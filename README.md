@@ -1,10 +1,10 @@
-## Brand Advance 2.0 Deployment
+## InfositeR Deployment
 
 **TEMP NOTE: This repo is missing a dependency file (pending). In order to make this project work, you need to include these two folders: 'ext-libraries' and 'amp-premier'**
 
 After each pull request is approved and merged, the merging party must deploy to both prod-dev and prod-staging by completing the following tasks.
 
-* Pull the merged changes: ` git pull origin master-brandadvance `
+* Pull the merged changes: ` git pull origin master `
 
 * Run the build task. This packages changes and places them into the proper locations of the master folder:  `gulp ba-build`
 
@@ -16,13 +16,13 @@ After each pull request is approved and merged, the merging party must deploy to
 Here's a quick rundown of the development workflow as it relates to git. First, grab the repository:
 
 ```
-git clone ssh://git@stash.portal.webmd.com:7999/profdevpoc/csd-core-library.git
+git clone ssh://git@stash.portal.webmd.com:7999/profpromodev/infositer.git
 ```
 
-This will create a directory named `csd-core-library` and the project contents will be inside. `cd` into the directory and install any `npm` packages.
+This will create a directory named `infositer` and the project contents will be inside. `cd` into the directory and install any `npm` packages.
 
 ```
-cd csd-core-library
+cd infositer
 npm install
 ```
 
@@ -86,49 +86,3 @@ If you run into "Module not found":
 ```
 npm install --save-dev <module-name>
 ```
-
-# Deploying
-
-To generate a deployment bundle of javascript and css:
-
-```
-npm run dist-<product name> // e.g. npm run dist-cme
-```
-
-Where `<product>` is the directory name under the `/products`
-directory. This will generate a file: `dist/corelib.bundle.js`. If
-you would like this process to run continuously, you can add the
-`--watch` option
-
-## WARNING: the grunt sftp task probably needs some love and may be buggy
-
-To use the grunt sftp deploy script, you need to create a file called
-`.ftppass` in the project directory with your sftp username and password, like so:
-
-```
-{
-    "username": "<username>",
-    "password": "<password>"
-}
-```
-
-This file is ignored by git, so there shouldn't be any danger of
-accidentally checking it into version control. This will deploy the js
-and css bundle in the `dist` directory.
-
-```
-grunt --product <product> sftp-medscape:<product>
-```
-
-Available subtasks:
-
-* `sftp-medscape:<product>-jsp`
-* `sftp-medscape:<product>-instance`
-
-Command line flags:
-
-* `--product` e.g. brandplay, cme, slideshow
-* `--server` default 'preview'
-* `--activity-ids` default [ '15345' ]
-* `--version` default 17r (this is the corelib directory where the bundle will be deployed)
-
