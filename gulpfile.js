@@ -1,4 +1,4 @@
-/* Gulp file for Infosites. TODO: Clean BA 2.0 info */
+/*=== Gulp file for Infosites. ===*/
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
@@ -8,62 +8,46 @@ var includer = require('gulp-htmlincluder');
 
 var shell = require('gulp-shell')
 
-// Brand Advance Sass Compiler
-gulp.task('ba-sass', function (){
-	gulp.src(['./products/brandadvance/scss/*.scss'])
+// Infosite Sass Compiler
+gulp.task('infosite-sass', function (){
+	gulp.src(['./assets/scss/*.scss'])
 		.pipe(sass({
-			includePaths: ['./products/brandadvance/scss']
+			includePaths: ['./assets/scss/']
 		}))
 		.pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
         .pipe(rename("style.css"))
-		.pipe(gulp.dest('./products/brandadvance/master/images/medcss/features/ba2'));
+		.pipe(gulp.dest('./assets/css/'));
 });
 
 
-// Brand Advance HTML Compiler
-gulp.task('ba-htmlIncluder', function() {
-    gulp.src('./products/brandadvance/html/*.html')
+// Infosite HTML Compiler
+gulp.task('infosite-htmlIncluder', function() {
+    gulp.src('./assets/html/*.html')
         .pipe(includer())
-        .pipe(gulp.dest('./products/brandadvance/dist-html/'));
-});
-
-// Brand Advance JS Compiler
-gulp.task('ba-js', function() {
-    gulp.src('./products/brandadvance/js/*.js')
-        .pipe(gulp.dest('./products/brandadvance/master/images/pi/scripts/ba2/'));
-});
-
-// Brand Advance Assets
-gulp.task('ba-assets', function() {
-    gulp.src('./products/brandadvance/assets/*/**')
-        .pipe(gulp.dest('./products/brandadvance/master/images/pi/sp/ipp/7/14480/'));
+        .pipe(gulp.dest('./assets/dist-html/'));
 });
 
 
-
-
-// Brand Advance Watch //////////////////////////////////////////////////////////////////////////
-gulp.task('ba-watch', function(){
-	gulp.watch("./products/brandadvance/scss/**/*.scss", function(event){
-		gulp.run('ba-sass');
+// Infosite Watch //////////////////////////////////////////////////////////////////////////
+gulp.task('infosite-watch', function(){
+	gulp.watch("./assets/scss/**/*.scss", function(event){
+		gulp.run('infosite-sass');
 	});
 
-	gulp.watch(['./products/brandadvance/html/*.html'], function(event) {
-      gulp.start('ba-htmlIncluder');
+	gulp.watch(['./assets/html/*.html'], function(event) {
+      gulp.start('infosite-htmlIncluder');
     });
 });
 
 
 
-// Brand Advance Build //////////////////////////////////////////////////////////////////////////
-gulp.task('ba-build', function(){
-	gulp.run('ba-sass');
-	gulp.run('ba-htmlIncluder');
-	gulp.run('ba-js');
-	gulp.run('ba-assets');
+// Infosite Build //////////////////////////////////////////////////////////////////////////
+gulp.task('infosite-build', function(){
+	gulp.run('infosite-sass');
+	gulp.run('infosite-htmlIncluder');
 });
 
 
