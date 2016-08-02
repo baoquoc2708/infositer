@@ -10,34 +10,34 @@ var shell = require('gulp-shell')
 
 // Infosite Sass Compiler
 gulp.task('infosite-sass', function (){
-	gulp.src(['./assets/scss/*.scss'])
+	gulp.src(['./Infosite/scss/*.scss'])
 		.pipe(sass({
-			includePaths: ['./assets/scss/']
+			includePaths: ['./Infosite/scss/']
 		}))
 		.pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
         .pipe(rename("style.css"))
-		.pipe(gulp.dest('./assets/css/'));
+		.pipe(gulp.dest('./Infosite/css/'));
 });
 
 
 // Infosite HTML Compiler
 gulp.task('infosite-htmlIncluder', function() {
-    gulp.src('./assets/html/*.html')
+    gulp.src('./Infosite/html/*.html')
         .pipe(includer())
-        .pipe(gulp.dest('./assets/dist-html/'));
+        .pipe(gulp.dest('./Infosite/dist-html/'));
 });
 
 
 // Infosite Watch //////////////////////////////////////////////////////////////////////////
 gulp.task('infosite-watch', function(){
-	gulp.watch("./assets/scss/**/*.scss", function(event){
+	gulp.watch("./Infosite/scss/**/*.scss", function(event){
 		gulp.run('infosite-sass');
 	});
 
-	gulp.watch(['./assets/html/*.html'], function(event) {
+	gulp.watch(['./Infosite/html/*.html'], function(event) {
       gulp.start('infosite-htmlIncluder');
     });
 });
@@ -48,48 +48,4 @@ gulp.task('infosite-watch', function(){
 gulp.task('infosite-build', function(){
 	gulp.run('infosite-sass');
 	gulp.run('infosite-htmlIncluder');
-});
-
-
-
-
-
-
-
-
-
-
-gulp.task('cme-webpack', shell.task([
-  'webpack --progress --optimize-minimize --config webpack.cme.deploy.js',
-  'echo world'
-]))
-
-
-
-// CME Sass Compiler
-gulp.task('cme-sass', function (){
-	gulp.src(['./products/cme/css/*.scss'])
-		.pipe(sass({
-			includePaths: ['./products/cme/css']
-		}))
-		.pipe(autoprefixer({
-            browsers: ['not ie <= 8'],
-            cascade: false
-        }))
-        .pipe(rename("cme-video-player.css"))
-		.pipe(gulp.dest('./master/images/medcss/cme/coreplayer'));
-});
-
-
-// CME Watch //////////////////////////////////////////////////////////////////////////
-gulp.task('cme-watch', function(){
-	gulp.watch("./products/cme/css/**/*.scss", function(event){
-		gulp.run('cme-sass');
-	});
-});
-
-// CME Build //////////////////////////////////////////////////////////////////////////
-gulp.task('dist-cme', function(){
-	gulp.run('cme-sass');
-	gulp.run('cme-webpack');
 });
