@@ -187,7 +187,6 @@ ul li:before {
   right: 0;
   left: 0;
   height: 20%;
-  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   overflow-y: hidden;
   z-index: 5000;
@@ -202,7 +201,6 @@ ul li:before {
     .isi.is-expanded .progress-bar, .isi.is-expanded.is-final-state .progress-bar {
       display: none; }
     .isi.is-expanded .isi-content, .isi.is-expanded.is-final-state .isi-content {
-      -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
       transition: height .2s;
       overflow-y: scroll;
@@ -375,19 +373,15 @@ ul li:before {
     .brand-header > .container {
       width: 100%;
       display: -ms-flexbox;
-      display: -webkit-flex;
       display: flex;
-      -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
       justify-content: flex-start;
-      -webkit-align-items: stretch;
       -ms-flex-align: stretch;
       align-items: stretch; }
     .brand-header .brand-header-logo {
       padding: 14px;
       border-right: solid 1px #aaa;
       overflow: hidden;
-      -webkit-flex-grow: 2;
       -ms-flex-positive: 2;
       flex-grow: 2; }
       .brand-header .brand-header-logo img {
@@ -396,7 +390,6 @@ ul li:before {
       padding: 0;
       text-align: left;
       float: none;
-      -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
       flex-grow: 1; }
       .brand-header .brand-header-links a {
@@ -958,12 +951,6 @@ p.qna-is-correct:before {
   margin-right: 5px;
   margin-bottom: -4px; }
 
-@-webkit-keyframes pulse {
-  from {
-    box-shadow: 0 0 0 0 rgba(116, 162, 184, 0.6); }
-  to {
-    box-shadow: 0 0 0 1000px rgba(116, 162, 184, 0); } }
-
 @keyframes pulse {
   from {
     box-shadow: 0 0 0 0 rgba(116, 162, 184, 0.6); }
@@ -1303,7 +1290,6 @@ button:focus {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   visibility: hidden;
   transition: all 1s;
