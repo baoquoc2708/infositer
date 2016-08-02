@@ -1,0 +1,66 @@
+{
+	"@attributes" : {
+		"version" : "2.0"
+	},
+	"channel" : {
+		"category" : "",
+		"pubDate" : "Wed, 03 Aug 2011 10:00:21 -0400",
+		"language" : "en",
+		"ttl" : "10",
+		"item" : {
+			"title" : "Elephant Dreams",
+			"link" : "http://akamai.com/player.html",
+			"description" : "Elephant Dreams",
+			"category" : "",
+			"pubDate" : "Wed, 03 Aug 2011 10:00:21 -0400",
+			"guid" : "sppartner_simple_example_1-123",
+			"media-status":
+			{
+				"@attributes" : {
+					"state": "blocked",
+					"reason": "ais"
+				}
+			},
+			"media-group" : {
+				"media-content" : {
+					"@attributes" : {
+						"isDefault" : "true",
+						"url" : "http://mediapm.edgesuite.net/ovp/content/demo/video/elephants_dream/elephants_dream_768x428_24.0fps_608kbps.mp4",
+						"type" : "video/mp4",
+						"medium" : "video",
+						"duration" : "600"
+					}
+				},
+				"media-title" : "Elephant Dreams",
+				"media-description" : "Elephant Dreams",
+				"media-embed" : {
+					"@attributes" : {
+						"url" : "http://player.js",
+						"width" : "604",
+						"height" : "341"
+					},
+					"media-param" : {
+						"@attributes" : {
+							"name" : "type"
+						},
+						"#text" : "text/javascript"
+					}
+				},
+				"media-subTitle": {
+					"@attributes": {
+						"type": "application/ttml+xml",
+						"lang": "en",
+						"href": ""
+					}
+				},
+				"media-thumbnail" : {
+					"@attributes" : {
+						"url" : "../resources/images/elephant-dreams.jpg",
+						"width" : "604",
+						"height" : "341"
+					}
+				}
+			}
+		}
+	}
+}

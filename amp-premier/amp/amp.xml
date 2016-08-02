@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="AMP">
+	<head>
+		<link type="text/css" rel="stylesheet" href="../resources/amp/amp.css" />
+	</head>
+	<config>
+		<native type="Object">
+	    	<fullscreen type="Boolean">true</fullscreen>
+	    	<controls type="Boolean">false</controls>
+	   	</native>
+	   	<flash type="Object">
+	   		<swf type="String">../resources/amp/AkamaiStandardPlayer.swf</swf>
+	   		<debug type="String">../resources/amp/AkamaiStandardPlayer-debug.swf</debug>
+	   		<expressInstallSWF type="String">../resources/amp/playerProductInstall.swf</expressInstallSWF>
+	   		<vars type="Object"></vars>
+			<application>
+				<player auto_play_list="false" auto_replay="false" controls="true" dvr_enabled="1" enable_alternate_server_mapping="false" enable_end_user_mapping="false" font_size="18" is_token_required="false" locale_setting="en" media_analytics_logging_enabled="false" rewind_interval="15" set_resume_dvr_at_live="true" start_bitrate_index="-1" use_netsession_client="false" volume="50">
+				</player>
+				<view>
+					<element id="infoOverlay" style="top: 0px; text-align: left;"></element>
+					<element id="captionDisplay" style="bottom: 80px; opacity:1;"></element>
+					<element height="5" id="controls" visible="true">
+				        <element id="replay"></element>
+						<element id="playPause"></element>
+						<element id="rewind"></element>
+						<element color="#FF0000" id="progress"></element>
+						<element color="#00FF00" id="loaded"></element>
+						<element id="scrubber"></element>
+						<element id="cc"></element>
+						<element id="stats"></element>
+						<element id="hdclient"></element>
+						<element color="#0000FF" id="volume"></element>
+						<element id="fullscreen"></element>
+						<element id="logo" style="width: 150px; height: 53px; right: 15px; top: 15px; opacity: 0.5; background-image: url('../resources/amp/resources/images/akamai_logo.png');"></element>
+					</element>
+				</view>
+				<plugins>
+					<!-- CONSULT AKAMAI REGARDING PLUG-IN MODIFICATIONS. DO NOT MODIFY WITHOUT SUPPORT FROM AKAMAI -->
+					<plugin absolute="true" host="osmf" id="AkamaiAdvancedStreamingPlugin" type="dynamic">http://players.edgesuite.net/flash/plugins/osmf/advanced-streaming-plugin/v2.11/osmf2.0/AkamaiAdvancedStreamingPlugin.swf</plugin>
+					<plugin host="osmf" id="CaptioningPlugin" type="dynamic">../resources/amp/resources/plugins/CaptioningPlugin.swf</plugin>
+					<plugin host="osmf" id="OSMFCSMALoader" type="static">com.akamai.playeranalytics.osmf.OSMFCSMALoaderInfo</plugin>
+				</plugins>
+				<locales></locales>
+				<metrics></metrics>
+			</application>
+	   	</flash>
+	   	<userAgentHints type="Object">
+	   		<flashTablets type="Object">
+		    	<label type="String"><![CDATA[Android 2 & 3 or Kindle Fire 1]]></label>
+		        <regexp type="String">Android [23]|Silk\/1</regexp>
+		    </flashTablets>
+		    <html5Phones type="Object">
+		        <label type="String">iPhone</label>
+		        <regexp type="String">iPhone</regexp>
+		    </html5Phones>
+		    <html5Tablets type="Object">
+		        <label type="String">HTML5 Tablets</label>
+		        <regexp type="String">iPad|Android 4|Silk\/2</regexp>
+		    </html5Tablets>
+		    <desktop type="Object">
+		        <label type="String">Desktop</label>
+		        <regexp type="String">^((?!iPad|iPhone|Android|BlackBerry|PlayBook|Silk).)*$</regexp>
+		    </desktop>
+	   	</userAgentHints>
+	   	<captioning type="Object"></captioning>
+		<mediaanalytics type="Object">
+			<config type="String">http://ma188-r.analytics.edgesuite.net/config/beacon-2114.xml</config>
+			<plugin type="Object">
+				<js type="String">http://79423.analytics.edgesuite.net/html5/akamaihtml5-min.js</js>
+				<swf type="String">http://79423.analytics.edgesuite.net/csma/plugin/csma.swf</swf>
+			</plugin>
+		</mediaanalytics>
+		<locales type="Object">  
+			<en type="Object">
+				<MSG_EMAIL_TO>To</MSG_EMAIL_TO>
+				<MSG_EMAIL_FROM>From</MSG_EMAIL_FROM>
+				<MSG_EMAIL_VIDEO>Email this video</MSG_EMAIL_VIDEO>
+				<MSG_EMAIL_MESSAGE_DEFAULT>Check out this video from xxx</MSG_EMAIL_MESSAGE_DEFAULT>
+				<MSG_EMAIL_MESSAGE>Message</MSG_EMAIL_MESSAGE>
+				<MSG_EMAIL_ADDRESS_INVALID>Invalid Email Address</MSG_EMAIL_ADDRESS_INVALID>
+				<MSG_EMAIL_MESSAGE_INVALID>Please limit your message to 500 characters or less.</MSG_EMAIL_MESSAGE_INVALID>
+				<MSG_EMAIL_CHARACTERS_REMAINING_TEXT> characters left</MSG_EMAIL_CHARACTERS_REMAINING_TEXT>
+				<MSG_EMAIL_SEND_FAILURE>Message could not be sent.</MSG_EMAIL_SEND_FAILURE>
+				<MSG_EMAIL_SEND_SUCCESS_MESSAGE>Your email has been sent!</MSG_EMAIL_SEND_SUCCESS_MESSAGE>
+				<MSG_SHARE_VIDEO_TEXT>Share this video...</MSG_SHARE_VIDEO_TEXT>
+				<MSG_POST_TEXT>Post</MSG_POST_TEXT>
+				<MSG_EMBED_TEXT>Embed</MSG_EMBED_TEXT>
+				<MSG_LINK_TEXT>Link</MSG_LINK_TEXT>
+				<MSG_SHARE_CONNECT_FAILURE>Unable to connect. Please try again.</MSG_SHARE_CONNECT_FAILURE>
+				<MSG_SHARE_CONTENT_DISABLED>Share and embed are disabled.</MSG_SHARE_CONTENT_DISABLED>
+				<MSG_VERSION_TEXT>Version</MSG_VERSION_TEXT>
+				<MSG_BUFFERING_TEXT>buffering</MSG_BUFFERING_TEXT>
+				<MSG_CUSTOMIZE_CLIP_POINTS>Customize the start and end point of the video.</MSG_CUSTOMIZE_CLIP_POINTS>
+				<MSG_PAUSE>Pause</MSG_PAUSE>
+				<MSG_PREVIEW>Preview</MSG_PREVIEW>
+				<MSG_CURRENT>Currrent</MSG_CURRENT>
+				<MSG_SEEK_TO>Seek to</MSG_SEEK_TO>
+				<MSG_LIVE>LIVE</MSG_LIVE>
+				<MSG_DEFAULT_ERROR_MESSAGE>Sorry, we were unable to play the media you selected. Please try again, or select alternate media.</MSG_DEFAULT_ERROR_MESSAGE>
+				<MSG_ERROR_PREFIX>Error encountered:</MSG_ERROR_PREFIX>
+				<MSG_STREAM_NOT_FOUND>Stream not found</MSG_STREAM_NOT_FOUND>
+				<MSG_CURRENT_WORKING_BANDWIDTH>Current working bandwidth</MSG_CURRENT_WORKING_BANDWIDTH>
+				<MSG_CURRENT_BITRATE_PLAYING>Current bitrate playing</MSG_CURRENT_BITRATE_PLAYING>
+				<MSG_MAX_BITRATE_AVAILABLE>Max bitrate available</MSG_MAX_BITRATE_AVAILABLE>
+				<MSG_NOT_AVAILABLE>Not Available</MSG_NOT_AVAILABLE>
+				<MSG_GO_LIVE>GO LIVE</MSG_GO_LIVE>
+				<MSG_REPLAY>Replay</MSG_REPLAY>
+				<MSG_NEXT_VIDEO>Next video starts in: </MSG_NEXT_VIDEO>
+				<MSG_RECOMMENDED>Recommended</MSG_RECOMMENDED>
+				<MSG_VIEW_ALL>View all </MSG_VIEW_ALL>
+				<MSG_VIDEO> videos</MSG_VIDEO>
+		  	</en>
+			<es type="Object">
+				<MSG_EMAIL_TO>a</MSG_EMAIL_TO>
+			  	<MSG_EMAIL_FROM>de</MSG_EMAIL_FROM>
+				<MSG_EMAIL_VIDEO>Enviar este vï¿½deo</MSG_EMAIL_VIDEO>
+				<MSG_EMAIL_MESSAGE_DEFAULT>Echa un vistazo a este video de xxx</MSG_EMAIL_MESSAGE_DEFAULT>
+				<MSG_EMAIL_MESSAGE>mensaje</MSG_EMAIL_MESSAGE>
+				<MSG_EMAIL_ADDRESS_INVALID>Direcciï¿½n de correo electrï¿½nico no vï¿½lida</MSG_EMAIL_ADDRESS_INVALID>
+				<MSG_EMAIL_MESSAGE_INVALID>Por favor limite su mensaje a 500 caracteres o menos.</MSG_EMAIL_MESSAGE_INVALID>
+				<MSG_EMAIL_CHARACTERS_REMAINING_TEXT>personajes de la izquierda</MSG_EMAIL_CHARACTERS_REMAINING_TEXT>
+				<MSG_EMAIL_SEND_FAILURE>El mensaje no pudo ser enviado.</MSG_EMAIL_SEND_FAILURE>
+				<MSG_EMAIL_SEND_SUCCESS_MESSAGE>Tu email ha sido enviado!</MSG_EMAIL_SEND_SUCCESS_MESSAGE>
+				<MSG_SHARE_VIDEO_TEXT>Comparte este vï¿½deo...</MSG_SHARE_VIDEO_TEXT>
+				<MSG_POST_TEXT>enviar</MSG_POST_TEXT>
+				<MSG_EMBED_TEXT>incrustar</MSG_EMBED_TEXT>
+				<MSG_LINK_TEXT>enlace</MSG_LINK_TEXT>
+				<MSG_SHARE_CONNECT_FAILURE>No se puede conectar. Por favor, intï¿½ntelo de nuevo.</MSG_SHARE_CONNECT_FAILURE>
+				<MSG_SHARE_CONTENT_DISABLED>Compartir e incrustar estï¿½n desactivados.</MSG_SHARE_CONTENT_DISABLED>
+				<MSG_VERSION_TEXT>versiï¿½n</MSG_VERSION_TEXT>
+				<MSG_BUFFERING_TEXT>el almacenamiento en bï¿½fer</MSG_BUFFERING_TEXT>
+				<MSG_CUSTOMIZE_CLIP_POINTS>Personalizar el inicio y el punto final del video.</MSG_CUSTOMIZE_CLIP_POINTS>
+				<MSG_PAUSE>romper</MSG_PAUSE>
+				<MSG_PREVIEW>vista previa</MSG_PREVIEW>
+				<MSG_CURRENT>corriente</MSG_CURRENT>
+				<MSG_SEEK_TO>Tratar de</MSG_SEEK_TO>
+				<MSG_LIVE>EN VIVO</MSG_LIVE>
+				<MSG_DEFAULT_ERROR_MESSAGE>Lo sentimos, no hemos podido jugar los medios de comunicaciï¿½n seleccionados. Por favor, intï¿½ntelo de nuevo, o seleccionar los medios de comunicaciï¿½n alternativos.</MSG_DEFAULT_ERROR_MESSAGE>
+				<MSG_ERROR_PREFIX>Se produjo un error:</MSG_ERROR_PREFIX>
+				<MSG_STREAM_NOT_FOUND>Stream que no se encuentra</MSG_STREAM_NOT_FOUND>
+				<MSG_CURRENT_WORKING_BANDWIDTH>Ancho de banda actual de trabajo</MSG_CURRENT_WORKING_BANDWIDTH>
+				<MSG_CURRENT_BITRATE_PLAYING>Tasa de bits de reproducciï¿½n actual</MSG_CURRENT_BITRATE_PLAYING>
+				<MSG_MAX_BITRATE_AVAILABLE>Tasa de bits mï¿½xima disponible</MSG_MAX_BITRATE_AVAILABLE>
+				<MSG_NOT_AVAILABLE>No estï¿½ disponible</MSG_NOT_AVAILABLE>
+				<MSG_GO_LIVE>IR A VIVIR</MSG_GO_LIVE>
+				<MSG_REPLAY>Repetir</MSG_REPLAY>
+				<MSG_NEXT_VIDEO>El prï¿½ximo video comienza en: </MSG_NEXT_VIDEO>
+				<MSG_RECOMMENDED>Recomendado</MSG_RECOMMENDED>
+				<MSG_VIEW_ALL>Ver todos </MSG_VIEW_ALL>
+				<MSG_VIDEO> vï¿½deos</MSG_VIDEO>
+			</es>
+		</locales>
+   	</config>
+</module>

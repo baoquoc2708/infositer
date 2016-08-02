@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+	<channel>
+	    <title>AMP Premier</title>
+	    <link>http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/</link>
+	    <description>AMP Premier Player</description>
+	    <pubDate>Wed, 03 Aug 2011 10:00:21 -0400</pubDate>
+	    <language>en</language>
+	    <item>
+	    	<title>HD World</title>
+	    	<description>View world's beauty in HD</description>
+	      	<link>http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/</link>
+	      	<pubDate>Wed, 03 Aug 2011 10:00:21 -0400</pubDate>
+	      	<guid>32586901234</guid>
+	      	<media:group>
+		      	<media:title>HD World</media:title>
+		      	<media:description>View world's beauty in HD</media:description>
+		        <media:content 
+		        	isDefault="true"
+					url="http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m"
+					type="video/f4m"
+					medium="video"
+					duration="108" />
+				<media:content 
+		        	url="http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/master.m3u8"
+		        	duration="108"
+					medium="video"
+					type="application/x-mpegURL" />
+				<media:content 
+		        	url="http://mediapm.edgesuite.net/osmf/content/test/spacealonehd_sounas_640_700.mp4"
+		        	duration="108"
+					medium="video"
+					type="video/mp4" />
+				<media:thumbnail
+					url="../resources/images/hd_world.jpg"
+					width="604"
+					height="341" />
+				<media:embed url="http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/" width="604" height="341">
+					<media:param name="type">text/javascript</media:param>
+				</media:embed>
+	    	</media:group>
+	    </item>
+	    <item>
+	    	<title>HD World</title>
+	    	<description>View world's beauty in HD</description>
+	      	<link>http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/</link>
+	      	<pubDate>Wed, 03 Aug 2011 10:00:21 -0400</pubDate>
+	      	<guid>32586901234</guid>
+	      	<media:group>
+		      	<media:title>HD World</media:title>
+		      	<media:description>View world's beauty in HD</media:description>
+		        <media:content 
+		        	isDefault="true"
+					url="http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m"
+					type="video/f4m"
+					medium="video"
+					duration="108" />
+				<media:content 
+		        	url="http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/master.m3u8"
+		        	duration="108"
+					medium="video"
+					type="application/x-mpegURL" />
+				<media:content 
+		        	url="http://mediapm.edgesuite.net/osmf/content/test/spacealonehd_sounas_640_700.mp4"
+		        	duration="108"
+					medium="video"
+					type="video/mp4" />
+				<media:thumbnail
+					url="../resources/images/hd_world.jpg"
+					width="604"
+					height="341" />
+				<media:embed url="http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/" width="604" height="341">
+					<media:param name="type">text/javascript</media:param>
+				</media:embed>
+	    	</media:group>
+	    </item>
+	    <item>
+	    	<title>HD World</title>
+	    	<description>View world's beauty in HD</description>
+	      	<link>http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/</link>
+	      	<pubDate>Wed, 03 Aug 2011 10:00:21 -0400</pubDate>
+	      	<guid>32586901234</guid>
+	      	<media:group>
+		      	<media:title>HD World</media:title>
+		      	<media:description>View world's beauty in HD</media:description>
+		        <media:content 
+		        	isDefault="true"
+					url="http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m"
+					type="video/f4m"
+					medium="video"
+					duration="108" />
+				<media:content 
+		        	url="http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/master.m3u8"
+		        	duration="108"
+					medium="video"
+					type="application/x-mpegURL" />
+				<media:content 
+		        	url="http://mediapm.edgesuite.net/osmf/content/test/spacealonehd_sounas_640_700.mp4"
+		        	duration="108"
+					medium="video"
+					type="video/mp4" />
+				<media:thumbnail
+					url="../resources/images/hd_world.jpg"
+					width="604"
+					height="341" />
+				<media:embed url="http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/" width="604" height="341">
+					<media:param name="type">text/javascript</media:param>
+				</media:embed>
+	    	</media:group>
+	    </item>
+	    <item>
+	    	<title>HD World</title>
+	    	<description>View world's beauty in HD</description>
+	      	<link>http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/</link>
+	      	<pubDate>Wed, 03 Aug 2011 10:00:21 -0400</pubDate>
+	      	<guid>32586901234</guid>
+	      	<media:group>
+		      	<media:title>HD World</media:title>
+		      	<media:description>View world's beauty in HD</media:description>
+		        <media:content 
+		        	isDefault="true"
+					url="http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m"
+					type="video/f4m"
+					medium="video"
+					duration="108" />
+				<media:content 
+		        	url="http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/master.m3u8"
+		        	duration="108"
+					medium="video"
+					type="application/x-mpegURL" />
+				<media:content 
+		        	url="http://mediapm.edgesuite.net/osmf/content/test/spacealonehd_sounas_640_700.mp4"
+		        	duration="108"
+					medium="video"
+					type="video/mp4" />
+				<media:thumbnail
+					url="../resources/images/hd_world.jpg"
+					width="604"
+					height="341" />
+				<media:embed url="http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/" width="604" height="341">
+					<media:param name="type">text/javascript</media:param>
+				</media:embed>
+	    	</media:group>
+	    </item>
+	    <item>
+	    	<title>HD World</title>
+	    	<description>View world's beauty in HD</description>
+	      	<link>http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/</link>
+	      	<pubDate>Wed, 03 Aug 2011 10:00:21 -0400</pubDate>
+	      	<guid>32586901234</guid>
+	      	<media:group>
+		      	<media:title>HD World</media:title>
+		      	<media:description>View world's beauty in HD</media:description>
+		        <media:content 
+		        	isDefault="true"
+					url="http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m"
+					type="video/f4m"
+					medium="video"
+					duration="108" />
+				<media:content 
+		        	url="http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/master.m3u8"
+		        	duration="108"
+					medium="video"
+					type="application/x-mpegURL" />
+				<media:content 
+		        	url="http://mediapm.edgesuite.net/osmf/content/test/spacealonehd_sounas_640_700.mp4"
+		        	duration="108"
+					medium="video"
+					type="video/mp4" />
+				<media:thumbnail
+					url="../resources/images/hd_world.jpg"
+					width="604"
+					height="341" />
+				<media:embed url="http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/" width="604" height="341">
+					<media:param name="type">text/javascript</media:param>
+				</media:embed>
+	    	</media:group>
+	    </item>
+	    <item>
+	    	<title>HD World</title>
+	    	<description>View world's beauty in HD</description>
+	      	<link>http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/</link>
+	      	<pubDate>Wed, 03 Aug 2011 10:00:21 -0400</pubDate>
+	      	<guid>32586901234</guid>
+	      	<media:group>
+		      	<media:title>HD World</media:title>
+		      	<media:description>View world's beauty in HD</media:description>
+		        <media:content 
+		        	isDefault="true"
+					url="http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m"
+					type="video/f4m"
+					medium="video"
+					duration="108" />
+				<media:content 
+		        	url="http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/master.m3u8"
+		        	duration="108"
+					medium="video"
+					type="application/x-mpegURL" />
+				<media:content 
+		        	url="http://mediapm.edgesuite.net/osmf/content/test/spacealonehd_sounas_640_700.mp4"
+		        	duration="108"
+					medium="video"
+					type="video/mp4" />
+				<media:thumbnail
+					url="../resources/images/hd_world.jpg"
+					width="604"
+					height="341" />
+				<media:embed url="http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/" width="604" height="341">
+					<media:param name="type">text/javascript</media:param>
+				</media:embed>
+	    	</media:group>
+	    </item>
+	    <item>
+	    	<title>HD World</title>
+	    	<description>View world's beauty in HD</description>
+	      	<link>http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/</link>
+	      	<pubDate>Wed, 03 Aug 2011 10:00:21 -0400</pubDate>
+	      	<guid>32586901234</guid>
+	      	<media:group>
+		      	<media:title>HD World</media:title>
+		      	<media:description>View world's beauty in HD</media:description>
+		        <media:content 
+		        	isDefault="true"
+					url="http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m"
+					type="video/f4m"
+					medium="video"
+					duration="108" />
+				<media:content 
+		        	url="http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/master.m3u8"
+		        	duration="108"
+					medium="video"
+					type="application/x-mpegURL" />
+				<media:content 
+		        	url="http://mediapm.edgesuite.net/osmf/content/test/spacealonehd_sounas_640_700.mp4"
+		        	duration="108"
+					medium="video"
+					type="video/mp4" />
+				<media:thumbnail
+					url="../resources/images/hd_world.jpg"
+					width="604"
+					height="341" />
+				<media:embed url="http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/" width="604" height="341">
+					<media:param name="type">text/javascript</media:param>
+				</media:embed>
+	    	</media:group>
+	    </item>
+	    <item>
+	    	<title>HD World</title>
+	    	<description>View world's beauty in HD</description>
+	      	<link>http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/</link>
+	      	<pubDate>Wed, 03 Aug 2011 10:00:21 -0400</pubDate>
+	      	<guid>32586901234</guid>
+	      	<media:group>
+		      	<media:title>HD World</media:title>
+		      	<media:description>View world's beauty in HD</media:description>
+		        <media:content 
+		        	isDefault="true"
+					url="http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m"
+					type="video/f4m"
+					medium="video"
+					duration="108" />
+				<media:content 
+		        	url="http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/master.m3u8"
+		        	duration="108"
+					medium="video"
+					type="application/x-mpegURL" />
+				<media:content 
+		        	url="http://mediapm.edgesuite.net/osmf/content/test/spacealonehd_sounas_640_700.mp4"
+		        	duration="108"
+					medium="video"
+					type="video/mp4" />
+				<media:thumbnail
+					url="../resources/images/hd_world.jpg"
+					width="604"
+					height="341" />
+				<media:embed url="http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/" width="604" height="341">
+					<media:param name="type">text/javascript</media:param>
+				</media:embed>
+	    	</media:group>
+	    </item>
+	    <item>
+	    	<title>HD World</title>
+	    	<description>View world's beauty in HD</description>
+	      	<link>http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/</link>
+	      	<pubDate>Wed, 03 Aug 2011 10:00:21 -0400</pubDate>
+	      	<guid>32586901234</guid>
+	      	<media:group>
+		      	<media:title>HD World</media:title>
+		      	<media:description>View world's beauty in HD</media:description>
+		        <media:content 
+		        	isDefault="true"
+					url="http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m"
+					type="video/f4m"
+					medium="video"
+					duration="108" />
+				<media:content 
+		        	url="http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/master.m3u8"
+		        	duration="108"
+					medium="video"
+					type="application/x-mpegURL" />
+				<media:content 
+		        	url="http://mediapm.edgesuite.net/osmf/content/test/spacealonehd_sounas_640_700.mp4"
+		        	duration="108"
+					medium="video"
+					type="video/mp4" />
+				<media:thumbnail
+					url="../resources/images/hd_world.jpg"
+					width="604"
+					height="341" />
+				<media:embed url="http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/" width="604" height="341">
+					<media:param name="type">text/javascript</media:param>
+				</media:embed>
+	    	</media:group>
+	    </item>
+	    <item>
+	    	<title>HD World</title>
+	    	<description>View world's beauty in HD</description>
+	      	<link>http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/</link>
+	      	<pubDate>Wed, 03 Aug 2011 10:00:21 -0400</pubDate>
+	      	<guid>32586901234</guid>
+	      	<media:group>
+		      	<media:title>HD World</media:title>
+		      	<media:description>View world's beauty in HD</media:description>
+		        <media:content 
+		        	isDefault="true"
+					url="http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m"
+					type="video/f4m"
+					medium="video"
+					duration="108" />
+				<media:content 
+		        	url="http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/master.m3u8"
+		        	duration="108"
+					medium="video"
+					type="application/x-mpegURL" />
+				<media:content 
+		        	url="http://mediapm.edgesuite.net/osmf/content/test/spacealonehd_sounas_640_700.mp4"
+		        	duration="108"
+					medium="video"
+					type="video/mp4" />
+				<media:thumbnail
+					url="../resources/images/hd_world.jpg"
+					width="604"
+					height="341" />
+				<media:embed url="http://projects.mediadev.edgesuite.net/customers/akamai/mdt-html5-core/premier/" width="604" height="341">
+					<media:param name="type">text/javascript</media:param>
+				</media:embed>
+	    	</media:group>
+	    </item>
+	</channel>
+</rss>

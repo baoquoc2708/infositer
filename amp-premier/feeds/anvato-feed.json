@@ -1,0 +1,67 @@
+{
+	"@attributes" : {
+		"version" : "2.0"
+	},
+	"channel" : {
+		"category" : "",
+		"pubDate" : "Wed, 03 Aug 2011 10:00:21 -0400",
+		"language" : "en",
+		"ttl" : "10",
+		"item" : {
+			"title" : "Anvato Caption",
+			"link" : "http://live.html",
+			"temporalType" : "live",
+			"description" : "onvato",
+			"category" : "",
+			"pubDate" : "Wed, 03 Aug 2011 10:00:21 -0400",
+			"guid" : "4255636",
+			"media-group" : {
+				"media-content" : [
+						{
+							"@attributes" : {
+								"isDefault" : "true",
+								"url" : "http://pico713_716hds-lh.akamaihd.net/z/stgFS1_1@121119/manifest.f4m",
+								"medium" : "video",
+								"duration" : "0"
+							}
+						},
+						{
+							"@attributes" : {
+								"url" : "http://fnctve-i.akamaihd.net/hls/live/200669/fnctve/playlist.m3u8?hdnea=st=1326108173~exp=1412508173~acl=/*~hmac=65cccba0ebd08e4780899156c8ac28c819043ad493ba8abba970d7c4d4c1de5d",
+								"medium" : "video",
+								"type" : "application/x-mpegURL"
+							}
+						}],
+				"media-title" : "Caption Settings DEMO - Live",
+				"media-description" : "Fox News Channel",
+				"media-embed" : {
+					"@attributes" : {
+						"url" : "http://player.js",
+						"width" : "604",
+						"height" : "341"
+					},
+					"media-param" : {
+						"@attributes" : {
+							"name" : "type"
+						},
+						"#text" : "text/javascript"
+					}
+				},
+				"media-subTitle": {
+					"@attributes": {
+						"type": "live-anvato",
+						"lang": "en-us",
+						"href": ""
+					}
+				},
+				"media-thumbnail" : {
+					"@attributes" : {
+						"url" : "../resources/images/hd_world.jpg",
+						"width" : "320",
+						"height" : "240"
+					}
+				}
+			}
+		}
+	}
+}

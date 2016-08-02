@@ -1,0 +1,67 @@
+{
+	"@attributes" : {
+		"version" : "2.0"
+	},
+	"channel" : {
+		"category" : "",
+		"pubDate" : "Wed, 03 Aug 2011 10:00:21 -0400",
+		"language" : "en",
+		"ttl" : "10",
+		"item" : {
+			"title" : "iHeart",
+			"link" : "http://live.html",
+			"temporalType" : "live",
+			"description" : "iHeart",
+			"category" : "",
+			"pubDate" : "Wed, 03 Aug 2011 10:00:21 -0400",
+			"guid" : "4255636",
+			"media-group" : {
+				"media-content" : [
+						{
+							"@attributes" : {
+								"isDefault" : "true",
+								"url" : "http://ktlatribune-lh.akamaihd.net/z/KTLATribune_1@109091/manifest.f4m",
+								"medium" : "video",
+								"duration" : "108"
+							}
+						},
+						{
+							"@attributes" : {
+								"url" : "http://www.nasa.gov/multimedia/nasatv/NTV-Public-IPS.m3u8",
+								"medium" : "video",
+								"type" : "application/x-mpegURL"
+							}
+						}],
+				"media-title" : "VOD - HD World",
+				"media-description" : "View world's beauty in HD",
+				"media-embed" : {
+					"@attributes" : {
+						"url" : "http://player.js",
+						"width" : "604",
+						"height" : "341"
+					},
+					"media-param" : {
+						"@attributes" : {
+							"name" : "type"
+						},
+						"#text" : "text/javascript"
+					}
+				},
+				"media-subTitle": {
+					"@attributes": {
+						"type": "application/ttml+xml",
+						"lang": "en",
+						"href": ""
+					}
+				},
+				"media-thumbnail" : {
+					"@attributes" : {
+						"url" : "../resources/images/hd_world.jpg",
+						"width" : "320",
+						"height" : "240"
+					}
+				}
+			}
+		}
+	}
+}

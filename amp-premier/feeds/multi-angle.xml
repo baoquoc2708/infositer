@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:itunes='http://www.itunes.com/dtds/podcast-1.0.dtd' xmlns:media='http://search.yahoo.com/mrss/' xmlns:dc='http://purl.org/dc/elements/1.1/' version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
+	<channel>
+		<title></title>
+		<atom:link href='' rel='self' type='application/rss+xml' />
+		<link></link>
+		<description></description>
+			<image>
+				<link></link>
+				<title>Channel List</title>
+				<url></url>
+				<description></description>
+				<height>97</height>
+				<width>86</width>
+			</image>
+			<itunes:image href='' />
+			<itunes:explicit>clean</itunes:explicit>
+			<category>30</category>
+			<itunes:category text='Category' />
+			<pubDate>Wed, 31 Dec 1969 19:00:00 -0500</pubDate>
+			<dc:date>1969-12-31T19:00:00-05:00</dc:date>
+			<language>en</language>
+			<dc:language>en</dc:language>
+			<ttl>10</ttl>
+			<item>
+				<matchName>matchName</matchName>
+				<cameraAngle>1</cameraAngle>
+				<title>HD World</title>
+				<link></link>
+				<description>View world's beauty in HD</description>
+				<category>null</category>
+				<category>null</category>
+				<pubDate>Wed, 31 Dec 1969 19:00:00 -0500</pubDate>
+				<guid isPermaLink='false'>1369488429003</guid>
+				<dc:date>1969-12-31T19:00:00-05:00</dc:date>
+				<dc:source></dc:source>
+				<dc:creator></dc:creator>
+				<dc:contributor></dc:contributor>
+				<itunes:author></itunes:author>
+				<itunes:summary></itunes:summary>
+				<itunes:explicit>clean</itunes:explicit>
+				<itunes:duration>00:00</itunes:duration>
+				<enclosure url='' length='0' type='video/mp4'></enclosure>
+				<media:group>
+					<media:title>HD World</media:title>
+				    <media:description>View world's beauty in HD</media:description>
+				    <media:subTitle type="application/ttml+xml" lang="en-us" href="" />
+					<media:content 
+						isDefault='true' 
+						framerate='0' 
+						medium='video' 
+						url="http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m?start=0&amp;end=30" 
+						type='video/f4m' 
+						expression='full' 
+						bitrate='0' 
+						lang='en-us' 
+						width='640' 
+						height='360' 
+						duration='30' />
+					<media:content 
+						isDefault='true' 
+						framerate='0' 
+						medium='video' 
+						url='http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/master.m3u8?start=0&amp;end=30' 
+						type='application/x-mpegURL' 
+						expression='full' 
+						bitrate='0' 
+						lang='en-us' 
+						width='640' 
+						height='360' 
+						duration='30' />
+					<media:thumbnail
+						url="../resources/images/hd_world.jpg"
+						width="604"
+						height="341" />
+				</media:group>
+			</item>
+			<item>
+				<matchName>matchName</matchName>
+				<cameraAngle>1</cameraAngle>
+				<title>HD World</title>
+				<link></link>
+				<description>View world's beauty in HD</description>
+				<category>null</category>
+				<category>null</category>
+				<pubDate>Wed, 31 Dec 1969 19:00:00 -0500</pubDate>
+				<guid isPermaLink='false'>1369488429003</guid>
+				<dc:date>1969-12-31T19:00:00-05:00</dc:date>
+				<dc:source></dc:source>
+				<dc:creator></dc:creator>
+				<dc:contributor></dc:contributor>
+				<itunes:author></itunes:author>
+				<itunes:summary></itunes:summary>
+				<itunes:explicit>clean</itunes:explicit>
+				<itunes:duration>00:00</itunes:duration>
+				<enclosure url='' length='0' type='video/mp4'></enclosure>
+				<media:group>
+					<media:title>HD World</media:title>
+				    <media:description>View world's beauty in HD</media:description>
+				    <media:subTitle type="application/ttml+xml" lang="en-us" href="" />
+					<media:content 
+						framerate='0' 
+						medium='video' 
+						url='http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m?start=30&amp;end=60' 
+						type='video/f4m' 
+						expression='full' 
+						bitrate='0' 
+						lang='en-us' 
+						width='640' 
+						height='360' 
+						duration='30' />
+					<media:content 
+						framerate='0' 
+						medium='video' 
+						url='http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/master.m3u8?start=30&amp;end=60' 
+						type='application/x-mpegURL' 
+						expression='full' 
+						bitrate='0' 
+						lang='en-us' 
+						width='640' 
+						height='360' 
+						duration='30' />
+					<media:thumbnail
+						url="../resources/images/hd_world.jpg"
+						width="604"
+						height="341" />
+				</media:group>
+			</item>
+			<item>
+				<matchName>matchName</matchName>
+				<cameraAngle>1</cameraAngle>
+				<title>HD World</title>
+				<link></link>
+				<description>View world's beauty in HD</description>
+				<category>null</category>
+				<category>null</category>
+				<pubDate>Wed, 31 Dec 1969 19:00:00 -0500</pubDate>
+				<guid isPermaLink='false'>1369488429003</guid>
+				<dc:date>1969-12-31T19:00:00-05:00</dc:date>
+				<dc:source></dc:source>
+				<dc:creator></dc:creator>
+				<dc:contributor></dc:contributor>
+				<itunes:author></itunes:author>
+				<itunes:summary></itunes:summary>
+				<itunes:explicit>clean</itunes:explicit>
+				<itunes:duration>00:00</itunes:duration>
+				<enclosure url='' length='0' type='video/mp4'></enclosure>
+				<media:group>
+					<media:title>HD World</media:title>
+				    <media:description>View world's beauty in HD</media:description>
+				    <media:subTitle type="application/ttml+xml" lang="en-us" href="" />
+					<media:content 
+						framerate='0' 
+						medium='video' 
+						url='http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m?start=60&amp;end=90' 
+						type='video/f4m' 
+						expression='full' 
+						bitrate='0' 
+						lang='en-us' 
+						width='640' 
+						height='360' 
+						duration='30' />
+					<media:content 
+						framerate='0' 
+						medium='video' 
+						url='http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/master.m3u8?start=60&amp;end=90' 
+						type='application/x-mpegURL' 
+						expression='full' 
+						bitrate='0' 
+						lang='en-us' 
+						width='640' 
+						height='360' 
+						duration='30' />
+					<media:thumbnail
+						url="../resources/images/hd_world.jpg"
+						width="604"
+						height="341" />
+				</media:group>
+			</item>
+	</channel>
+</rss>

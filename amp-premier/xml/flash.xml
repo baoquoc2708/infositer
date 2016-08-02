@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+	<player
+		auto_play = "false"
+		volume = "50"
+		start_bitrate_index = "-1"
+		auto_replay = "true"
+		dvr_enabled = "1"
+		rewind_interval = "15"
+		title="Video Title"
+		media_analytics_logging_enabled="false"
+		set_resume_dvr_at_live="false"
+		js_callback = "AEP.jsCallbackHandler"
+		use_netsession_client = "false"
+		show_feature_bar = "false"
+		show_email_overlay="false" 
+		show_sharing_overlay="false" 
+		netsession_install_prompt_frequency_secs = "1">
+	</player>
+	<view>
+    		<element id="infoOverlay" style="top: 0px;" />
+    		<element id="recommendationSlate" viewMode="grid" items="5" />
+    		<element id="captionDisplay" style="bottom: 0px; opacity:1;"/>
+    		<element id="logoOverlay" style="width: 150px; height: 53px; right: 15px; top: 15px; opacity: 0.5; background-image: url('../resources/images/sola.png	');" />
+    		<element id="controls" autoHide="5" height="25">
+			<element id="streamTimeIndicator">
+				<element id="streamTime" />
+				<element id="streamDuration" />
+			</element>
+			<element id="replayBtn" />
+			<element id="playPauseBtn" />
+			<element id="rewindBtn" />
+			<element id="progressBar" color="#FF0000" />
+			<element id="loadedBar" color="#00FF00" />
+			<element id="scrubber" />
+			<element id="shareBtn" />
+			<element id="captionBtn" />
+			<element id="statsBtn" />
+			<element id="hdClientBtn" />
+			<element id="volumeBar" color="#0000FF" />
+			<element id="volumeBtn" color="#0000FF" />
+			<element id="fullscreenBtn" />
+		</element>
+    	</view>
+	<plugins>
+		<!-- CONSULT AKAMAI REGARDING PLUG-IN MODIFICATIONS. DO NOT MODIFY WITHOUT SUPPORT FROM AKAMAI -->
+		<plugin host="osmf" type="dynamic" absolute="true" id="AkamaiAdvancedStreamingPlugin">http://players.edgesuite.net/flash/plugins/osmf/advanced-streaming-plugin/v3.6/osmf2.0/AkamaiAdvancedStreamingPlugin.swf</plugin>
+		<plugin host="osmf" type="dynamic" id="CaptioningPlugin">../resources/plugins/CaptioningPlugin.swf</plugin>
+		<plugin host="osmf" type="static" id="OSMFCSMALoader">com.akamai.playeranalytics.osmf.OSMFCSMALoaderInfo</plugin>
+	</plugins>
+	<metrics>
+		<vendor id="akamai">
+			<property key="MEDIA_ANALYTICS_BEACON">http://ma1-r.analytics.edgesuite.net/config/beacon-3018.xml?setVideoObject=1</property>
+			<dimensions default="N/A">
+				<property key="fnc_streamname" mapType="key">videoUrl</property>
+				<property key="deliveryType" mapType="key">deliveryType</property>
+				<property key="contentType" mapType="value">title</property>
+				<property key="category" mapType="key">sortedCategory</property>
+				<property key="siteSection" mapType="value">N/A</property>
+				<property key="title" mapType="key">title</property>
+				<property key="titleId" mapType="key">guid</property>
+				<property key="contentLength" mapType="key">duration</property>
+				<property key="pageUrl" mapType="key" defaultValue="N/A">embedDomain</property>
+				<property key="playerId" mapType="key" defaultValue="N/A">playerName</property>
+				<property key="subCategory" mapType="key">publisher</property>
+				<property key="pageName" mapType="value">N/A</property>
+				<property key="device" mapType="value">N/A</property>
+			</dimensions> 
+		</vendor>
+	</metrics>
+	<eventmanagementstates>
+		<states>
+            <state>
+                <property	key="ID">pre</property>
+                <property	key="POSTER_SRC">../resources/eventmanagement/pre_slate.png</property>
+                <property	key="URL"></property>
+            </state>
+            <state>
+                <property	key="ID">post</property>
+                <property	key="POSTER_SRC">../resources/eventmanagement/post_slate.png</property>
+                <property	key="URL"></property>
+            </state>
+            <state>
+                <property	key="ID">error</property>
+                <property	key="POSTER_SRC">../resources/eventmanagement/error_slate.png</property>
+                <property	key="URL"></property>
+            </state>
+            <state>
+                <property	key="ID">off</property>
+                <property	key="POSTER_SRC">../resources/eventmanagement/off_slate.png</property>
+                <property	key="URL"></property>
+            </state>
+        </states>
+    </eventmanagementstates>
+    <locales>  
+	  <locale id="en">
+		  <property key="MSG_EMAIL_TO">To</property>
+		  <property key="MSG_EMAIL_FROM">From</property>
+		  <property key="MSG_EMAIL_VIDEO">Email this video</property>
+		  <property key="MSG_EMAIL_MESSAGE_DEFAULT">Check out this video from xxx</property>
+		  <property key="MSG_EMAIL_MESSAGE">Message</property>
+		  <property key="MSG_EMAIL_ADDRESS_INVALID">Invalid Email Address</property>
+		  <property key="MSG_EMAIL_MESSAGE_INVALID">Please limit your message to 500 characters or less.</property>
+		  <property key="MSG_EMAIL_CHARACTERS_REMAINING_TEXT"> characters left</property>
+		  <property key="MSG_EMAIL_SEND_FAILURE">Message could not be sent.</property>
+		  <property key="MSG_EMAIL_SEND_SUCCESS_MESSAGE">Your email has been sent!</property>
+		  <property key="MSG_SHARE_VIDEO_TEXT">Share this video...</property>
+		  <property key="MSG_POST_TEXT">Post</property>
+		  <property key="MSG_EMBED_TEXT">Embed</property>
+		  <property key="MSG_LINK_TEXT">Link</property>
+		  <property key="MSG_SHARE_CONNECT_FAILURE">Unable to connect. Please try again.</property>
+		  <property key="MSG_SHARE_CONTENT_DISABLED">Share and embed are disabled.</property>
+		  <property key="MSG_VERSION_TEXT">Version</property>
+		  <property key="MSG_BUFFERING_TEXT">buffering</property>
+		  <property key="MSG_CUSTOMIZE_CLIP_POINTS">Customize the start and end point of the video.</property>
+		  <property key="MSG_PAUSE">Pause</property>
+		  <property key="MSG_PREVIEW">Preview</property>
+		  <property key="MSG_CURRENT">Currrent</property>
+		  <property key="MSG_SEEK_TO">Seek to</property>
+		  <property key="MSG_LIVE">LIVE</property>
+		  <property key="MSG_DEFAULT_ERROR_MESSAGE">Sorry, we were unable to play the media you selected. Please try again, or select alternate media.</property>
+		  <property key="MSG_ERROR_PREFIX">Error encountered:</property>
+		  <property key="MSG_STREAM_NOT_FOUND">Stream not found</property>
+		  <property key="MSG_CURRENT_WORKING_BANDWIDTH">Current working bandwidth</property>
+		  <property key="MSG_CURRENT_BITRATE_PLAYING">Current bitrate playing</property>
+		  <property key="MSG_MAX_BITRATE_AVAILABLE">Max bitrate available</property>
+		  <property key="MSG_NOT_AVAILABLE">Not Available</property>
+		  <property key="MSG_GO_LIVE">GO LIVE</property>
+		  <property key="MSG_REPLAY">Replay</property>
+	  </locale>
+	  <locale id="es">
+		  <property key="MSG_EMAIL_TO">a</property>
+		  <property key="MSG_EMAIL_FROM">de</property>
+		  <property key="MSG_EMAIL_VIDEO">Enviar este vídeo</property>
+		  <property key="MSG_EMAIL_MESSAGE_DEFAULT">Echa un vistazo a este video de xxx</property>
+		  <property key="MSG_EMAIL_MESSAGE">mensaje</property>
+		  <property key="MSG_EMAIL_ADDRESS_INVALID">Dirección de correo electrónico no válida</property>
+		  <property key="MSG_EMAIL_MESSAGE_INVALID">Por favor limite su mensaje a 500 caracteres o menos.</property>
+		  <property key="MSG_EMAIL_CHARACTERS_REMAINING_TEXT">personajes de la izquierda</property>
+		  <property key="MSG_EMAIL_SEND_FAILURE">El mensaje no pudo ser enviado.</property>
+		  <property key="MSG_EMAIL_SEND_SUCCESS_MESSAGE">Tu email ha sido enviado!</property>
+		  <property key="MSG_SHARE_VIDEO_TEXT">Comparte este vídeo...</property>
+		  <property key="MSG_POST_TEXT">enviar</property>
+		  <property key="MSG_EMBED_TEXT">incrustar</property>
+		  <property key="MSG_LINK_TEXT">enlace</property>
+		  <property key="MSG_SHARE_CONNECT_FAILURE">No se puede conectar. Por favor, inténtelo de nuevo.</property>
+		  <property key="MSG_SHARE_CONTENT_DISABLED">Compartir e incrustar están desactivados.</property>
+		  <property key="MSG_VERSION_TEXT">versión</property>
+		  <property key="MSG_BUFFERING_TEXT">el almacenamiento en búfer</property>
+		  <property key="MSG_CUSTOMIZE_CLIP_POINTS">Personalizar el inicio y el punto final del video.</property>
+		  <property key="MSG_PAUSE">romper</property>
+		  <property key="MSG_PREVIEW">vista previa</property>
+		  <property key="MSG_CURRENT">corriente</property>
+		  <property key="MSG_SEEK_TO">Tratar de</property>
+		  <property key="MSG_LIVE">EN VIVO</property>
+		  <property key="MSG_DEFAULT_ERROR_MESSAGE">Lo sentimos, no hemos podido jugar los medios de comunicación seleccionados. Por favor, inténtelo de nuevo, o seleccionar los medios de comunicación alternativos.</property>
+		  <property key="MSG_ERROR_PREFIX">Se produjo un error:</property>
+		  <property key="MSG_STREAM_NOT_FOUND">Stream que no se encuentra</property>
+		  <property key="MSG_CURRENT_WORKING_BANDWIDTH">Ancho de banda actual de trabajo</property>
+		  <property key="MSG_CURRENT_BITRATE_PLAYING">Tasa de bits de reproducción actual</property>
+		  <property key="MSG_MAX_BITRATE_AVAILABLE">Tasa de bits máxima disponible</property>
+		  <property key="MSG_NOT_AVAILABLE">No está disponible</property>
+		  <property key="MSG_GO_LIVE">IR A VIVIR</property>
+		  <property key="MSG_REPLAY">Repetir</property>
+	  </locale>
+	</locales>
+</application>

@@ -1,0 +1,123 @@
+{
+	"@attributes" : {
+		"version" : "2.0"
+	},
+	"channel" : {
+		"category" : "",
+		"pubDate" : "Wed, 03 Aug 2011 10:00:21 -0400",
+		"language" : "en",
+		"ttl" : "10",
+		"item" : {
+			"title" : "AMP Premier",
+			"link" : "http://akamai.com/player.html",
+			"description" : "AMP Premier Player",
+			"category" : "",
+			"pubDate" : "Wed, 03 Aug 2011 10:00:21 -0400",
+			"guid" : "4255636",
+			"media-group" : {
+				"media-content" : [
+						{
+							"@attributes" : {
+								"isDefault" : "true",
+								"url" : "http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m?start=0&end=60",
+								"type" : "video/f4m",
+								"medium" : "video",
+								"duration" : "108"
+							}
+						},
+						{
+							"@attributes" : {
+								"url" : "http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/master.m3u8?start=0&end=60",
+								"duration" : "108",
+								"medium" : "video",
+								"type" : "application/x-mpegURL"
+							}
+						},
+						{
+							"@attributes" : {
+								"url" : "http://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,.mp4.csmil/master.m3u8?start=0&end=60",
+								"duration" : "108",
+								"medium" : "video",
+								"type" : "application/x-mpegURL"
+							},
+							"media-category": {
+								"@attributes": {
+									"schema": "http://mrss.akamai.com/user_agent_hint",
+									"label": "html5Tablets"
+								}
+							}
+						},
+						{
+							"@attributes" : {
+								"isDefault" : "true",
+								"url" : "http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,.mp4.csmil/manifest.f4m?start=0&end=60",
+								"type" : "video/f4m",
+								"medium" : "video",
+								"duration" : "108"
+							},
+							"media-category": {
+								"@attributes": {
+									"schema": "http://mrss.akamai.com/user_agent_hint",
+									"label": "flashTablets"
+								}
+							}
+						}],
+				"media-title" : "VOD - HD World",
+				"media-description" : "View world's beauty in HD",
+				"media-scenes": {
+					"media-scene": [
+						{
+							"sceneTitle": "Scene 1",
+							"sceneDescription": "Scene 1 - Description",
+							"sceneStartTime": "00:00:00",
+							"sceneEndTime": "00:00:30"
+						}, {
+							"sceneTitle": "Scene 2",
+							"sceneDescription": "Scene 2 - Description",
+							"sceneStartTime": "00:00:30",
+							"sceneEndTime": "00:01:00"
+						}, {
+							"sceneTitle": "Scene 3",
+							"sceneDescription": "Scene 3 - Description",
+							"sceneStartTime": "00:01:00",
+							"sceneEndTime": "00:01:30"
+						}, {
+							"sceneTitle": "Scene 4",
+							"sceneDescription": "Scene 4 - Description",
+							"sceneStartTime": "00:01:30",
+							"sceneEndTime": "00:01:48"
+						}
+					]
+				},
+				"media-embed" : {
+					"@attributes" : {
+						"url" : "http://player.js",
+						"width" : "604",
+						"height" : "341"
+					},
+					"media-param" : {
+						"@attributes" : {
+							"name" : "type"
+						},
+						"#text" : "text/javascript"
+					}
+				},
+				"media-subTitle": {
+					"@attributes": {
+						"type": "application/ttml+xml",
+						"lang": "en",
+						"href": ""
+					}
+				},
+				"media-thumbnail" : {
+					"@attributes" : {
+						"url" : "../resources/images/hd_world.jpg",
+						"width" : "604",
+						"height" : "341"
+					}
+				}
+			}
+		}
+	}
+}
+

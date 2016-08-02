@@ -1,0 +1,70 @@
+{
+	"@attributes" : {
+		"version" : "2.0"
+	},
+	"channel" : {
+		"category" : "",
+		"pubDate" : "Wed, 03 Aug 2011 10:00:21 -0400",
+		"language" : "en",
+		"ttl" : "10",
+		"item" : {
+			"title" : "Demo Stream",
+			"link" : "http://akamai.com/player.html",
+			"description" : "Demo Stream",
+			"category" : "",
+			"pubDate" : "Wed, 03 Aug 2011 10:00:21 -0400",
+			"guid" : "4255636",
+			"media-group" : {
+				"media-content" : [
+						{
+							"@attributes" : {
+								"isDefault" : "true",
+								"url" : "http://multiformatlive-f.akamaihd.net/z/demostream_1@2131/manifest.f4m",
+								"type" : "video/f4m",
+								"medium" : "video",
+								"duration" : "108"
+							}
+						},
+						{
+							"@attributes" : {
+								"url" : "http://multiformatlive-f.akamaihd.net/i/demostream_1@2131/master.m3u8",
+								"duration" : "108",
+								"medium" : "video",
+								"type" : "application/x-mpegURL"
+							}
+						}],
+				"media-title" : "Demo Stream",
+				"media-description" : "Demo Stream",
+				"media-subTitle": [
+					{
+					    "@attributes" : {
+						"type" : "application/ttml+xml",
+						"lang" : "en-us",
+						"href" : ""
+					    }
+					}
+				],
+				"media-embed" : {
+					"@attributes" : {
+						"url" : "http://player.js",
+						"width" : "604",
+						"height" : "341"
+					},
+					"media-param" : {
+						"@attributes" : {
+							"name" : "type"
+						},
+						"#text" : "text/javascript"
+					}
+				},
+				"media-thumbnail" : {
+					"@attributes" : {
+						"url" : "../resources/images/elephant-dreams.jpg",
+						"width" : "604",
+						"height" : "341"
+					}
+				}
+			}
+		}
+	}
+}
