@@ -6,7 +6,7 @@ var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var includer = require('gulp-htmlincluder');
 
-var shell = require('gulp-shell')
+var shell = require('gulp-shell');
 
 // Infosite Sass Compiler
 gulp.task('infosite-sass', function (){
