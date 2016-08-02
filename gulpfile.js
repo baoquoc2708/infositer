@@ -1,3 +1,5 @@
+/* Gulp file for Infosites. TODO: Clean BA 2.0 info */
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
