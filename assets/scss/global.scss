@@ -1,0 +1,60 @@
+* {box-sizing: border-box;}
+@mixin aspect-ratio($width, $height, $content: 'content') {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .#{$content} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@import 'normalize/fonts';
+@import 'config';
+
+@import 'normalize/type';
+
+@import 'components/isi',
+		'components/header',
+		'components/scene',
+		'components/scroll-indicator',
+		'components/progress-bar',
+		'components/content-wrap',
+		'components/expand',
+        'components/buttons',
+        'components/blocker',
+		'components/gm',
+		'components/qna',
+		'components/video',
+		'components/reengagement';
+
+@import 'interactions/expandable';
+
+.container {
+	max-width: 800px;
+	width: 92%;
+	margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 132px;
+}
+
+html,
+* {
+	text-size-adjust: none;
+}
+
+
+.no-scroll {
+	overflow-y: hidden;
+}

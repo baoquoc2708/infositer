@@ -1,0 +1,29 @@
+.scene {
+	background: linear-gradient( 180deg, white 80%, #ccc );
+	min-height: 600px;
+	padding: 1.5rem 0;
+	.svg-chart {
+		width: 100%;
+	}
+	.chart-image {
+		max-width: 100%;
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 1.5rem;
+	}
+
+
+}
+
+.scene-refs {
+	margin-top: 1.5rem;
+}
+
+.scene {
+	box-shadow: inset 0 0 300px rgba(#000,.3);
+}
+
+.scene ~ .scene,
+.block ~ .block .scene {
+	box-shadow: none;
+}

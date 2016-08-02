@@ -1,0 +1,1352 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+/* updated 10/30/15 (bugfix) by MG-NYC previously  9/22/15 (SOLR 1.1.1) by MG-NYC */
+/*
+ * Web Fonts from fontspring.com
+*/
+/*Regular*/
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/reg/ProximaNova-Reg-webfont.eot");
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/reg/ProximaNova-Reg-webfont.eot?#iefix") format("embedded-opentype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/reg/ProximaNova-Reg-webfont.woff") format("woff"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/reg/ProximaNova-Reg-webfont.ttf") format("truetype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/reg/ProximaNova-Reg-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'proxima_nova_rgregular-it';
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/reg/ProximaNova-RegIt-webfont.eot");
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/reg/ProximaNova-RegIt-webfont.eot?#iefix") format("embedded-opentype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/reg/ProximaNova-RegIt-webfont.woff") format("woff"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/reg/ProximaNova-RegIt-webfont.ttf") format("truetype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/reg/ProximaNova-RegIt-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+/*Semibold*/
+@font-face {
+  font-family: 'proxima_nova_ltsemibold';
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/semibold/ProximaNova-Sbold-webfont.eot");
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/semibold/ProximaNova-Sbold-webfont.eot?#iefix") format("embedded-opentype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/semibold/ProximaNova-Sbold-webfont.woff") format("woff"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/semibold/ProximaNova-Sbold-webfont.ttf") format("truetype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/semibold/ProximaNova-Sbold-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'proxima_nova_ltsemibold-it';
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/semibold/ProximaNova-SboldIt-webfont.eot");
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/semibold/ProximaNova-SboldIt-webfont.eot?#iefix") format("embedded-opentype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/semibold/ProximaNova-SboldIt-webfont.woff") format("woff"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/semibold/ProximaNova-SboldIt-webfont.ttf") format("truetype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/semibold/ProximaNova-SboldIt-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+/*Bold*/
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/bold/ProximaNova-Bold-webfont.eot");
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/bold/ProximaNova-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/bold/ProximaNova-Bold-webfont.woff") format("woff"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/bold/ProximaNova-Bold-webfont.ttf") format("truetype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/bold/ProximaNova-Bold-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/bold/ProximaNova-BoldIt-webfont.eot");
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/bold/ProximaNova-BoldIt-webfont.eot?#iefix") format("embedded-opentype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/bold/ProximaNova-BoldIt-webfont.woff") format("woff"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/bold/ProximaNova-BoldIt-webfont.ttf") format("truetype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/bold/ProximaNova-BoldIt-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+/*Light*/
+@font-face {
+  font-family: 'proxima_nova_ltlight';
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/light/ProximaNova-Light-webfont.eot");
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/light/ProximaNova-Light-webfont.eot?#iefix") format("embedded-opentype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/light/ProximaNova-Light-webfont.woff") format("woff"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/light/ProximaNova-Light-webfont.ttf") format("truetype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/light/ProximaNova-Light-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'proxima_nova_ltlight-it';
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/light/ProximaNova-LightIt-webfont.eot");
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/light/ProximaNova-LightIt-webfont.eot?#iefix") format("embedded-opentype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/light/ProximaNova-LightIt-webfont.woff") format("woff"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/light/ProximaNova-LightIt-webfont.ttf") format("truetype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/light/ProximaNova-LightIt-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+/*Thin*/
+@font-face {
+  font-family: 'proxima_nova_ththin';
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/thin/ProximaNova-Thin-webfont.eot");
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/thin/ProximaNova-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/thin/ProximaNova-Thin-webfont.woff") format("woff"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/thin/ProximaNova-Thin-webfont.ttf") format("truetype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/thin/ProximaNova-Thin-webfont.svg#proxima_nova_ththin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'proxima_nova_ththin';
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/thin/ProximaNova-ThinIt-webfont.eot");
+  src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/thin/ProximaNova-ThinIt-webfont.eot?#iefix") format("embedded-opentype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/thin/ProximaNova-ThinIt-webfont.woff") format("woff"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/thin/ProximaNova-ThinIt-webfont.ttf") format("truetype"), url("http://img.medscapestatic.com/medcss/fonts/proximanova/thin/ProximaNova-ThinIt-webfont.svg#proxima_novathin_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/reg/ProximaNova-Reg-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+  @font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/reg/ProximaNova-RegIt-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: italic; }
+  @font-face {
+    font-family: 'proxima_nova_ltsemibold';
+    src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/semibold/ProximaNova-Sbold-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+  @font-face {
+    font-family: 'proxima_nova_ltsemibold';
+    src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/semibold/ProximaNova-Sbold-webfont.svg") format("svg");
+    font-weight: bold;
+    font-style: normal; }
+  @font-face {
+    font-family: 'proxima_nova_ltsemibold';
+    src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/semibold/ProximaNova-SboldIt-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: italic; }
+  @font-face {
+    font-family: 'proxima_nova_ltsemibold';
+    src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/semibold/ProximaNova-SboldIt-webfont.svg") format("svg");
+    font-weight: bold;
+    font-style: italic; }
+  @font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/bold/ProximaNova-Bold-webfont.svg") format("svg"); }
+  @font-face {
+    font-family: 'proxima_nova_ltlight';
+    src: url("http://img.medscapestatic.com/medcss/fonts/proximanova/light/ProximaNova-Light-webfont.svg") format("svg"); } }
+
+html {
+  font-size: 20px; }
+  @media (max-width: 800px) {
+    html {
+      font-size: 15px; } }
+
+body {
+  font-family: "proxima_nova_rgregular", sans-serif, sans-serif;
+  font-size: 1rem;
+  color: #231f20; }
+
+a {
+  text-decoration: none; }
+
+h1,
+h2,
+h3 {
+  display: block; }
+
+h2 {
+  color: #4d4184;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem; }
+  @media (min-width: 800px) {
+    h2 + h3 {
+      margin-top: -1.5rem; } }
+  h2:first-child {
+    margin-top: 0; }
+  @media (max-width: 800px) {
+    h2 {
+      margin-bottom: 1rem; } }
+
+h3 {
+  color: #000;
+  font-size: 1rem;
+  font-family: "proxima_nova_ltsemibold", sans-serif;
+  margin-bottom: .6em; }
+
+.chart-title {
+  font-size: .8rem;
+  text-transform: uppercase;
+  margin-bottom: .5rem; }
+
+.footnote-ref {
+  vertical-align: super;
+  font-size: .6em; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+ul li {
+  padding-left: .65rem;
+  text-indent: -.7rem; }
+
+ul li:before {
+  content: "• ";
+  color: #44b2b5; }
+
+/*======= ISI Area =======*/
+.isi {
+  transition: height .2s;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 20%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  overflow-y: hidden;
+  z-index: 5000;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3); }
+  .isi .progress-bar {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2); }
+  .isi.is-expanded, .isi.is-expanded.is-final-state {
+    transition: height .2s;
+    height: 100%;
+    box-shadow: none;
+    padding-top: 134px; }
+    .isi.is-expanded .progress-bar, .isi.is-expanded.is-final-state .progress-bar {
+      display: none; }
+    .isi.is-expanded .isi-content, .isi.is-expanded.is-final-state .isi-content {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      transition: height .2s;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      top: 164px; }
+  .isi .isi-header {
+    height: 30px;
+    width: 100%;
+    background: #44b2b5;
+    cursor: pointer; }
+    @media (max-width: 800px) {
+      .isi .isi-header {
+        font-size: 1rem; } }
+    .isi .isi-header .container {
+      position: relative; }
+    .isi .isi-header .isi-title {
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 30px;
+      display: inline-block;
+      left: 0;
+      color: #fff;
+      font-family: "proxima_nova_ltsemibold", sans-serif; }
+    .isi .isi-header .isi-expand {
+      position: absolute;
+      top: 4px;
+      right: 0;
+      height: 22px;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0; }
+      .isi .isi-header .isi-expand p {
+        color: #fff;
+        text-decoration: underline;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1rem; }
+  .isi .isi-content {
+    bottom: 0;
+    overflow-y: hidden;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #ddd; }
+  .isi .isi-header-text-collapsed,
+  .isi .isi-header-icon-collapsed {
+    display: block; }
+  .isi .isi-header-text-expanded,
+  .isi .isi-header-icon-expanded {
+    display: none; }
+  .isi.is-expanded .isi-header-text-collapsed,
+  .isi.is-expanded .isi-header-icon-collapsed {
+    display: none; }
+  .isi.is-expanded .isi-header-text-expanded,
+  .isi.is-expanded .isi-header-icon-expanded {
+    display: block; }
+
+.header .isi {
+  position: static;
+  min-height: 30px;
+  height: 100px;
+  box-shadow: none;
+  overflow: hidden;
+  padding-top: 0px;
+  z-index: -1; }
+  .header .isi.is-expanded {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    padding-top: 54px;
+    z-index: 9999; }
+  .header .isi .isi-header {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    z-index: 99; }
+  .header .isi .isi-content {
+    position: static;
+    width: 100%;
+    height: calc(100% - 30px);
+    bottom: 30px; }
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 4000;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background: #fff; }
+
+.brand-header {
+  border-top: solid 1px #ddd;
+  padding: 0;
+  height: 80px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 0 #ddd; }
+  @media (max-width: 800px) {
+    .brand-header {
+      border-top: solid 1px #aaa;
+      border-bottom: solid 1px #aaa; } }
+
+.brand-header-logo,
+.brand-header-links {
+  padding: 20px 0;
+  display: inline-block; }
+
+.brand-header-logo {
+  padding-right: 20px;
+  border-right: solid 1px #ddd; }
+  .brand-header-logo img {
+    height: 40px;
+    vertical-align: bottom; }
+
+.brand-header-links {
+  text-align: right;
+  float: right; }
+  .brand-header-links a {
+    display: block;
+    line-height: 1.8;
+    color: #4d4184;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400; }
+
+.chrome-header {
+  padding: 12px 0;
+  height: 54px;
+  position: relative; }
+
+.chrome-header-links {
+  display: inline-block; }
+  .chrome-header-links a {
+    display: block;
+    line-height: 2;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #006699; }
+    @media (max-width: 800px) {
+      .chrome-header-links a {
+        font-size: .66rem; } }
+
+.chrome-header-statement {
+  float: right;
+  font-size: 12px; }
+  @media (max-width: 800px) {
+    .chrome-header-statement {
+      position: absolute;
+      right: 12px;
+      font-size: .66rem;
+      line-height: 1.3;
+      top: 12px;
+      width: 50%;
+      bottom: 10px;
+      overflow: hidden; } }
+
+@media (max-width: 800px) {
+  .brand-header {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+    background: #fff; }
+    .brand-header > .container {
+      width: 100%;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch; }
+    .brand-header .brand-header-logo {
+      padding: 14px;
+      border-right: solid 1px #aaa;
+      overflow: hidden;
+      -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+      flex-grow: 2; }
+      .brand-header .brand-header-logo img {
+        width: 125px; }
+    .brand-header .brand-header-links {
+      padding: 0;
+      text-align: left;
+      float: none;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
+      .brand-header .brand-header-links a {
+        font-size: 12px;
+        padding: 10px;
+        width: 100%;
+        line-height: 1.1; }
+        .brand-header .brand-header-links a:not(:last-of-type) {
+          border-bottom: solid 1px #aaa; } }
+
+.scene {
+  background: linear-gradient(180deg, white 80%, #ccc);
+  min-height: 600px;
+  padding: 1.5rem 0; }
+  .scene .svg-chart {
+    width: 100%; }
+  .scene .chart-image {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1.5rem; }
+
+.scene-refs {
+  margin-top: 1.5rem; }
+
+.scene {
+  box-shadow: inset 0 0 300px rgba(0, 0, 0, 0.3); }
+
+.scene ~ .scene,
+.block ~ .block .scene {
+  box-shadow: none; }
+
+/*=== Scroll Indicator ===*/
+.scroll-indicator-1 {
+  position: fixed;
+  top: 30vh;
+  left: 5vw;
+  transition: visibility .5;
+  z-index: 8500; }
+
+.is-visible {
+  visibility: visible !important; }
+
+.is-invisible {
+  visibility: hidden; }
+
+/*=== Progress Bar ===*/
+/* Progress Bar Div */
+.progress-bar {
+  text-align: center;
+  height: 8px;
+  width: 100%;
+  overflow: hidden; }
+
+/*.progressbar{
+                -webkit-writing-mode: horizontal-tb;
+                -webkit-appearance: progress-bar;
+                box-sizing: border-box;
+                display: inline-block;
+                height: 0.5em;
+                width: 1200px;
+            }*/
+/* width for Single progressbar element */
+.progressbar {
+  height: 8px;
+  width: 100%;
+  background-color: #ccc; }
+
+/* width for sectioned progressbar element */
+.progressPosition {
+  height: 8px;
+  display: inline-block;
+  z-index: 500;
+  background-color: #0099ff;
+  float: left;
+  /*border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;*/ }
+
+/*.progressPosition:nth-child(4){
+                background-color: red;
+            }*/
+/*=== Expandable Sections ===*/
+.accordion {
+  width: 100%;
+  max-height: 300px;
+  margin: 20px auto; }
+
+.wrapper-item {
+  font-size: 1em;
+  padding: 10px;
+  height: 20px;
+  background: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  cursor: pointer; }
+
+.wrapper-item.open {
+  background: #848484;
+  border-bottom: 0;
+  color: #fff; }
+
+.wrapper-item.open .type {
+  float: right;
+  background: url("http://vivekarora.com/images/minus.png") center no-repeat;
+  padding: 10px; }
+
+.wrapper-item .type {
+  float: right;
+  background: url("http://vivekarora.com/images/plus.png") center no-repeat;
+  padding: 10px; }
+
+div.data {
+  background: #fff;
+  border: 1px solid #ccc;
+  font-size: .8em;
+  line-height: 140%;
+  display: none; }
+
+.open-refs {
+  height: 40px;
+  display: block;
+  overflow: hidden;
+  vertical-align: top; }
+  .open-refs p {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    font-family: "proxima_nova_ltsemibold", sans-serif;
+    color: #4d4184; }
+  .open-refs .circle-icon {
+    font-size: 44px;
+    text-align: center;
+    border-radius: 100%;
+    line-height: 22px;
+    border: none;
+    background: #4d4184;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-right: 6px; }
+
+.scene-button {
+  background: #4d4184;
+  position: relative;
+  width: 650px;
+  max-width: 100%;
+  padding: 1rem 5rem;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 10px auto;
+  margin-bottom: 2rem; }
+  @media (max-width: 800px) {
+    .scene-button {
+      padding: .66rem 3rem;
+      font-size: .85rem; } }
+  .scene-button p {
+    margin: 0 0 0 0; }
+  .scene-button img {
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    height: 70%;
+    left: .66rem;
+    overflow: hidden; }
+    @media (max-width: 800px) {
+      .scene-button img {
+        height: 60%;
+        bottom: 20%;
+        top: 20%; } }
+
+.landscape-blocker,
+.portrait-blocker {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: tomato; }
+
+@media all and (max-aspect-ratio: 13 / 9) {
+  .landscape-blocker {
+    display: none; }
+  .portrait-blocker {
+    display: block; } }
+
+@media all and (min-aspect-ratio: 13 / 9) {
+  .landscape-blocker {
+    display: block; }
+  .portrait-blocker {
+    display: none; } }
+
+.gift-manager-container {
+  border-radius: 8px;
+  border: solid 1px #ddd;
+  box-shadow: 0 3px 1px #ccc;
+  overflow: hidden;
+  background: #fff; }
+  .gift-manager-container input,
+  .gift-manager-container label {
+    display: block; }
+  .gift-manager-container .input-group {
+    margin-bottom: 20px; }
+    @media (min-width: 800px) {
+      .gift-manager-container .input-group {
+        width: 60%; } }
+  .gift-manager-container input {
+    display: block;
+    background: #efeeee;
+    border: solid 1px #ccc;
+    padding: 6px;
+    font-size: 20px;
+    color: #999;
+    font-weight: 300;
+    width: 100%; }
+  .gift-manager-container select {
+    display: block;
+    border: solid 1px #ccc;
+    padding: 6px;
+    font-size: 18px;
+    color: #999;
+    font-weight: 300;
+    width: 100%;
+    background-image: linear-gradient(#fff, #ddd); }
+  .gift-manager-container label {
+    color: #666; }
+  .gift-manager-container .error input,
+  .gift-manager-container .error select {
+    border-color: red; }
+  .gift-manager-container .error label {
+    color: red; }
+
+.gift-manager-header {
+  width: 100%;
+  padding: 15px 35px;
+  color: #fff;
+  background: #4d4184; }
+
+.gift-manager-body {
+  padding: 15px 35px;
+  width: 100%; }
+
+input[type=submit],
+input[type=button] {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background-image: none;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+  border: none;
+  margin-right: 6px; }
+
+input[type=submit] {
+  background: #36cb79;
+  color: #fff;
+  transition: all .2s; }
+  input[type=submit]:hover {
+    background: #2aa461; }
+
+input[type=button] {
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #000;
+  color: #000;
+  transition: all .1s; }
+  input[type=button]:hover {
+    background: #2aa461;
+    color: #fff;
+    box-shadow: inset 0 0 0 1px #2aa461; }
+
+@media (min-width: 800px) {
+  .input-group.text-field-officecity,
+  .input-group.officestate_field,
+  .input-group.office-zip-field {
+    width: 15%;
+    display: inline-block;
+    vertical-align: top; }
+  .input-group.text-field-officecity {
+    width: 40%; }
+  .input-group.office-zip-field {
+    width: 25%; } }
+
+.gmHide {
+  height: 0px;
+  width: 0px;
+  visibility: hidden; }
+
+.qna-container {
+  font-size: 16px;
+  display: block;
+  font-weight: 300;
+  overflow: hidden; }
+  .qna-container ul li {
+    text-indent: 0; }
+    .qna-container ul li:before {
+      content: none;
+      text-indent: 0; }
+  .qna-container .question-layer,
+  .qna-container .chart-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 50px 40px; }
+  .qna-container .qna-question {
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 17px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
+  .qna-container ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0; }
+  .qna-container ul li {
+    padding-bottom: 0; }
+  .qna-container .qna-question-percentage-bar {
+    background: rgba(8, 90, 129, 0.15);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0%; }
+  .qna-container .qna-question-percentage {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    height: 50px;
+    line-height: 50px; }
+  .qna-container fieldset {
+    padding: 0;
+    border: none; }
+  .qna-container legend {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1;
+    padding-left: 0; }
+    .qna-container legend:before {
+      content: 'question ';
+      text-transform: uppercase; }
+  .qna-container .qna-radio-choice,
+  .qna-container .qna-checkbox-choice {
+    display: block;
+    border: solid 1px #ddd;
+    margin-bottom: 10px;
+    padding: 0 14px;
+    position: relative; }
+    .qna-container .qna-radio-choice.qna-is-highlighted,
+    .qna-container .qna-checkbox-choice.qna-is-highlighted {
+      border-color: #74a2b8; }
+  .qna-container .qna-radio-choice label,
+  .qna-container .qna-checkbox-choice label {
+    line-height: 1.1;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    width: 90%;
+    display: inline-block;
+    cursor: pointer;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    margin-left: 30px;
+    padding-right: 50px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .qna-container input[type=checkbox],
+  .qna-container input[type=radio] {
+    display: none; }
+  .qna-container input[type=radio] + label:before,
+  .qna-container input[type=checkbox] + label:before {
+    position: absolute;
+    left: -34px;
+    top: 0; }
+  .qna-container input[type=radio] + label:before {
+    content: '';
+    background: url("http://img.medscapestatic.com/pi/videoplayer/icons/qna-radio-off.png") center center no-repeat;
+    overflow: hidden;
+    height: 48px;
+    width: 30px;
+    display: inline-block; }
+  .qna-container input[type=radio]:checked + label:before {
+    content: '';
+    background: url("http://img.medscapestatic.com/pi/videoplayer/icons/qna-radio-on.png") center center no-repeat; }
+  .qna-container input[type=checkbox] + label:before {
+    content: '';
+    background: url("http://img.medscapestatic.com/pi/videoplayer/icons/qna-checkbox-off.png") center center no-repeat;
+    overflow: hidden;
+    height: 48px;
+    width: 30px;
+    display: inline-block; }
+  .qna-container input[type=checkbox]:checked + label:before {
+    content: '';
+    background: url("http://img.medscapestatic.com/pi/videoplayer/icons/qna-checkbox-on.png") center center no-repeat; }
+  .qna-container p.qna-is-correct {
+    display: none; }
+  .qna-container p.qna-is-correct.is-visible {
+    display: block; }
+  .qna-container .qna-is-correct input[type=radio] + label:before,
+  .qna-container .qna-is-correct.qna-is-highlighted input[type=radio] + label:before {
+    content: '';
+    background: url("http://img.medscapestatic.com/pi/videoplayer/icons/qna-radio-correct.png") center center no-repeat;
+    overflow: hidden;
+    height: 48px;
+    width: 30px;
+    display: inline-block; }
+  .qna-container .qna-is-correct input[type=radio]:checked + label:before,
+  .qna-container .qna-is-correct.qna-is-highlighted input[type=radio]:checked + label:before {
+    content: '';
+    background: url("http://img.medscapestatic.com/pi/videoplayer/icons/qna-radio-correct.png") center center no-repeat; }
+  .qna-container .qna-is-correct input[type=checkbox] + label:before,
+  .qna-container .qna-is-correct.qna-is-highlighted input[type=checkbox] + label:before {
+    content: '';
+    background: url("http://img.medscapestatic.com/pi/videoplayer/icons/qna-checkbox-correct.png") center center no-repeat;
+    overflow: hidden;
+    height: 48px;
+    width: 30px;
+    display: inline-block; }
+  .qna-container .qna-is-correct input[type=checkbox]:checked + label:before,
+  .qna-container .qna-is-correct.qna-is-highlighted input[type=checkbox]:checked + label:before {
+    content: '';
+    background: url("http://img.medscapestatic.com/pi/videoplayer/icons/qna-checkbox-correct.png") center center no-repeat; }
+  .qna-container .question-layer .qna-is-highlighted input[type=radio] + label:before {
+    content: '';
+    background: url("http://img.medscapestatic.com/pi/videoplayer/icons/qna-radio-on.png") center center no-repeat; }
+  .qna-container .question-layer .qna-is-highlighted input[type=checkbox] + label:before {
+    content: '';
+    background: url("http://img.medscapestatic.com/pi/videoplayer/icons/qna-checkbox-on.png") center center no-repeat; }
+  .qna-container .chartLayer, .qna-container .questionLayer, .qna-container .qna-error-overlay {
+    background-color: #fff;
+    display: none; }
+  .qna-container .qna-error-overlay {
+    z-index: 300; }
+  .qna-container .clear {
+    clear: both; }
+  .qna-container .error {
+    display: none; }
+  .qna-container .qna-checkbox-question,
+  .qna-container .qna-radio-question,
+  .qna-container .qna-textbox-question,
+  .qna-container .qna-textarea-question {
+    margin-bottom: 40px; }
+  .qna-container .cme-chart .correct {
+    color: green;
+    font-weight: bold;
+    margin-left: 15px; }
+  .qna-container .cme-chart fieldset {
+    border: none; }
+  .qna-container .cme-chart .qna-bar-chart {
+    margin-bottom: 10px; }
+  .qna-container .cme-chart .qna-radio-choice-wrap {
+    clear: both;
+    margin-bottom: 10px; }
+  .qna-container .cme-chart .bar {
+    height: 20px;
+    width: 200px; }
+  .qna-container .cme-chart .bar-bg {
+    height: 100%;
+    display: inline-block;
+    background-color: #085a81;
+    margin-right: 10px; }
+  .qna-container .qna-submit-button,
+  .qna-container .qna-continue-button,
+  .qna-container .qna-error-button {
+    line-height: 40px;
+    padding: 0;
+    text-align: center;
+    width: 250px;
+    float: right;
+    background: #007cb1;
+    border: none;
+    background-image: none;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    cursor: pointer; }
+    .qna-container .qna-submit-button:disabled, .qna-container .qna-submit-button.disabled,
+    .qna-container .qna-continue-button:disabled,
+    .qna-container .qna-continue-button.disabled,
+    .qna-container .qna-error-button:disabled,
+    .qna-container .qna-error-button.disabled {
+      background: #999;
+      cursor: default; }
+  .qna-container .qna-error-overlay {
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding-top: 140px; }
+    .qna-container .qna-error-overlay > div {
+      width: 300px;
+      padding: 40px;
+      border: solid 10px #eee;
+      display: inline-block; }
+      .qna-container .qna-error-overlay > div span {
+        display: block;
+        text-align: left; }
+  .qna-container .qna-error-button {
+    width: 80px;
+    margin-bottom: -20px;
+    margin-right: -20px; }
+  .qna-container .qna-required-message {
+    color: #954f49;
+    font-style: italic;
+    display: block;
+    margin-bottom: 24px;
+    display: none; }
+  .qna-container .qna-question-explanation {
+    font-size: 14px;
+    font-weight: 400; }
+    .qna-container .qna-question-explanation:before {
+      content: 'Explanation:';
+      margin-right: 5px;
+      font-weight: 600;
+      text-transform: uppercase; }
+  .qna-container .is-visible {
+    display: block; }
+  .qna-container .qna-questions-loading {
+    box-sizing: border-box;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    left: 50%;
+    margin-left: -35px;
+    background: url("http://img.medscapestatic.com/pi/videoplayer/icons/loading-light.gif") center center no-repeat;
+    background-size: 70px 70px; }
+
+p.qna-is-correct:before {
+  content: url("http://img.medscapestatic.com/pi/videoplayer/icons/qna-radio-correct.png");
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: -4px; }
+
+@-webkit-keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0 rgba(116, 162, 184, 0.6); }
+  to {
+    box-shadow: 0 0 0 1000px rgba(116, 162, 184, 0); } }
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0 rgba(116, 162, 184, 0.6); }
+  to {
+    box-shadow: 0 0 0 1000px rgba(116, 162, 184, 0); } }
+
+.video-scene {
+  position: relative; }
+  .video-scene:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 56.25%; }
+  .video-scene > .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+/* Hide Akamai logo */
+.akamai-branding, .akamai-controls, .akamai-replay {
+  display: none !important; }
+
+/* Overlay play button */
+.akamai-play {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/play-overlay.svg") center center no-repeat !important;
+  height: 30% !important;
+  margin-bottom: -10% !important;
+  background-size: 60% 60% !important; }
+
+button:focus {
+  outline: none; }
+
+/* Main video controls container which contains ".video-controls" */
+.control-container {
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 100%; }
+
+/* Video controls container */
+.video-controls {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  transition: opacity .3s; }
+
+.is-idle {
+  height: 10px !important; }
+
+.progress-drag, .volume-drag {
+  cursor: move;
+  cursor: grab;
+  cursor: -webkit-grab;
+  position: absolute; }
+
+/* Video progress div */
+.video-progress {
+  position: relative;
+  bottom: 14px;
+  cursor: pointer;
+  /* Firefox requires a different configuration */ }
+
+@-moz-document url-prefix() {
+  .video-progress {
+    bottom: 16px; } }
+
+/* The video progress bar height */
+.seekslider, .not-value {
+  height: 4px;
+  display: inline-block; }
+
+.seekslider {
+  width: 0; }
+
+.not-value {
+  width: 100%; }
+
+/* Video progress: Pending color bar */
+.not-value {
+  background-color: #595959; }
+
+/* Video progress: Watched color bar */
+.seekslider {
+  background-color: #44b2b5; }
+
+/* Video progress dragable circle */
+.progress-drag {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  bottom: 3px;
+  display: inline-block;
+  background-color: #74a2b8;
+  border: solid 1px #74a2b8;
+  float: left; }
+
+.on-progress-drag {
+  z-index: 1; }
+
+/* The video buttons bar which includes: play/pause, time/duration volume and fullscreen */
+.play-buttons-bar {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  bottom: 12px;
+  left: 10px; }
+  .play-buttons-bar:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@-moz-document url-prefix() {
+  .play-buttons-bar {
+    bottom: 20px; } }
+
+.playpause, .duration {
+  position: relative;
+  float: left; }
+
+/* Full screen div which includes the full screen icon */
+.fullscreen {
+  float: right;
+  position: relative;
+  left: 2%; }
+
+.playpause {
+  width: 24px; }
+
+.duration {
+  margin-left: 10px; }
+
+@-moz-document url-prefix() {
+  .duration {
+    position: relative;
+    left: 2%;
+    top: 5px; } }
+
+/* The volume div that shows on hover over the volume button */
+.volume-wrap {
+  position: relative;
+  bottom: 170px;
+  height: 170px;
+  width: 5%;
+  float: right;
+  right: 60px; }
+
+.volume-bar-wrap {
+  height: 100%;
+  position: relative; }
+
+.volume-bar-background {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.volume-bar {
+  position: relative;
+  width: 4px;
+  height: 125px;
+  margin-left: 50%;
+  margin-top: 15px; }
+
+.volume-inner {
+  width: 4px;
+  height: 125px;
+  cursor: pointer; }
+
+.volume {
+  height: 100%;
+  width: 50%; }
+
+.not-volume {
+  height: 0%;
+  width: 50%; }
+
+/* Volume progress bar circle */
+.volume-drag {
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  background-color: #74a2b8;
+  left: -5px; }
+
+/* The current volume color */
+.volume {
+  background-color: #c8c8c8; }
+
+/* The empty volume space color */
+.not-volume {
+  background-color: #595959; }
+
+.curtimetext, .separator, .durtimetext {
+  color: #74a2b8;
+  font-size: 12px;
+  display: inline-block;
+  padding: 2px; }
+
+.curtimetext {
+  text-align: right; }
+
+.separator {
+  margin: 0 3px;
+  text-align: center; }
+
+.durtimetext {
+  text-align: left; }
+
+/* Buttons size */
+.play, .pause, .volume-med, .volume-low, .volume-high, .unmute, .fs, .fs-exit {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: 0;
+  background-size: 100% 100% !important; }
+
+.button-mute {
+  padding-left: 25%;
+  position: relative;
+  top: -15px; }
+
+/* Play icon and on hover effect */
+.play {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/play.svg") center center no-repeat; }
+  .play:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/play-active.svg") center center no-repeat; }
+
+/* Pause icon and on hover effect */
+.pause {
+  background: url("http://localhost:8080/products/brandadvance/assets/images/images_player/pause.svg") center center no-repeat; }
+  .pause:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/pause-active.svg") center center no-repeat; }
+
+/* Volume icon and on hover effect */
+.volume-high {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-high.svg") center center no-repeat; }
+  .volume-high:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-high-hover.svg") center center no-repeat; }
+
+.volume-med {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-med.svg") center center no-repeat; }
+  .volume-med:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-med-hover.svg") center center no-repeat; }
+
+.volume-low {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-low.svg") center center no-repeat; }
+  .volume-low:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-low-hover.svg") center center no-repeat; }
+
+.unmute {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-mute.svg") center center no-repeat; }
+  .unmute:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-mute-hover.svg") center center no-repeat; }
+
+/* Fullscreen icon and on hover effect */
+.fs {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/enter-full-screen.svg") center center no-repeat; }
+  .fs:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/enter-full-screen-active.svg") center center no-repeat; }
+
+.fs-exit {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/exit-full-screen.svg") center center no-repeat; }
+  .fs-exit:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/exit-full-screen-active.svg") center center no-repeat; }
+
+/* Breakpoint for small devices: from 320px to 767px */
+@media screen and (min-width: 320px) {
+  .curtimetext, .durtimetext, .separator {
+    /*display: none;*/ }
+  .button-mute, .volume-bar, .fullscreen {
+    padding-right: 5%; }
+  .play-buttons-bar {
+    bottom: 5px; }
+  .progress-drag {
+    width: 8px;
+    height: 8px;
+    bottom: 1px; }
+  .fullscreen {
+    left: 5%; }
+  @-moz-document url-prefix() {
+    .video-progress {
+      bottom: 12px; }
+    .play-buttons-bar {
+      bottom: 10px; }
+    .fullscreen {
+      left: 3%; } } }
+
+/* Breakpoint for small devices: from 768px to 979px */
+@media screen and (min-width: 768px) {
+  .curtimetext, .durtimetext, .separator {
+    display: inline-block; }
+  .button-mute, .volume-bar, .fullscreen {
+    padding-right: 5%; }
+  .play-buttons-bar {
+    bottom: 5px; }
+  @-moz-document url-prefix() {
+    .play-buttons-bar {
+      bottom: 9px; } }
+  .progress-drag {
+    width: 10px;
+    height: 10px;
+    bottom: 0; }
+  .fullscreen {
+    left: 6%; } }
+
+/* Breakpoint for small devices: from 980px and higher */
+@media screen and (min-width: 980px) {
+  .curtimetext, .durtimetext, .separator {
+    display: inline-block; }
+  .button-mute, .volume-bar, .fullscreen {
+    padding-right: 5%; }
+  .play-buttons-bar {
+    bottom: 13px; }
+  .progress-drag {
+    width: 10px;
+    height: 10px;
+    bottom: 3px; }
+  .fullscreen {
+    left: 7%; }
+  @-moz-document url-prefix() {
+    .video-progress {
+      bottom: 15px; }
+    .play-buttons-bar {
+      bottom: 20px; } } }
+
+.restart-resume {
+  width: 500px;
+  max-width: 80%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9000;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  visibility: hidden;
+  transition: all 1s;
+  opacity: 0; }
+  .restart-resume.is-visible {
+    visibility: visible;
+    opacity: 1; }
+
+.js-expandable .js-expandable-content {
+  transition: all .5s;
+  max-height: 0;
+  overflow: hidden; }
+
+.js-expandable .js-expandable-button-collapsed {
+  display: block; }
+
+.js-expandable .js-expandable-button-expanded {
+  display: none; }
+
+.js-expandable.is-expanded .js-expandable-content {
+  max-height: 1000px; }
+
+.js-expandable.is-expanded .js-expandable-button-expanded {
+  display: block; }
+
+.js-expandable.is-expanded .js-expandable-button-collapsed {
+  display: none; }
+
+.container {
+  max-width: 800px;
+  width: 92%;
+  margin: 0 auto; }
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 132px; }
+
+html,
+* {
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none; }
+
+.no-scroll {
+  overflow-y: hidden; }

@@ -1,0 +1,104 @@
+@mixin aspect-ratio($width, $height, $content: 'content') {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .#{$content} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin user-select($value) {
+    -webkit-user-select: $value;
+    -moz-user-select: $value;
+    -ms-user-select: $value;
+}
+
+@mixin box-sizing($value) {
+    -webkit-box-sizing: $value;
+    -moz-box-sizing: $value;
+    -ms-box-sizing: $value;
+    box-sizing: $value;
+}
+
+@mixin retina {
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin center-verticle {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin fullscreen-controls {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    webkit-transition:  0.5s linear;
+    -moz-transition:  0.5s linear;
+    -ms-transition:  0.5s linear;
+    -o-transition:  0.5s linear;
+
+    &.is-idle {
+        bottom: -36px;
+        webkit-transition: bottom 1s cubic-bezier;
+        -moz-transition: bottom 1s cubic-bezier;
+        -ms-transition: bottom 1s cubic-bezier;
+        -o-transition: bottom 1s cubic-bezier;
+    }
+}
+
+@mixin keyframes($name) {
+    @keyframes #{$name}         { @content; }
+    @-o-keyframes #{$name}      { @content; }
+    @-moz-keyframes #{$name}    { @content; }
+    @-webkit-keyframes #{$name} { @content; }
+    @-ms-keyframes #{$name}     { @content; }
+}
+
+@mixin transition($content) {
+    webkit-transition: $content;
+    -moz-transition:   $content;
+    -ms-transition:    $content;
+    -o-transition:     $content;
+}
+
+@mixin animation($animationName, $duration, $kind) {
+    -webkit-animation: $animationName $duration, $kind;
+    -moz-animation: $animationName $duration $kind;
+    -o-animation: $animationName $duration $kind;
+    animation: $animationName $duration $kind;
+}
+
+@mixin landscape {
+  @media only screen and (orientation : landscape) {@content;}
+}
+
+@mixin portrait {
+  @media only screen and (orientation : portrait) {@content;}
+}

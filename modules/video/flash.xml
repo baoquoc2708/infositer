@@ -1,0 +1,55 @@
+<application>
+  <player core_player_name="amp-premier-player"
+          volume=".75"
+          mbr_starting_index="1"
+          inpage_bitrate_index_limit="3"
+          use_last_known_bitrate="false"
+          use_netsession_client="false"
+          netsession_install_prompt_frequency_secs="-1"
+          ad_server_timeout="20"
+          ad_control_enabled="true"
+          dvr_enabled="1"
+          branding_preload="none"
+          hds_live_low_latency="true"
+          fullscreen_enabled="true"
+          show_feature_bar="false"
+          suppress_events="mediaPlayerViewInitialized"
+          caption_language="en-us"
+          hds_fragment_retry_data_gap_threshold= "20"
+          ads_auto_fit="true"
+          auto_replay="false">
+  </player>
+  <view skin="{baseSkinUrl}webmd.assets.swf">
+    <element id="endState" enabled="false" hideElements="viewAll" />
+    <element id="logoOverlay" style="height: 45px; width: 150px; right: 15px; bottom: 15px; opacity: 1.0;"/>
+    <element id="captionDisplay"
+             initState="off"
+             position="relative"
+             captionWidth="90"
+             enabled="true"
+             settingsEnabled="true"
+             style="width: 100%; rightMargin:0; bottom: 0; windowColor:0x000000; windowOpacity:1.0; font: Arial; fontColor:0xffffff; fontBGColor:0x000000; fontBGOpacity:0; edgeType:none; edgeColor:0x000000; edgeOpacity:0; scroll:popOut; textAlign: center; fontSize:12; fontWeight:normal;"
+             />
+    <element id="bufferingView" mode="loader" tether="true" style="fontSize:30px;" />
+    <element id="endSlate" enabled="false" hideElements="brandingLogo|viewAll" />
+    <element id="controls" height="28" scrubPosition="inline" itemMargin="5" />
+    <element id="captionBtn" />
+    <element id="recommendationSlate" viewMode="grid" items="6" />
+    <element id="replayBtn" />
+    <element id="playPauseBtn" />
+    <element id="rewindBtn" />
+    <element id="scrubBar" style="height: 18px;" />
+    <element id="loadedBar" style="background: linear-gradient(90deg, #00FF00, #1B1B1B);" />
+    <element id="playlistBtn" />
+    <element id="timeLocationIndicator" type="arrow" color="#FFFFFF" />
+    <element id="goLiveBtn" />
+    <element id="shareBtn" />
+    <element id="captionBtn" />
+    <element id="statsBtn" />
+    <element id="hdClientBtn" />
+    <element id="chromecastBtn"/>
+    <element id="volumeBar" color="#CA2127" />
+    <element id="volumeBtn" />
+    <element id="fullscreenBtn" />
+  </view>
+</application>

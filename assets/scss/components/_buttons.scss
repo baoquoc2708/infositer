@@ -1,0 +1,65 @@
+.open-refs {
+	height: 40px;
+	display: block;
+	overflow: hidden;
+	vertical-align: top;
+	p {
+		font-size: 20px;
+		line-height: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		display: inline-block;
+		margin: 0;
+		vertical-align: top;
+		font-family: $semi-bold;
+		color: $brand-primary;
+	}
+	.circle-icon{
+		font-size: 44px;
+		text-align: center;
+		border-radius: 100%;
+		line-height: 22px;
+		border: none;
+		background: $brand-primary;
+		color: #fff;
+		height: 40px;
+		width: 40px;
+		display: inline-block;
+		margin-right: 6px;
+	}
+}
+
+
+.scene-button {
+	background: $brand-primary;
+	position: relative;
+	width: 650px;
+	max-width: 100%;
+	padding: 1rem 5rem;
+	line-height: 1.2;
+	text-align: center;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 1.5rem;
+	margin: 10px auto;
+	margin-bottom: 2rem;
+	@include max-brk(800px){
+		padding: .66rem 3rem;
+		font-size: .85rem;
+	}
+	p {margin: 0 0 0 0;}
+	img {
+		position: absolute;
+		top: 15%;
+		bottom: 15%;
+		height: 70%;
+		left: .66rem;
+		overflow: hidden;
+		@include max-brk(800px){
+			height: 60%;
+			bottom: 20%;
+			top: 20%;
+		}
+
+	}
+}

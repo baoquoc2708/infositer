@@ -1,0 +1,161 @@
+const flashConfig = require('raw-loader!video/flash.xml');
+
+export default function(pluginUrl, ampURL) {
+  return  {
+    domain: 'webmd.com',
+    paths: {
+      player: ampURL,
+      resources: ampURL
+    },
+    resources: [ ],
+    params: { },
+    controls: { mode: 'auto' },
+    fullscreen: {
+      enabled: true,
+      native: true
+    },
+    branding: {
+      id: 'logo',
+      logo: 'http://nkalaiya.mediadev.edgesuite.net/webmd_overlay.png'
+    },
+    playoverlay: { enabled: true},
+    flash: {
+      swf: `${ampURL}AkamaiPremierPlayer.swf`,
+      debug: `${ampURL}AkamaiPremierPlayer-debug.swf`,
+      vars: {
+        core_ads_enabled: false,
+        auto_play_override: false
+      },
+      xml: flashConfig.replace(/\{baseSkinUrl\}/g, ampURL),
+    },
+    mediaanalytics: {
+      resources: [{
+        type: 'text/javascript',
+        src:'http://79423.analytics.edgesuite.net/html5/akamaihtml5-min.js'
+      }],
+      plugin: {
+        swf: 'http://79423.analytics.edgesuite.net/csma/plugin/csma.swf'
+      },
+      config: 'http://ma1-r.analytics.edgesuite.net/config/beacon-3018.xml?setVideoObject=1',
+      dimensions: {
+        title: '#{media.title}',
+        playerId: '#{player.mode} Player'
+      }
+    },
+
+    locales: {
+      es: {
+        MSG_RECOMMENDATIONS_TITLE: 'Recomendado',
+        MSG_CHROMECAST_MESSAGE: 'Video playing on another screen',
+        MSG_RU: 'Ruso',
+        MSG_IT: 'Italiano',
+        MSG_FR: 'Franc\u00e9s',
+        MSG_DE: 'Alem\u00e1n',
+        MSG_ES: 'Espa\u00f1ol',
+        MSG_EN: 'Ingl\u00e9s',
+        MSG_CC: 'CC',
+        MSG_VIDEO: ' v\u00eddeos',
+        MSG_VIEW_ALL: 'Ver todos ',
+        MSG_RECOMMENDED: 'Recomendado',
+        MSG_NEXT_VIDEO: 'El pr\u00f3ximo video comienza en: ',
+        MSG_REPLAY: 'Repetir',
+        MSG_GO_LIVE: 'IR A VIVIR',
+        MSG_NOT_AVAILABLE: 'No est\u00e1 disponible',
+        MSG_MAX_BITRATE_AVAILABLE: 'Tasa de bits m\u00e1xima disponible',
+        MSG_CURRENT_BITRATE_PLAYING: 'Tasa de bits de reproducci\u00f3n actual',
+        MSG_CURRENT_WORKING_BANDWIDTH: 'Ancho de banda actual de trabajo',
+        MSG_STREAM_NOT_FOUND: 'Stream que no se encuentra',
+        MSG_ERROR_PREFIX: 'Se produjo un error:',
+        MSG_DEFAULT_ERROR_MESSAGE: 'Lo sentimos, no hemos podido jugar los medios de comunicaci\u00f3n seleccionados. Por favor, int\u00e9ntelo de nuevo, o seleccionar los medios de comunicaci\u00f3n alternativos.',
+        MSG_LIVE: 'EN VIVO',
+        MSG_SEEK_TO: 'Tratar de',
+        MSG_CURRENT: 'corriente',
+        MSG_PREVIEW: 'vista previa',
+        MSG_PAUSE: 'romper',
+        MSG_CUSTOMIZE_CLIP_POINTS: 'Personalizar el inicio y el punto final del video.',
+        MSG_BUFFERING_TEXT: 'el almacenamiento en b\u00fafer',
+        MSG_VERSION_TEXT: 'versi\u00f3n',
+        MSG_SHARE_CONTENT_DISABLED: 'Compartir e incrustar est\u00e1n desactivados.',
+        MSG_SHARE_CONNECT_FAILURE: 'No se puede conectar. Por favor, int\u00e9ntelo de nuevo.',
+        MSG_LINK_TEXT: 'enlace',
+        MSG_EMBED_TEXT: 'incrustar',
+        MSG_POST_TEXT: 'enviar',
+        MSG_SHARE_VIDEO_TEXT: 'Comparte este v\u00eddeo...',
+        MSG_EMAIL_SEND_SUCCESS_MESSAGE: 'Tu email ha sido enviado!',
+        MSG_EMAIL_SEND_FAILURE: 'El mensaje no pudo ser enviado.',
+        MSG_EMAIL_CHARACTERS_REMAINING_TEXT: 'personajes de la izquierda',
+        MSG_EMAIL_MESSAGE_INVALID: 'Por favor limite su mensaje a 500 caracteres o menos.',
+        MSG_EMAIL_ADDRESS_INVALID: 'Direcci\u00f3n de correo electr\u00f3nico no v\u00e1lida',
+        MSG_EMAIL_MESSAGE: 'mensaje',
+        MSG_EMAIL_MESSAGE_DEFAULT: 'Echa un vistazo a este video de xxx',
+        MSG_EMAIL_VIDEO: 'Enviar este v\u00eddeo',
+        MSG_EMAIL_FROM: 'de',
+        MSG_EMAIL_TO: 'a'
+      },
+      en: {
+        MSG_RECOMMENDATIONS_TITLE: 'Recommended',
+        MSG_CHROMECAST_MESSAGE: 'Video playing on another screen',
+        MSG_RU: 'Russian',
+        MSG_IT: 'Italian',
+        MSG_FR: 'French',
+        MSG_DE: 'German',
+        MSG_ES: 'Spanish',
+        MSG_EN: 'English',
+        MSG_CC_APPLY: 'Apply',
+        MSG_CC_CANCEL: 'Cancel',
+        MSG_CC_RESET: 'Default',
+        MSG_CC_HIDE_ADVANCED: 'Hide Advanced Settings',
+        MSG_CC_SHOW_ADVANCED: 'Show Advanced Settings',
+        MSG_CC_OPACITY: 'Opacity :',
+        MSG_CC_WINDOW: 'Window :',
+        MSG_CC_BACKGROUND: 'Background :',
+        MSG_CC_COLOR: 'Color :',
+        MSG_CC_SCROLL: 'Scroll :',
+        MSG_CC_SIZE: 'Size :',
+        MSG_CC_EDGE: 'Edge :',
+        MSG_CC_FONT: 'Font :',
+        MSG_CC_PRESETS: 'Presets :',
+        MSG_CC_LANGUAGE: 'Track :',
+        MSG_CC_TITLE: 'Captions',
+        MSG_CC: 'CC',
+        MSG_VIDEO: ' videos',
+        MSG_VIEW_ALL: 'View all ',
+        MSG_RECOMMENDED: 'Recommended',
+        MSG_NEXT_VIDEO: 'Next video starts in: ',
+        MSG_REPLAY: 'Replay',
+        MSG_GO_LIVE: 'GO LIVE',
+        MSG_NOT_AVAILABLE: 'Not Available',
+        MSG_MAX_BITRATE_AVAILABLE: 'Max bitrate available',
+        MSG_CURRENT_BITRATE_PLAYING: 'Current bitrate playing',
+        MSG_CURRENT_WORKING_BANDWIDTH: 'Current working bandwidth',
+        MSG_STREAM_NOT_FOUND: 'Stream not found',
+        MSG_ERROR_PREFIX: 'Error encountered:',
+        MSG_DEFAULT_ERROR_MESSAGE: 'Sorry, we were unable to play the media you selected. Please try again, or select alternate media.',
+        MSG_LIVE: 'LIVE',
+        MSG_SEEK_TO: 'Seek to',
+        MSG_CURRENT: 'Currrent',
+        MSG_PREVIEW: 'Preview',
+        MSG_PAUSE: 'Pause',
+        MSG_CUSTOMIZE_CLIP_POINTS: 'Customize the start and end point of the video.',
+        MSG_BUFFERING_TEXT: 'buffering',
+        MSG_VERSION_TEXT: 'Version',
+        MSG_SHARE_CONTENT_DISABLED: 'Share and embed are disabled.',
+        MSG_SHARE_CONNECT_FAILURE: 'Unable to connect. Please try again.',
+        MSG_LINK_TEXT: 'Link',
+        MSG_EMBED_TEXT: 'Embed',
+        MSG_POST_TEXT: 'Post',
+        MSG_SHARE_VIDEO_TEXT: 'Share this video...',
+        MSG_EMAIL_SEND_SUCCESS_MESSAGE: 'Your email has been sent!',
+        MSG_EMAIL_SEND_FAILURE: 'Message could not be sent.',
+        MSG_EMAIL_CHARACTERS_REMAINING_TEXT: ' characters left',
+        MSG_EMAIL_MESSAGE_INVALID: 'Please limit your message to 500 characters or less.',
+        MSG_EMAIL_ADDRESS_INVALID: 'Invalid Email Address',
+        MSG_EMAIL_MESSAGE: 'Message',
+        MSG_EMAIL_MESSAGE_DEFAULT: 'Check out this video from xxx',
+        MSG_EMAIL_VIDEO: 'Email this video',
+        MSG_EMAIL_FROM: 'From',
+        MSG_EMAIL_TO: 'To'
+      }
+    }
+  };
+}

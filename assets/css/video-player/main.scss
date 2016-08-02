@@ -1,0 +1,511 @@
+@import './mixins.scss';
+
+$main-color:	  #333333 !default;
+$secondary-color: #9a9a9a !default;
+$tertiary-color:  #6a6a6a !default;
+$highlight-color: #e6eef2 !default;
+.video-player-empty-shell {
+	min-width: 100%;
+	height: 233px;
+	background: $tertiary-color;
+	color: #FEFEFE;
+	content: "Loading. . .";
+	text-align: center;
+	font-family: helvetica, arial, sans-serif;
+	padding-top: 200px;
+}
+
+.video-player-standalone {
+	@include user-select(none);
+	position: relative;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+
+.video-player-screen {
+	@include aspect-ratio(16,9);
+	background-size: 100%;
+	.akamai-branding-logo {
+		opacity: 1;
+	}
+	.akamai-ended .akamai-replay {
+		display: none;
+	}
+}
+
+video.akamai-media-element, object.akamai-media-element {
+	width: 100%;
+}
+
+.akamai-controls-native {
+	.akamai-branding.akamai-overlay {
+		display: block;
+	}
+}
+
+img.akamai-branding-image {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	height: 10%;
+	opacity: 1.0;
+}
+
+.video-player-screen {
+	.akamai-waiting {
+		.akamai-loading.akamai-overlay,
+		.akamai-waiting.akamai-overlay {
+			display: none;
+		}
+	}
+}
+
+.video-player-error {
+	display: none;
+	&.is-error {
+		display: block;
+		background: black;
+		color: white;
+	}
+}
+
+.video-player-standalone {
+	&.is-playing {
+		.akamai-poster.akamai-layer {
+			display: none;
+		}
+	}
+}
+
+.video-player-playlist {
+	position: absolute;
+	bottom: -50px;
+	width: 733px;
+	height: 50px;
+	cursor: pointer;
+}
+.video-player-playlist .video-player-playlist-index {
+	display: none;
+}
+.video-player-playlist.is-open .video-player-playlist-index {
+	list-style: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	z-index: 9999999;
+	padding: 12px;
+	border: 1px solid $main-color;
+	background: white;
+	cursor: pointer;
+}
+
+.video-player-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90%;
+	background: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-play-video-full.png") no-repeat;
+	background-position: 50% 50%;
+	z-index: 10;
+}
+
+@media only screen and(-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+	.video-player-overlay {
+	background: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-play-video-full-2x.png") no-repeat;
+	background-position: 50% 50%;
+	background-size: 150px 150px;
+	}
+}
+
+.video-player-controls {
+	@include clearfix;
+	height: 36px;
+	width: 100%;
+	color: #ccc;
+	background: $main-color;
+	button, .button {
+		height: 36px;
+		outline: none;
+		border: 0;
+		color: $secondary-color;
+		background: $main-color;
+		cursor: pointer;
+	}
+	.video-player-play-button {
+		float: left;
+		width: 12%;
+		font-size: 0;
+		background: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-play.png") no-repeat;
+		background-size: 15px 21px;
+		background-position: center 7px;
+		&.is-playing {
+			background: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-pause.png") no-repeat;
+			background-position: center 7px;
+			background-size: 17px 23px;
+			@include retina {
+					background: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-pause-2x.png") no-repeat;
+					background-position: center 7px;
+					background-size: 17px 23px;
+			}
+		}
+	}
+	@include retina {
+		.video-player-play-button {
+			background: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-play-2x.png") no-repeat;
+			background-position: center 7px;
+			background-size: 15px 21px;
+		}
+	}
+	.video-player-load-progress {
+	position: relative;
+	float: left;
+		height: 36px;
+		width: 55%;
+		background-color: $tertiary-color;
+		&.is-loading, &.is-buffering {
+			@include box-sizing(border-box);
+			text-align: center;
+			line-height: 3;
+			background-color: $secondary-color;
+			background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+			background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+			background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+			background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+			background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+			-webkit-background-size: 30px 30px;
+			-moz-background-size: 30px 30px;
+			-ms-background-size: 30px 30px;
+			-o-background-size: 30px 30px;
+			background-size: 30px 30px;
+			-webkit-animation: move 1.0s linear infinite;
+			-moz-animation: move 1.0s linear infinite;
+			-ms-animation: move 1.0s linear infinite;
+			-o-animation: move 1.0s linear infinite;
+			animation: move 1.0s linear infinite;
+			overflow: hidden;
+		}
+	}
+	.video-player-elapsed-time-indicator {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 36px;
+		border-right: 3px solid #fff;
+		background-color: $highlight-color;
+		width: 0;
+		cursor: pointer;
+	}
+	&.is-buffering {
+		.video-player-elapsed-time-indicator {
+			@include box-sizing(border-box);
+			background-color: $highlight-color;
+			overflow: hidden;
+			background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+			background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+			background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+			background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+			background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+			-webkit-background-size: 30px 30px;
+			-moz-background-size: 30px 30px;
+			-ms-background-size: 30px 30px;
+			-o-background-size: 30px 30px;
+			background-size: 30px 30px;
+			-webkit-animation: move 1.0s linear infinite;
+			-moz-animation: move 1.0s linear infinite;
+			-ms-animation: move 1.0s linear infinite;
+			-o-animation: move 1.0s linear infinite;
+			animation: move 1.0s linear infinite;
+		}
+	}
+}
+/* TODO: clean up the rest of this garbage. */
+.video-player-controls .video-player-time-tracking {
+	margin: 11px 0;
+	width: 14%;
+	text-align: center;
+	float: left;
+	overflow: hidden;
+}
+.video-player-controls .video-player-elapsed-time {
+	text-align: right;
+	line-height: 14px;
+	height: 14px;
+	display: inline-block;
+}
+.video-player-controls .video-player-progress-divider {
+	margin: 0 3px;
+	text-align: center;
+	line-height: 14px;
+	height: 14px;
+	color: $secondary-color;
+	display: inline-block;
+}
+.video-player-controls .video-player-duration {
+	text-align: left;
+	line-height: 14px;
+	height: 14px;
+	display: inline-block;
+}
+.video-player-controls .video-player-volume-slider {
+	float: left;
+	width: 9%;
+	height: 36px;
+	border-left: 1px solid $highlight-color;
+	padding-top: 8px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.video-player-controls .video-player-volume-slider .video-player-mute-button {
+	box-sizing: border-box;
+	width: 22px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0;
+	background: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-volume.png") no-repeat;
+	background-size: 12px 21px;
+	margin-right: 2%;
+	@include retina {
+		background-image: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-volume-2x.png");
+	}
+}
+.video-player-controls .video-player-cc-chrome {
+  float:left;
+}
+
+.video-player-controls .video-player-volume-slider.is-muted .video-player-mute-button {
+	text-decoration: line-through;
+	background-image: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-volume-mute.png");
+	background-size: 21px 22px;
+	@include retina {
+		background-image: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-volume-mute-2x.png");
+	}
+}
+
+.video-player-controls .video-player-volume-boundary {
+	display: inline-block;
+	vertical-align: top;
+	height: 20px;
+	width: 50%;
+	background-color: $tertiary-color;
+}
+.video-player-controls .video-player-volume-indicator {
+	height: 20px;
+	background-color: $secondary-color;
+}
+
+.video-player-controls .video-player-cc-button,
+.video-player-controls .video-player-cc-button .video-player-cc-chrome {
+	border-left: 1px solid $highlight-color;
+	width: 4.5%;
+	text-indent: -1000em;
+	&:after {
+		float: left;
+		content: "";
+		height: 100%;
+		width: 100%;
+		background: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-cc.png") no-repeat;
+		background-size: 29px 16px;
+		background-position: center;
+		opacity: 0.7;
+		@include retina {
+			background-image: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-cc-2x.png");
+		}
+	}
+	&.is-on:after {
+		opacity: 1;
+	}
+}
+
+.video-player-controls .video-player-fullscreen-button {
+	float: right;
+	width: 5%;
+	font-size: 0;
+	background: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-fullscreen.png") no-repeat;
+	background-position: center 7px;
+	background-size: 21px 21px;
+	border-left: 1px solid $highlight-color;
+	@include retina {
+		background-image: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-fullscreen-2x.png");
+	}
+	&.is-fullscreen {
+		background: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-exit-fullscreen.png") no-repeat;
+		background-position: center 7px;
+		background-size: 21px 21px;
+		@include retina {
+			background-image: url("http://img.medscapestatic.com/pi/videoplayer/icons/icon-exit-fullscreen-2x.png");
+		}
+	}
+}
+
+// this kinda sucks. any major deviation from the layout will require
+// an addition of the top level component class here. (e.g. the .cme
+// class in the case of that player)
+
+.video-player-standalone {
+	&.is-fullscreen {
+		.video-player-error { display: none; }
+		.video-player-playlist { display: none; }
+		.video-player-screen {
+			@include center-verticle;
+			position: relative;
+			top: 50%;
+		}
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		background: black;
+		.video-player-controls {
+			@include fullscreen-controls;
+		}
+	}
+}
+
+/* fallback for IE < 11*/
+
+.fallback-fullscreen {
+	.video-player-standalone {
+		&.is-fullscreen {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 99;
+		}
+	}
+}
+
+
+@-webkit-keyframes move {
+	0% { background-position: 0 0; }
+	100% { background-position: 30px 30px; }
+}
+@-moz-keyframes move {
+	0% { background-position: 0 0; }
+	100% { background-position: 30px 30px; }
+}
+@-ms-keyframes move {
+	0% { background-position: 0 0; }
+	100% { background-position: 30px 30px; }
+}
+@-o-keyframes move {
+	0% { background-position: 0 0; }
+	100% { background-position: 30px 30px; }
+}
+@keyframes move {
+	0% { background-position: 0 0; }
+	100% { background-position: 30px 30px; }
+}
+
+/* Editor */
+.json-editor {
+	padding: 1em;
+	margin: 1em;
+	border: 2px solid #CCC;
+	border-radius: 3px;
+}
+.json-editor.is-saved {
+	border: 2px solid #CCC;
+}
+.json-editor .json-editor-error-message {
+	color: #AA0000;
+	font-size: 18px;
+	font-style: italic;
+}
+.json-editor .json-editor-text {
+	border: none;
+	outline: none;
+	font-family: Consolas, Monaco, "Lucida Console", "Courier New", mono-spaced;
+	width: 100%;
+	height: 600px;
+}
+.json-editor .json-editor-save-button {
+	margin-top: 24px;
+	outline: none;
+	color: $secondary-color;
+	border: 1px solid #222;
+	border-radius: 3px;
+	font-size: 24px;
+	background: $main-color;
+}
+.layout {
+	display: block;
+}
+.layout .left-side {
+	max-width: 770px;
+	width: 100%;
+	float: left;
+}
+.layout .right-side {
+	float: left;
+	width: 770px;
+}
+
+@media (min-width: 1200px) {
+	.layout {
+		display: flex;
+		flex-direction: row;
+	}
+	.layout .left-side {
+		max-width: 770px;
+	}
+	.layout .right-side {
+		flex-grow: 2;
+		width: auto;
+	}
+}
+
+.is-mobile {
+	.video-player-overlay {
+		background-size: 20%;
+	}
+	::-webkit-media-controls-start-playback-button {
+		display:none !important;
+	}
+	video::-webkit-media-controls-overlay-play-button {
+		display:none !important;
+	}
+	audio::-webkit-media-controls, video::-webkit-media-controls  {
+		z-index:100;
+	}
+	.video-player-screen.is-paused {
+		.content.akamai-html5.akamai-player.akamai-controls-native {
+			&.akamai-iphone, &.akamai-ipad {
+			}
+		}
+	}
+}
+.qna-submit-button {
+	margin: 0;
+	padding: 10px 20px;
+	display: block;
+	background: none;
+	background-color: #085a81;
+	color:#ffffff;
+	cursor:pointer;
+	width:44px;
+	margin:10px auto;
+}
+.qna-close-button {
+	position:absolute;
+	text-decoration: none;
+	color: #085a81;
+	font-weight: bold;
+	cursor: pointer;
+	width:30px;
+	z-index:99999;
+	right:10px;
+	top:10px;
+	display:none;
+}
+.is-iphone .qna-close-button {
+	display: none;
+}
+.qna-radio-question,
+.qna-checkbox-question,
+.qna-textarea-question {
+	clear:right;
+}

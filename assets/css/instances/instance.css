@@ -1,0 +1,172 @@
+/*---------------------------*/
+/*                           */
+/*     ISI HEIGHT STATES     */
+/*                           */
+/*---------------------------*/
+
+/* Size of ISI's initial state  */
+.isi {
+  height: 200px;
+}
+/*mobile*/
+@media (max-width: 800px) { .isi {
+  height: 200px;
+}}
+
+body {
+    padding-bottom: 100px;
+}
+
+
+/* Size of ISI's FINAL state (calculated as a 100% of browser height minus percent height) */
+.isi.is-final-state {
+    height: 100px;
+}
+/*mobile*/
+@media (max-width: 800px) { .isi.is-final-state {
+  height: 60px;
+}}
+
+
+/* Fully expanded ISI state (needs to fall below the header, so set the top value to the height of the header) */
+.isi.is-expanded {
+  /*height: 100%*/
+}
+/*mobile*/
+@media (max-width: 800px) { .isi.is-expanded {
+  /*height: 100%;*/
+}}
+
+
+
+
+
+/*---------------------------*/
+/*                           */
+/*        ISI STYLES         */
+/*                           */
+/*---------------------------*/
+
+.isi {
+/* Speed of resizing transitions */
+  /*transition: all .2s;*/
+
+/* Style ISI background & Shadow here */
+  /*background: #ddd;*/
+  /*box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);*/
+}
+
+
+/* Style ISI header here */
+.isi .isi-header {
+  /*background: #44b2b5;*/
+}
+
+
+/* Style ISI header TEXT here */
+.isi .isi-header .isi-title {
+  /*color: #fff;*/
+  /*font-family: "proxima_nova_ltsemibold", sans-serif;*/
+}
+
+/* Text Style for Expand button in ISI */
+.isi .isi-header .isi-expand p {
+  /*color: #fff;*/
+  /*text-decoration: underline;*/
+}
+.isi.is-expanded { /*height: 100%*/}
+
+.isi.is-expanded, .isi.is-expanded.is-final-state{padding-top: 0px; top: 120px;}
+
+@media (max-width: 800px) { 
+  .isi.is-expanded, .isi.is-expanded.is-final-state{padding-top: 0px; top: 135px;}
+}
+.isi.is-expanded .isi-content, .isi.is-expanded.is-final-state .isi-content{top: 35px; bottom: 86px;}
+
+
+/*---------------------------*/
+/*                           */
+/*        VIDEO CSS          */
+/*                           */
+/*---------------------------*/
+
+
+/* Play icon and on hover icon */
+.play {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/play.svg") center center no-repeat; }
+  .play:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/play-active.svg") center center no-repeat; }
+
+/* Pause icon and on hover icon */
+.pause {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/pause.svg") center center no-repeat; }
+  .pause:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/pause-active.svg") center center no-repeat; }
+
+/* Volume icons and on hover icons */
+.volume-high {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-high.svg") center center no-repeat; }
+  .volume-high:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-high-hover.svg") center center no-repeat; }
+
+.volume-med {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-med.svg") center center no-repeat; }
+  .volume-med:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-med-hover.svg") center center no-repeat; }
+
+.volume-low {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-low.svg") center center no-repeat; }
+  .volume-low:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-low-hover.svg") center center no-repeat; }
+
+.unmute {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-mute.svg") center center no-repeat; }
+  .unmute:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-mute-hover.svg") center center no-repeat; }
+
+/* Fullscreen icon and on hover icon */
+.fs {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/enter-full-screen.svg") center center no-repeat; }
+  .fs:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/enter-full-screen-active.svg") center center no-repeat; }
+
+.fs-exit {
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/exit-full-screen.svg") center center no-repeat; }
+  .fs-exit:hover {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/exit-full-screen-active.svg") center center no-repeat; }
+
+/* Main video controls container which contains ".video-controls" */
+.control-container {
+  height: 40px; }
+
+/* Video controls container */
+.video-controls {
+    background-color: rgba(0,0,0,0.6);
+    height: 40px; }
+
+/* Video progress: Pending color bar */
+.not-value {
+  background-color: #595959; }
+
+/* Video progress: Watched color bar */
+.seekslider {
+  background-color: #44b2b5; }
+
+/* The current volume color */
+.volume {
+  background-color: #c8c8c8; }
+
+/* The empty volume space color */
+.not-volume {
+  background-color: #595959; }
+
+/*video Duration text Size and color */
+.curtimetext, .separator, .durtimetext {
+  color: #74a2b8;
+  font-size: 12px;
+  display: inline-block;
+  padding: 2px; }
+
+/* volume bar background color */ 
+.volume-bar-background {
+  background-color: rgba(0, 0, 0, 0.4); }

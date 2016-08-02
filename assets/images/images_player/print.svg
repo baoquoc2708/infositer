@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="13px" viewBox="0 0 14 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+    <title>95738925-40FE-436B-938D-3EBA8D1862A9</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 12.1165743 13.9299392 12.1165743 13.9299392 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Buttons" transform="translate(-155.000000, -1027.000000)">
+            <g id="Group-2" transform="translate(115.000000, 954.000000)">
+                <g id="Print" transform="translate(40.000000, 73.000000)">
+                    <path d="M11.951723,5.7697973 C11.4965684,5.7697973 11.1274662,5.40069512 11.1274662,4.94554054 C11.1274662,4.49038596 11.4965684,4.12128378 11.951723,4.12128378 C12.4068776,4.12128378 12.7759797,4.49038596 12.7759797,4.94554054 C12.7759797,5.40069512 12.4068776,5.7697973 11.951723,5.7697973 L11.951723,5.7697973 Z M3.95643243,11.1274662 L9.97350676,11.1274662 L9.97350676,6.92375676 L3.95643243,6.92375676 L3.95643243,11.1274662 L3.95643243,11.1274662 Z M13.9299392,2.96732432 L0,2.96732432 L0,8.16014189 L2.96732432,8.16014189 L2.96732432,12.1165743 L10.9626149,12.1165743 L10.9626149,8.16014189 L13.9299392,8.16014189 L13.9299392,2.96732432 L13.9299392,2.96732432 Z" id="Fill-1" fill="#005B81"></path>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-4"></g>
+                    <polygon id="Fill-3" fill="#005B81" mask="url(#mask-2)" points="2.88489865 2.06064189 11.0450405 2.06064189 11.0450405 0 2.88489865 0"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

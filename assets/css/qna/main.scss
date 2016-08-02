@@ -1,0 +1,422 @@
+// --------------------------
+// --  Colour Definitions  --
+// --------------------------
+$main-color:      #085a81;
+$secondary-color: #74a2b8;
+$tertiary-color:  #acc7d4;
+$highlight-color: #e6eef2;
+
+// -----------------
+// --   Layout    --
+// -----------------
+.cme.is-fullscreen .cme-qna {
+  position:fixed;
+}
+#cme-video-player .cme-qna .is-visible {
+    display: block;
+}
+.qna-stand-alone-container {
+    border: solid 4px #eee;
+    font-size: 16px;
+    background: #fff;
+    font-weight: 300;
+    overflow: hidden;
+
+    &.is-visible {
+        display: block;
+    }
+    .question-layer,
+    .chart-layer {
+        position: absolute;
+        top: 0;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 50px 40px;
+    }
+    .qna-question {
+        font-weight: 400;
+        margin-bottom: 20px;
+        font-size: 17px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    ul li {
+        padding-bottom: 0;
+    }
+    .qna-question-percentage-bar {
+        background: rgba($main-color,.15);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+    }
+    .qna-question-percentage {
+        position: absolute;
+        right: 20px;
+        top: 0px;
+        height: 50px;
+        line-height: 50px;
+    }
+    fieldset {
+        padding: 0;
+        border: none;
+    }
+    legend {
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 1;
+        padding-left: 0;
+        &:before {
+            content: 'question ';
+            text-transform: uppercase;
+        }
+    }
+
+    .qna-radio-choice,
+    .qna-checkbox-choice {
+        display: block;
+        border: solid 1px #ddd;
+        margin-bottom: 10px;
+        padding: 0 14px;
+        position: relative;
+        &.qna-is-highlighted {
+            border-color: $secondary-color;
+        }
+    }
+
+    .qna-radio-choice label,
+    .qna-checkbox-choice label {
+        line-height: 1.1;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        width: 90%;
+        display: inline-block;
+        cursor: pointer;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        margin-left: 30px;
+        padding-right: 50px;
+        user-select: none;
+    }
+
+    input[type=checkbox],
+    input[type=radio] {
+        display: none;
+    }
+
+    input[type=radio] + label:before,
+    input[type=checkbox] + label:before {
+        position: absolute;
+        left: -34px;
+        top: 0;
+    }
+
+    // ----------------
+    // --   Icons    --
+    // ----------------
+    .question-layer {
+        input[type=radio] + label:before {
+            content: '';
+            background: url('http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-radio-off.png') center center no-repeat;
+            overflow: hidden;
+            height: 48px;
+            width: 30px;
+            display: inline-block;
+        }
+
+        input[type=radio]:checked + label:before {
+            content: '';
+            background: url('http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-radio-on.png') center center no-repeat;
+        }
+
+        input[type=checkbox] + label:before {
+            content: '';
+            background: url('http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-checkbox-off.png') center center no-repeat;
+            overflow: hidden;
+            height: 48px;
+            width: 30px;
+            display: inline-block;
+        }
+
+        input[type=checkbox]:checked + label:before {
+            content: '';
+            background: url('http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-checkbox-on.png') center center no-repeat;
+        }
+
+        p.qna-is-correct {
+            display:none;
+        }
+        p.qna-is-correct.is-visible {
+            display:block;
+        }
+    }
+    .qna-is-correct,
+    .qna-is-correct.qna-is-highlighted {
+        input[type=radio] + label:before {
+            content: '';
+            background: url('http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-radio-correct.png') center center no-repeat;
+            overflow: hidden;
+            height: 48px;
+            width: 30px;
+            display: inline-block;
+        }
+
+        input[type=radio]:checked + label:before {
+            content: '';
+            background: url('http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-radio-correct.png') center center no-repeat;
+        }
+
+        input[type=checkbox] + label:before {
+            content: '';
+            background: url('http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-checkbox-correct.png') center center no-repeat;
+            overflow: hidden;
+            height: 48px;
+            width: 30px;
+            display: inline-block;
+        }
+
+        input[type=checkbox]:checked + label:before {
+            content: '';
+            background: url('http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-checkbox-correct.png') center center no-repeat;
+        }
+    }
+
+    .question-layer .qna-is-highlighted {
+        input[type=radio] + label:before {
+            content: '';
+            background: url('http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-radio-on.png') center center no-repeat;
+        }
+
+        input[type=checkbox] + label:before {
+            content: '';
+            background: url('http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-checkbox-on.png') center center no-repeat;
+        }
+    }
+
+    .chartLayer, .questionLayer, .qna-error-overlay {
+        background-color: #fff;
+        display:none;
+    }
+
+    .qna-error-overlay {
+        z-index: 300;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .error {
+        display: none;
+    }
+
+    .qna-checkbox-question,
+    .qna-radio-question,
+    .qna-textbox-question,
+    .qna-textarea-question {
+        margin-bottom: 40px;
+    }
+
+    .cme-chart {
+        .correct {
+            color: green;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        fieldset {
+          border: none;
+        }
+        .qna-bar-chart {
+            margin-bottom: 10px;
+        }
+        .qna-radio-choice-wrap {
+            clear: both;
+            margin-bottom: 10px;
+        }
+        .bar {
+            height: 20px;
+            width: 200px;
+        }
+        .bar-bg {
+            height: 100%;
+            display: inline-block;
+            background-color: #085a81;
+            margin-right:10px
+        }
+    }
+
+
+    // -----------------
+    // -    Buttons    -
+    // -----------------
+
+    .qna-submit-button,
+    .qna-continue-button,
+    .qna-error-button {
+        line-height: 40px;
+        padding: 0;
+        text-align: center;
+        width: 250px;
+        float: right;
+        background: #007cb1;
+        border: none;
+        background-image: none;
+        color: #ffffff;
+        font-size: 18px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        &:disabled,
+        &.disabled {
+            background: #999;
+            cursor: default;
+        }
+    }
+
+    // ---------------------
+    // -   Error Overlay   -
+    // ---------------------
+    .qna-error-overlay {
+        background: rgba(#fff,.8);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 140px;
+
+        & > div {
+            width: 300px;
+            padding: 40px;
+            border: solid 10px #eee;
+            display: inline-block;
+            span {
+                display: block;
+                text-align: left;
+            }
+        }
+    }
+
+    .qna-error-button {
+        width: 80px;
+        margin-bottom: -20px;
+        margin-right: -20px;
+    }
+
+    .qna-required-message {
+        color: #954f49;
+        font-style: italic;
+        display: block;
+        margin-bottom: 24px;
+        display: none;
+    }
+
+    .qna-question-explanation {
+        font-size: 14px;
+        font-weight: 400;
+        &:before {
+            content: 'Explanation:';
+            margin-right: 5px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+    .is-visible {
+        display: block;
+    }
+
+    .qna-questions-loading {
+        box-sizing: border-box;
+        width: 75px;
+        height: 75px;
+        border-radius: 50px;
+        position: absolute;
+        top: 50%;
+        margin-top: -35px;
+        left: 50%;
+        margin-left: -35px;
+        background: url('http://img.qa01.medscapestatic.com/pi/videoplayer/icons/loading-light.gif') center center no-repeat;
+        background-size: 70px 70px;
+    }
+}
+
+p.qna-is-correct:before{
+    content: url('http://img.qa01.medscapestatic.com/pi/videoplayer/icons/qna-radio-correct.png');
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: -4px;
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0 rgba($secondary-color,.6);
+  }
+
+  to {
+    box-shadow: 0 0 0 1000px rgba($secondary-color,0);
+  }
+}
+
+.is-mobile #edu_article_content .cme-qna,
+.is-mobile .cme-qna {
+    position: fixed;
+    top: 44px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 7000;
+    .question-layer,
+    .chart-layer {
+        padding: 25px 20px;
+    }
+    .button-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #eee;
+        text-align: center;
+        padding: 10px;
+        .qna-submit-button,
+        .qna-continue-button,
+        .qna-error-button {
+            float: none;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin: 0 auto;
+        }
+    }
+    .question-layer {
+        .button-container {
+            position: static;
+            margin-left: -20px;
+            margin-right: -20px;
+            margin-bottom: -26px;
+        }
+    }
+    .chart-layer {
+        .qna-radio-choice label,
+        .qna-checkbox-choice label {
+            width: 75%;
+        }
+    }
+
+}

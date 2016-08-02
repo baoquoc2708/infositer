@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="15px" viewBox="0 0 19 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+    <title>52F73D56-1A1E-4E6A-B1CE-DE157C40D236</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Buttons" transform="translate(-420.000000, -468.000000)">
+            <g id="MuteHover" transform="translate(420.000000, 468.000000)">
+                <path d="M8.99862616,0 L3.92779728,4.25955414 L0.00206075408,4.25955414 L0.00206075408,7.55645628 L0,7.55862768 L0.00206075408,7.56079907 L0.00206075408,10.8236827 L3.94771791,10.8236827 L8.99862616,15 L8.99862616,10.8236827 L9,10.8236827 L9,4.25955414 L8.99862616,4.25955414 L8.99862616,0 L8.99862616,0 Z M8.30689971,13.5010133 L4.37498092,10.2497105 L4.18676538,10.0940938 L0.694474126,10.0940938 L0.694474126,4.98914302 L4.16959243,4.98914302 L8.30689971,1.51418645 L8.30689971,4.25955414 L8.30758663,4.98914302 L8.30758663,10.0940938 L8.30689971,13.5010133 Z" id="Fill-11" fill="#005B81"></path>
+                <g id="Line-+-Line-Copy-3" transform="translate(10.000000, 2.000000)" stroke-linecap="square" stroke="#005B81">
+                    <g id="Group-6" transform="translate(5.656854, 5.656854) rotate(-45.000000) translate(-5.656854, -5.656854) translate(1.656854, 1.656854)">
+                        <path d="M4,-3.28626015e-14 L4,8" id="Line"></path>
+                        <path d="M4,8.79296636e-14 L4,8" id="Line" transform="translate(4.000000, 4.000000) rotate(-270.000000) translate(-4.000000, -4.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
