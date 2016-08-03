@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 /**
- * This webpack config is for building the brand play product
+ * This webpack config is for building the Infosite product
  *
  */
 module.exports = {
@@ -27,10 +27,10 @@ module.exports = {
       classnames: __dirname + '/ext_libraries/classnames/index.js',
 
       // component styles
-      baseStyle:  __dirname + '/assets/css/video-player/main.scss',
+      baseStyle:  __dirname + '/Infosite/css/video-player/main.scss',
       //brandStyle: __dirname + '/products/brandplay/css/main.scss',
       //cmeStyle:   __dirname + '/products/cme/css/main.scss',
-      qnaStyle:   __dirname + '/assets/css/qna/main.scss',
+      qnaStyle:   __dirname + '/Infosite/css/qna/main.scss',
 
       // legacy
       x2js:           __dirname + '/ext_libraries/parsing/x2js/xml2json.min.js',
@@ -38,8 +38,8 @@ module.exports = {
     }
   },
   output: {
-    path: __dirname + '/assets/js/',
-    filename: 'ba2.bundle.js'
+    path: __dirname + '/Infosite/js/',
+    filename: 'infosite.bundle.js'
   },
   module: {
     loaders: [
