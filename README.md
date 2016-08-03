@@ -6,7 +6,7 @@ After each pull request is approved and merged, the merging party must deploy to
 
 * Pull the merged changes: ` git pull origin master `
 
-* Run the build task. This packages changes and places them into the proper locations of the master folder:  `gulp ba-build`
+* Run the build task. This packages changes and places them into the proper locations of the master folder:  `gulp infosite-build`
 
 * Open FileZilla, connect to the server and drag "dynamic" from the master folder into the root folder of the server (only prod-dev and staging. NEVER the live server)
 
