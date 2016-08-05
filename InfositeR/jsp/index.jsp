@@ -44,17 +44,18 @@
 		</head>
 		<body>
 			<div class='header'>
-				<%@ include file="/files/mscp_sites/www/infosite/salutrib/components/header.jsp" %>
+				<%@ include file="/files/mscp_sites/www/infosite/infositeR/components/header.jsp" %>
 			</div>
 
 			<div class='main-wrapper'>
 			</div>
 
 			<div class='footer'>
-				<%@ include file="/files/mscp_sites/www/sp/ipp/7/14480/scenes/scene-1.jsp" %>
+				<%@ include file="/files/mscp_sites/www/infosite/infositeR/components/footer.jsp" %>
 			</div>
 
 			<%-- Scripts --%>
+				<%@ include file="/files/mscp_sites/www/infosite/infositeR/components/scripts.jsp" %>
 			<%-- Configuration JS--%>
 			<%-- Main JS--%>
 			<%-- Instance JS--%>

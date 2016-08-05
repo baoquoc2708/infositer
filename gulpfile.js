@@ -10,34 +10,34 @@ var shell = require('gulp-shell');
 
 // Infosite Sass Compiler
 gulp.task('infosite-sass', function (){
-	gulp.src(['./Infosite/scss/*.scss'])
+	gulp.src(['./InfositeR/scss/*.scss'])
 		.pipe(sass({
-			includePaths: ['./Infosite/scss/']
+			includePaths: ['./InfositeR/scss/']
 		}))
 		.pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
         .pipe(rename("style.css"))
-		.pipe(gulp.dest('./Infosite/css/'));
+		.pipe(gulp.dest('./InfositeR/css/'));
 });
 
 
 // Infosite HTML Compiler
 gulp.task('infosite-htmlIncluder', function() {
-    gulp.src('./Infosite/html/*.html')
+    gulp.src('./InfositeR/html/*.html')
         .pipe(includer())
-        .pipe(gulp.dest('./Infosite/dist-html/'));
+        .pipe(gulp.dest('./InfositeR/dist-html/'));
 });
 
 
 // Infosite Watch //////////////////////////////////////////////////////////////////////////
 gulp.task('infosite-watch', function(){
-	gulp.watch("./Infosite/scss/**/*.scss", function(event){
+	gulp.watch("./InfositeR/scss/**/*.scss", function(event){
 		gulp.run('infosite-sass');
 	});
 
-	gulp.watch(['./Infosite/html/*.html'], function(event) {
+	gulp.watch(['./InfositeR/html/*.html'], function(event) {
       gulp.start('infosite-htmlIncluder');
     });
 });

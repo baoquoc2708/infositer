@@ -8,7 +8,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:8080', // WebpackDevServer host and port
     'webpack/hot/only-dev-server',
-    './modules/video/ba2_entry.js'
+    './modules/infosite_entry.js'
   ],
   devtool: 'source-map',
   resolve: {
@@ -27,10 +27,10 @@ module.exports = {
       classnames: __dirname + '/ext_libraries/classnames/index.js',
 
       // component styles
-      baseStyle:  __dirname + '/Infosite/css/video-player/main.scss',
+      baseStyle:  __dirname + '/InfositeR/css/video-player/main.scss',
       //brandStyle: __dirname + '/products/brandplay/css/main.scss',
       //cmeStyle:   __dirname + '/products/cme/css/main.scss',
-      qnaStyle:   __dirname + '/Infosite/css/qna/main.scss',
+      qnaStyle:   __dirname + '/InfositeR/css/qna/main.scss',
 
       // legacy
       x2js:           __dirname + '/ext_libraries/parsing/x2js/xml2json.min.js',
@@ -38,7 +38,7 @@ module.exports = {
     }
   },
   output: {
-    path: __dirname + '/Infosite/js/',
+    path: __dirname + '/InfositeR/js/',
     filename: 'infosite.bundle.js'
   },
   module: {
