@@ -1,0 +1,36 @@
+// Colours
+$brand-primary: #4d4184;
+$brand-secondary: #44b2b5;
+$progress-complete: #0099ff;
+$progress-remaining: #ccc;
+$mscp-blue: #006699;
+
+$main-color:      #085a81;
+$secondary-color: #74a2b8;
+$tertiary-color:  #acc7d4;
+$highlight-color: #e6eef2;
+
+
+
+$body-text-colour: #231f20;
+
+
+// Fonts
+$heading-font-family: 'proxima_nova_rgregular', sans-serif;
+$body-font-family: 'proxima_nova_rgregular', sans-serif;
+$alt-font-family: 'proxima_nova_ltlight', sans-serif;
+$semi-bold: 'proxima_nova_ltsemibold', sans-serif;
+
+
+// Mixins
+@mixin min-brk($num){
+	@media (min-width: $num){
+		@content;
+	}
+}
+
+@mixin max-brk($num){
+	@media (max-width: $num){
+		@content;
+	}
+}

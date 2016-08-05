@@ -1,0 +1,42 @@
+
+ /*=== Progress Bar ===*/
+            /* Progress Bar Div */
+            .progress-bar{
+                text-align: center;
+                height: 8px;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            /*.progressbar{
+                -webkit-writing-mode: horizontal-tb;
+                -webkit-appearance: progress-bar;
+                box-sizing: border-box;
+                display: inline-block;
+                height: 0.5em;
+                width: 1200px;
+            }*/
+
+            /* width for Single progressbar element */
+            .progressbar {
+
+                height: 8px;
+                width: 100%;
+                background-color: $progress-remaining;
+            }
+
+            /* width for sectioned progressbar element */
+            .progressPosition {
+                height: 8px;
+                display: inline-block;
+                z-index: 500;
+                background-color: $progress-complete;
+                float: left;
+                /*border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;*/
+            }
+
+
+            /*.progressPosition:nth-child(4){
+                background-color: red;
+            }*/
