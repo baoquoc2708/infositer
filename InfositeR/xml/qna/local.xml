@@ -1,734 +1,345 @@
 
-
 <!-- Questionnaire XML old format start -->
-<questionnaire id="35923" qType="DEFAULT">
-
-  <title>Pre-assessment at the beginning of the video</title>
-  <passScore>0</passScore>
-  <passMessage></passMessage>
-  <failMessage></failMessage>
-  <isGated>false</isGated>
-  <expirationDate></expirationDate>
-
-
-
-  	<page formtype="DEFAULT" id="1" isActive="true" order="1">
-      	<title>Question Form Title</title>
-      	<intro>Form Introduction</intro>
-      	<buttontext/>
-      	<evalReq/>
-
-
-	 		<question id="266151" order="1" poll="true" required="true" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="false">
-
-				<questionText>
-					á, é, í, ó, ú, ü, ñ, ¿, ¡,asdadsadsadasdsd,upendra,25.63,36.6598*()&amp;*(!@!#@!!@#@!#!@#http://tools.qa01.medscape.com/questionnaireadmin/,X6 O8M テストテストテスト 테스트 테스트 테스트 測試測試測試 Testowanie Testowanie Testowanie Тестирование Тестирование Тестирование test de test de test*++=-_A?&gt;|\
-					A 61-year-old man with stage IV squamous cell carcinoma returns to the clinic to discuss treatment options after routine follow-up revealed that his disease had progressed with first-line &lt;sup&gt;nab1&lt;/sup&gt;-paclitaxel and carboplatin.&amp;amp;#160; His &lt;sub&gt;na1bc&lt;/sub&gt; performance status is 1. He is relatively asymptomatic, ±µα©Ω∑÷×≠£€±ʭʫʰ₰₰ with his chief complaint being fatigue. Based on the patient's presentation at the time of follow-up, which of the following agents would most likely provide him with the greatest chance at clinical benefit?
-
-					. Based on the patient's presentation at the time of follow-up, which of the following agents would most likely provide him with the &lt;i&gt;greatest&lt;/i&gt; &lt;b&gt;chance&lt;/b&gt; at &lt;em&gt;clinical&lt;/em&gt; &lt;strong&gt;benefit&lt;/strong&gt;?
-					&lt;ol&gt;
-					&lt;li&gt;greatest
-					&lt;li&gt;greatest
-					&lt;/li&gt;
-					&lt;/ol&gt;
-
-					測試测试 ≤ тест-плеер Welches Medikament w&amp;#252;rden Sie f&amp;#252;r diesen Patienten empfehlen? &amp;#191;Cu&amp;#225;l ser&amp;#237;a su diagn&amp;#243;stico? Quantos pacientes com EM v&amp;#234; por m&amp;#234;s? Wie schwierig war es f&amp;#252;r Sie, in diesem Fall eine Diagnose zu stellen? (W&amp;#228;hlen Sie eine Bewertung von 1 [leicht] bis 5 [schwierig]) この症例を診断するのはどの程度難しかったですか? (1 [簡単] から 5 [困難]までのランクをお選びください)
-				</questionText>
-				<questionIntro>test introduction</questionIntro>
+<questionnaire id="40577" qType="DEFAULT">  
+  
+  <title>Infosite test</title>  
+  <passScore>0</passScore>  
+  <passMessage></passMessage>  
+  <failMessage></failMessage>  
+    
+    
+   
+  	<page formtype="DEFAULT" id="1" isActive="true" order="1">  
+      	<title>test poll</title>  
+      	<intro></intro>  
+      	<buttontext/>  
+      	<evalReq/>  
+        
+      			
+	 		<question id="312057" order="1" poll="true" required="false" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="false">
+				<questionText>This is a test poll for BP2.0</questionText>		
+				<questionIntro></questionIntro>
 				<displayRule>RadioButton</displayRule>
-				<userTypeName/>
+				<userTypeName/>		
 				<feedback/>
-				<responded>false</responded>
-				<totalResponse>14</totalResponse>
+				<responded>false</responded>		
+				<totalResponse>7</totalResponse>		
 				<passed>false</passed>
-				<viewResults>false</viewResults>
 
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="846891" order="1">
-							<choiceText>Bevacizumab  테스트 테스트 테스트اختبار اختبار اختبار</choiceText>
-							<choiceExplanation>Bevacizumab  테스트 테스트 테스트اختبار اختبار اختبار</choiceExplanation>
-							<isCorrect>true</isCorrect>
-							<totalResponse>79</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846893" order="2">
-							<choiceText>Docetaxel  테스트 테스트 테스트اختبار اختبار اختبار</choiceText>
-							<choiceExplanation>Bevacizumab  테스트 테스트 테스트اختبار اختبار اختبار</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>14</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846895" order="3">
-							<choiceText>Erlotinib  테스트 테스트 테스트اختبار اختبار اختبار</choiceText>
-							<choiceExplanation>Bevacizumab  테스트 테스트 테스트اختبار اختبار اختبار</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846897" order="4">
-							<choiceText>Nivolumab اختبار اختبار اختبار</choiceText>
-							<choiceExplanation>Bevacizumab  테스트 테스트 테스트اختبار اختبار اختبار</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>7</totalResponse>
-							<selected>true</selected>
-						</choice>
-
-			</question>
-
-
-	 		<question id="266153" order="2" poll="true" required="true" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="false">
-
-				<questionText>Which of the following has been shown to potentially serve as a prognostic indicator for overall response rate in patients with advanced non-small cell lung cancer (NSCLC) who are undergoing treatment with pembrolizumab?</questionText>
-				<questionIntro>test intro2</questionIntro>
+				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->		
+						<choice id="986041" order="1">		
+							<choiceText>Answer 1</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>29</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986043" order="2">		
+							<choiceText>Answer 2</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>43</totalResponse>		
+							<selected>true</selected>		
+						</choice>            		
+						<choice id="986045" order="3">		
+							<choiceText>Answer 3</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>28</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+		
+			</question>		
+        		
+      </page>
+ 
+   
+  	<page formtype="DEFAULT" id="2" isActive="true" order="2">  
+      	<title>page 2</title>  
+      	<intro></intro>  
+      	<buttontext/>  
+      	<evalReq/>  
+        
+      			
+	 		<question id="312059" order="2" poll="true" required="false" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="false">
+				<questionText>This is the 2nd page and it has 2 poll questions</questionText>		
+				<questionIntro></questionIntro>
 				<displayRule>RadioButton</displayRule>
-				<userTypeName/>
+				<userTypeName/>		
 				<feedback/>
-				<responded>false</responded>
-				<totalResponse>14</totalResponse>
+				<responded>false</responded>		
+				<totalResponse>0</totalResponse>		
 				<passed>false</passed>
-				<viewResults>false</viewResults>
 
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="846899" order="1">
-							<choiceText>High PD-L1 expression</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>true</isCorrect>
-							<totalResponse>79</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846901" order="2">
-							<choiceText>Mismatch repair deficiency</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846903" order="3">
-							<choiceText>Nonsquamous cell histology</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>14</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846905" order="4">
-							<choiceText>Squamous cell histology</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>7</totalResponse>
-							<selected>true</selected>
-						</choice>
+				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->		
+						<choice id="986047" order="1">		
+							<choiceText>True</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986049" order="2">		
+							<choiceText>False</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+		
+			</question>		
+        		
+      			
+	 		<question id="312061" order="3" poll="true" required="false" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="false">
+				<questionText>Question #2 of page 2</questionText>		
+				<questionIntro></questionIntro>
+				<displayRule>RadioButton</displayRule>
+				<userTypeName/>		
+				<feedback/>
+				<responded>false</responded>		
+				<totalResponse>0</totalResponse>		
+				<passed>false</passed>
 
-			</question>
-
-
-	 		<question id="266155" order="3" poll="true" required="true" scorable="false" showAnsTable="false" showQuestion="false" showRightWrong="false">
-
-				<questionText>A 53-year-old woman with stage IV adenocarcinoma of the lung experienced disease progression on first-line carboplatin + pemetrexed. She was enrolled in a clinical trial involving atezolizumab. Rebiopsy of her lung revealed immune cell immunohistochemistry of 6% for PD-L1 expression.  Based on available data, what is the expected clinical benefit of treatment with atezolizumab?</questionText>
+				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->		
+						<choice id="986051" order="1">		
+							<choiceText>Answer 1</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986053" order="2">		
+							<choiceText>Answer 2</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986055" order="3">		
+							<choiceText>Answer 3</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986057" order="4">		
+							<choiceText>Answer 4</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+		
+			</question>		
+        		
+      </page>
+ 
+   
+  	<page formtype="DEFAULT" id="3" isActive="true" order="3">  
+      	<title>page 3</title>  
+      	<intro></intro>  
+      	<buttontext/>  
+      	<evalReq/>  
+        
+      			
+	 		<question id="312063" order="4" poll="true" required="false" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="false">
+				<questionText>This is page 3 and it has check boxes</questionText>		
 				<questionIntro></questionIntro>
 				<displayRule>CheckBox</displayRule>
-				<userTypeName/>
+				<userTypeName/>		
 				<feedback/>
-				<responded>false</responded>
-				<totalResponse>16</totalResponse>
-				<passed>true</passed>
-				<viewResults>false</viewResults>
-
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="846907" order="1">
-							<choiceText>Duration of response of 13 weeks</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>62</totalResponse>
-							<selected>true</selected>
-						</choice>
-						<choice id="846909" order="2">
-							<choiceText>Duration of response of 64 weeks</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>true</isCorrect>
-							<totalResponse>12</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846911" order="3">
-							<choiceText>Overall survival of 11.4 months</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>6</totalResponse>
-							<selected>true</selected>
-						</choice>
-						<choice id="846913" order="4">
-							<choiceText>Overall survival hazard ratio of 0.56</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>true</isCorrect>
-							<totalResponse>19</totalResponse>
-							<selected>true</selected>
-						</choice>
-
-			</question>
-
-
-	 		<question id="266159" order="4" poll="true" required="true" scorable="false" showAnsTable="false" showQuestion="true" showRightWrong="false">
-
-				<questionText>In patients with small cell lung cancer that progressed after standard chemotherapy, which of the following PD-1-inhibitor or PD-L1 inhibitor regimens have been associated with an overall response rate of 35% in a recently reported study?</questionText>
-				<questionIntro></questionIntro>
-				<displayRule>RadioButton</displayRule>
-				<userTypeName/>
-				<feedback/>
-				<responded>false</responded>
-				<totalResponse>14</totalResponse>
+				<responded>false</responded>		
+				<totalResponse>0</totalResponse>		
 				<passed>false</passed>
-				<viewResults>false</viewResults>
 
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="846921" order="1">
-							<choiceText>Atezolizumab</choiceText>
-							<choiceExplanation>Test 1</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>71</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846923" order="2">
-							<choiceText>Nivolumab</choiceText>
-							<choiceExplanation>Test 2</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846925" order="3">
-							<choiceText>Nivolumab + ipilimumab</choiceText>
-							<choiceExplanation>Test 3</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>7</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846927" order="4">
-							<choiceText>Pembrolizumab</choiceText>
-							<choiceExplanation>Test 4 correct answer</choiceExplanation>
-							<isCorrect>true</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846929" order="5">
-							<choiceText>Tremelimumab + MEDI4736</choiceText>
-							<choiceExplanation>Test 5</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>21</totalResponse>
-							<selected>true</selected>
-						</choice>
-
-			</question>
-
-
-	 		<question id="266157" order="5" poll="true" required="true" scorable="false" showAnsTable="false" showQuestion="true" showRightWrong="false">
-
-				<questionText>How would you describe your practice setting?</questionText>
-				<questionIntro></questionIntro>
-				<displayRule>CheckBox</displayRule>
-				<userTypeName/>
-				<feedback/>
-				<responded>false</responded>
-				<totalResponse>14</totalResponse>
-				<passed>false</passed>
-				<viewResults>false</viewResults>
-
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="846915" order="1">
-							<choiceText>Academic</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>79</totalResponse>
-							<selected>true</selected>
-						</choice>
-						<choice id="846917" order="2">
-							<choiceText>Community</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>7</totalResponse>
-							<selected>true</selected>
-						</choice>
-						<choice id="846919" order="3">
-							<choiceText>Not applicable</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>14</totalResponse>
-							<selected>false</selected>
-						</choice>
-
-			</question>
-
+				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->		
+						<choice id="986059" order="1">		
+							<choiceText>check box 1</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986061" order="2">		
+							<choiceText>check box 2</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986063" order="3">		
+							<choiceText>check box 3</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986065" order="4">		
+							<choiceText>check box 4</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986067" order="5">		
+							<choiceText>check box 5</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+		
+			</question>		
+        		
       </page>
-
-
-  	<page formtype="DEFAULT" id="2" isActive="true" order="2">
-      	<title>Polling question: Interspersed throughout video</title>
-      	<intro></intro>
-      	<buttontext/>
-      	<evalReq/>
-
-
-	 		<question id="266161" order="6" poll="true" required="false" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="false">
-
-				<questionText>!@#http://tools.qa01.medscape.com/questionnaireadmin/,X6 O8M How would you describe your practice setting?</questionText>
+ 
+   
+  	<page formtype="DEFAULT" id="4" isActive="true" order="4">  
+      	<title>page 4</title>  
+      	<intro></intro>  
+      	<buttontext/>  
+      	<evalReq/>  
+        
+      			
+	 		<question id="312065" order="5" poll="true" required="false" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="false">
+				<questionText>THis is page 4 of the poll</questionText>		
 				<questionIntro></questionIntro>
 				<displayRule>RadioButton</displayRule>
-				<userTypeName/>
+				<userTypeName/>		
 				<feedback/>
-				<responded>false</responded>
-				<totalResponse>14</totalResponse>
+				<responded>false</responded>		
+				<totalResponse>5</totalResponse>		
 				<passed>false</passed>
-				<viewResults>false</viewResults>
 
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="846931" order="1">
-							<choiceText>Good</choiceText>
-							<choiceExplanation>Explanation1</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>100</totalResponse>
-							<selected>true</selected>
-						</choice>
-						<choice id="846933" order="2">
-							<choiceText>Bad</choiceText>
-							<choiceExplanation>Explanation2</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846935" order="3">
-							<choiceText>Other</choiceText>
-							<choiceExplanation>Explanation3</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-
-			</question>
-
-
-	 		<question id="266163" order="7" poll="true" required="false" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="false">
-
-				<questionText>How comfortable are you in prescribing immunotherapy for your patients with advanced disease?</questionText>
-				<questionIntro>test intro 2nd @ % %#5</questionIntro>
-				<displayRule>RadioButton</displayRule>
-				<userTypeName/>
-				<feedback/>
-				<responded>false</responded>
-				<totalResponse>14</totalResponse>
-				<passed>false</passed>
-				<viewResults>false</viewResults>
-
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="846937" order="1">
-							<choiceText>Very comfortable</choiceText>
-							<choiceExplanation>Explanation1</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>86</totalResponse>
-							<selected>true</selected>
-						</choice>
-						<choice id="846939" order="2">
-							<choiceText>Comfortable</choiceText>
-							<choiceExplanation>Explanation2</choiceExplanation>
-							<isCorrect>true</isCorrect>
-							<totalResponse>7</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846941" order="3">
-							<choiceText>Not very comfortable</choiceText>
-							<choiceExplanation>Explanation3</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>7</totalResponse>
-							<selected>false</selected>
-						</choice>
-
-			</question>
-
-
-	 		<question id="266181" order="13" poll="true" required="false" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="true">
-
-				<questionText>Which of the following symptoms might satisfy criteria for a major depressive episode with mixed features?</questionText>
-				<questionIntro></questionIntro>
-				<displayRule>CheckBox</displayRule>
-				<userTypeName/>
-				<feedback/>
-				<responded>false</responded>
-				<totalResponse>17</totalResponse>
-				<passed>false</passed>
-				<viewResults>false</viewResults>
-
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="847007" order="1">
-							<choiceText>Anxiety</choiceText>
-							<choiceExplanation>While anxiety, irritability, and agitation may be present in a patient with depression with mixed features, they may also be observed in patients with depression without mixed features. Symptoms indicative of mixed features are those clearly associated with mania and hypomania such as a decreased need for sleep, pressured speech, grandiosity, and an increase in energy or goal-directed activity.</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>35</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="847009" order="2">
-							<choiceText>Decreased need for sleep asdfas4 asd Decreased need for assdf sas  sleepDecreased need for sleepDecreased need for sleepDecreased need for sleepDecreased need for sleep</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>29</totalResponse>
-							<selected>true</selected>
-						</choice>
-						<choice id="847011" order="3">
-							<choiceText>Irritability</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>35</totalResponse>
-							<selected>true</selected>
-						</choice>
-						<choice id="847013" order="4">
-							<choiceText>Agitation</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-
-			</question>
-
-
-	 		<question id="266183" order="14" poll="false" required="false" scorable="false" showAnsTable="false" showQuestion="false" showRightWrong="false">
-
-				<questionText>The regimen of daclatasvir plus sofosbuvir was evaluated in patients with HCV genotype 3 infection. Which of the following is true about the results of the study?</questionText>
-				<questionIntro>Test</questionIntro>
-				<displayRule>RadioButton</displayRule>
-				<userTypeName/>
-				<feedback/>
-				<responded>false</responded>
-				<totalResponse>0</totalResponse>
-				<passed>false</passed>
-				<viewResults>false</viewResults>
-
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="847015" order="1">
-							<choiceText>Test</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>�</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="847017" order="2">
-							<choiceText>Test1</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>�</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="847019" order="3">
-							<choiceText>Test2</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>�</totalResponse>
-							<selected>true</selected>
-						</choice>
-						<choice id="847021" order="4">
-							<choiceText>Test3</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>�</totalResponse>
-							<selected>false</selected>
-						</choice>
-
-			</question>
-
+				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->		
+						<choice id="986069" order="1">		
+							<choiceText>True</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>40</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986071" order="2">		
+							<choiceText>False</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>60</totalResponse>		
+							<selected>true</selected>		
+						</choice>            		
+		
+			</question>		
+        		
       </page>
-
-
-  	<page formtype="DEFAULT" id="3" isActive="true" order="3">
-      	<title>The Global Battle Against the Obesity Tsunami: Can Science Deliver a Solution?</title>
-      	<intro></intro>
-      	<buttontext/>
-      	<evalReq/>
-
-
-	 		<question id="266165" order="8" poll="true" required="true" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="true">
-
-				<questionText>Which of the following statements regarding the link between obesity, type 2 diabetes mellitus (T2DM), and cardiovascular disease (CVD) is true?</questionText>
+ 
+   
+  	<page formtype="DEFAULT" id="5" isActive="true" order="5">  
+      	<title>page 5</title>  
+      	<intro></intro>  
+      	<buttontext/>  
+      	<evalReq/>  
+        
+      			
+	 		<question id="312067" order="6" poll="true" required="false" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="false">
+				<questionText>The is page 5 of the poll</questionText>		
 				<questionIntro></questionIntro>
 				<displayRule>RadioButton</displayRule>
-				<userTypeName/>
+				<userTypeName/>		
 				<feedback/>
-				<responded>false</responded>
-				<totalResponse>5</totalResponse>
+				<responded>false</responded>		
+				<totalResponse>0</totalResponse>		
 				<passed>false</passed>
-				<viewResults>false</viewResults>
 
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="846943" order="1">
-							<choiceText>Adipose tissue releases a number of bioactive mediators, including tumor necrosis factor-alpha (TNF-&amp;amp;#945;) that influence body weight homeostasis</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>true</isCorrect>
-							<totalResponse>60</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846945" order="2">
-							<choiceText>Insulin resistance is involved in the development of ectopic fat surrounding central organs, such as the liver and heart, but not peripheral organs, such as skeletal muscles</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846947" order="3">
-							<choiceText>The development of nonalcoholic fatty liver disease (NAFLD) is closely linked to the development of T2DM and CVD, however, the incidence of cholecystitis does not seem to be linked to obesity or T2DM rates</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846949" order="4">
-							<choiceText>In adults with obesity, the age-adjusted relative risk for T2DM is higher for men vs women</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>40</totalResponse>
-							<selected>true</selected>
-						</choice>
-
-			</question>
-
-
-	 		<question id="266167" order="9" poll="true" required="true" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="true">
-
-				<questionText>Multiple hormonal and neural pathways are involved in food intake and body weight homeostasis. Which of the following peptides provides appetite stimulant signals?</questionText>
-				<questionIntro></questionIntro>
-				<displayRule>RadioButton</displayRule>
-				<userTypeName/>
-				<feedback/>
-				<responded>false</responded>
-				<totalResponse>5</totalResponse>
-				<passed>true</passed>
-				<viewResults>false</viewResults>
-
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="846951" order="1">
-							<choiceText>Amylin</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>60</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846953" order="2">
-							<choiceText>Ghrelin</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>true</isCorrect>
-							<totalResponse>40</totalResponse>
-							<selected>true</selected>
-						</choice>
-						<choice id="846955" order="3">
-							<choiceText>Glucagon-like peptide 1 (GLP-1)</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846957" order="4">
-							<choiceText>Leptin</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-
-			</question>
-
-
-	 		<question id="266169" order="10" poll="true" required="true" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="true">
-
-				<questionText>Which of the following statements regarding pharmacotherapy for the treatment of patients with obesity is true?</questionText>
-				<questionIntro></questionIntro>
-				<displayRule>RadioButton</displayRule>
-				<userTypeName/>
-				<feedback/>
-				<responded>false</responded>
-				<totalResponse>5</totalResponse>
-				<passed>false</passed>
-				<viewResults>false</viewResults>
-
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="846959" order="1">
-							<choiceText>n patients prescribed pharmacotherapy for the treatment of obesity, lifestyle modifications are encouraged, but are not a required component of management</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>60</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846961" order="2">
-							<choiceText>If a patient does not lose weight when starting drug therapy (~5% at 12 weeks), the medication should be stopped, titrated or changed </choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>true</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846963" order="3">
-							<choiceText>Since GLP-1 is an endogenous hormone, a drug that targets this hormone, such as a GLP-1 receptor agonist (GLP-1 RA), is appropriate for most patients with obesity</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>40</totalResponse>
-							<selected>true</selected>
-						</choice>
-						<choice id="846965" order="4">
-							<choiceText>With respect to treatment options, lifestyle modifications plus pharmacotherapy provides similar reductions in body weight as lifestyle modifications alone </choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-
-			</question>
-
-
-	 		<question id="266171" order="11" poll="true" required="true" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="true">
-
-				<questionText>Recently, a post hoc analysis of the Satiety and Clinical Adiposity&amp;amp;#8211;Liraglutide Evidence in Non-Diabetic and Diabetic People (SCALE) clinical trials was performed. Which of the following statements regarding this analysis is true?</questionText>
-				<questionIntro></questionIntro>
-				<displayRule>RadioButton</displayRule>
-				<userTypeName/>
-				<feedback/>
-				<responded>false</responded>
-				<totalResponse>5</totalResponse>
-				<passed>false</passed>
-				<viewResults>false</viewResults>
-
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="846967" order="1">
-							<choiceText>In patients with obesity and prediabetes, those treated with liraglutide had significantly greater reductions in body weight compared with placebo, but body weight reductions in patients with obesity and T2DM were similar in those treated with liraglutide or placebo</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>60</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846969" order="2">
-							<choiceText>In patients with obesity and prediabetes, those treated with liraglutide had significantly greater reductions in body weight and waist circumference (WC) compared with placebo, but reductions in systolic blood pressure (SBP) were similar between the 2 groups </choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>40</totalResponse>
-							<selected>true</selected>
-						</choice>
-						<choice id="846971" order="3">
-							<choiceText>&gt;In patients with obesity and prediabetes, T2DM, or sleep apnea, those treated with liraglutide had significantly greater reductions in SBP compared with patients treated with placebo</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>true</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846973" order="4">
-							<choiceText>Patients with obesity and prediabetes, T2DM, or sleep apnea that were treated with liraglutide had significantly greater reductions in body weight compared with placebo, but were similar to the reductions in patients treated with naltrexone SR/bupropion SR.</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-
-			</question>
-
-
-	 		<question id="266173" order="12" poll="true" required="true" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="true">
-
-				<questionText>Which of the following statements regarding the link between obesity, type 2 diabetes mellitus (T2DM), and cardiovascular disease (CVD) is true?</questionText>
-				<questionIntro></questionIntro>
-				<displayRule>CheckBox</displayRule>
-				<userTypeName/>
-				<feedback/>
-				<responded>false</responded>
-				<totalResponse>5</totalResponse>
-				<passed>false</passed>
-				<viewResults>true</viewResults>
-
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="846975" order="1">
-							<choiceText>There are several mechanisms that link obesity, T2DM, and CVD.</choiceText>
-							<choiceExplanation>There are several mechanisms that link obesity, T2DM, and CVD.  In persons with obesity, adipose tissue releases a large number of bioactive mediators, including adipokines, TNF-&amp;amp;#945;, and IL-6 that influence not only body weight homeostasis but also insulin resistance, the core feature of T2DM. Insulin resistance plays a role in the overall recruitment of ectopic fats at the level of the liver, heart, and peripheral skeletal muscles. The development of NAFLD is closely linked to the development of T2DM and CVD; other diseases such as cholecystitis or gall bladder disease, obstructive sleep apnea, reproductive abnormalities, and certain cancers are also associated with obesity. In adults with obesity, the age-adjusted relative risk for T2DM is higher in women vs men.</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>40</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846977" order="2">
-							<choiceText>Adipose tissue releases a number of bioactive mediators</choiceText>
-							<choiceExplanation>There are several mechanisms that link obesity, T2DM, and CVD.  In persons with obesity, adipose tissue releases a large number of bioactive mediators, including adipokines, TNF-&amp;amp;#945;, and IL-6 that influence not only body weight homeostasis but also insulin resistance, the core feature of T2DM. Insulin resistance plays a role in the overall recruitment of ectopic fats at the level of the liver, heart, and peripheral skeletal muscles. The development of NAFLD is closely linked to the development of T2DM and CVD; other diseases such as cholecystitis or gall bladder disease, obstructive sleep apnea, reproductive abnormalities, and certain cancers are also associated with obesity. In adults with obesity, the age-adjusted relative risk for T2DM is higher in women vs men.</choiceExplanation>
-							<isCorrect>true</isCorrect>
-							<totalResponse>0</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846979" order="3">
-							<choiceText>The development of nonalcoholic fatty liver disease (NAFLD)</choiceText>
-							<choiceExplanation>There are several mechanisms that link obesity, T2DM, and CVD.  In persons with obesity, adipose tissue releases a large number of bioactive mediators, including adipokines, TNF-&amp;amp;#945;, and IL-6 that influence not only body weight homeostasis but also insulin resistance, the core feature of T2DM. Insulin resistance plays a role in the overall recruitment of ectopic fats at the level of the liver, heart, and peripheral skeletal muscles. The development of NAFLD is closely linked to the development of T2DM and CVD; other diseases such as cholecystitis or gall bladder disease, obstructive sleep apnea, reproductive abnormalities, and certain cancers are also associated with obesity. In adults with obesity, the age-adjusted relative risk for T2DM is higher in women vs men.</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>20</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="846981" order="4">
-							<choiceText>n adults with obesity</choiceText>
-							<choiceExplanation>There are several mechanisms that link obesity, T2DM, and CVD.  In persons with obesity, adipose tissue releases a large number of bioactive mediators, including adipokines, TNF-&amp;amp;#945;, and IL-6 that influence not only body weight homeostasis but also insulin resistance, the core feature of T2DM. Insulin resistance plays a role in the overall recruitment of ectopic fats at the level of the liver, heart, and peripheral skeletal muscles. The development of NAFLD is closely linked to the development of T2DM and CVD; other diseases such as cholecystitis or gall bladder disease, obstructive sleep apnea, reproductive abnormalities, and certain cancers are also associated with obesity. In adults with obesity, the age-adjusted relative risk for T2DM is higher in women vs men.</choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>40</totalResponse>
-							<selected>true</selected>
-						</choice>
-
-			</question>
-
+				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->		
+						<choice id="986073" order="1">		
+							<choiceText>answer 1</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986075" order="2">		
+							<choiceText>answer 2</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986077" order="3">		
+							<choiceText>answer 3</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986079" order="4">		
+							<choiceText>answer 4</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+		
+			</question>		
+        		
       </page>
-
-
-  	<page formtype="DEFAULT" id="4" isActive="true" order="4">
-      	<title>Question # 4</title>
-      	<intro>This is Question number 4</intro>
-      	<buttontext/>
-      	<evalReq/>
-
-
-	 		<question id="266243" order="15" poll="false" required="true" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="true">
-
-				<questionText>This is the 4th question. What is the answer? </questionText>
-				<questionIntro>Question 4 Intro</questionIntro>
+ 
+   
+  	<page formtype="DEFAULT" id="6" isActive="true" order="6">  
+      	<title>page 6</title>  
+      	<intro></intro>  
+      	<buttontext/>  
+      	<evalReq/>  
+        
+      			
+	 		<question id="312069" order="7" poll="true" required="false" scorable="false" showAnsTable="true" showQuestion="true" showRightWrong="false">
+				<questionText>This is page 6 of the poll</questionText>		
+				<questionIntro></questionIntro>
 				<displayRule>RadioButton</displayRule>
-				<userTypeName/>
+				<userTypeName/>		
 				<feedback/>
-				<responded>false</responded>
-				<totalResponse>0</totalResponse>
+				<responded>false</responded>		
+				<totalResponse>4</totalResponse>		
 				<passed>false</passed>
-				<viewResults>false</viewResults>
 
-				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->
-						<choice id="847153" order="1">
-							<choiceText>A</choiceText>
-							<choiceExplanation>A is correct</choiceExplanation>
-							<isCorrect>true</isCorrect>
-							<totalResponse>�</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="847155" order="2">
-							<choiceText>B</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>�</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="847157" order="3">
-							<choiceText>C</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>�</totalResponse>
-							<selected>false</selected>
-						</choice>
-						<choice id="847159" order="4">
-							<choiceText>D</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>�</totalResponse>
-							<selected>true</selected>
-						</choice>
-						<choice id="847161" order="5">
-							<choiceText>E</choiceText>
-							<choiceExplanation></choiceExplanation>
-							<isCorrect>false</isCorrect>
-							<totalResponse>�</totalResponse>
-							<selected>false</selected>
-						</choice>
-
-			</question>
-
+				<!-- 1=RADIOBUTTON,2=CHECKBOX,3=DROPDOWN,4=TEXTBOX,5=TEXTAREA,6=LICKERT -->		
+						<choice id="986081" order="1">		
+							<choiceText>&amp;lt;0</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>50</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986083" order="2">		
+							<choiceText>0-15</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+						<choice id="986085" order="3">		
+							<choiceText>16-30</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>50</totalResponse>		
+							<selected>true</selected>		
+						</choice>            		
+						<choice id="986087" order="4">		
+							<choiceText>&amp;gt;31</choiceText>		
+							<choiceExplanation></choiceExplanation>		
+							<isCorrect>false</isCorrect>		
+							<totalResponse>0</totalResponse>		
+							<selected>false</selected>		
+						</choice>            		
+		
+			</question>		
+        		
       </page>
-
-
-
+ 
+        
+     
 </questionnaire>
 
-<!-- Questionnaire XML old format end -->
+<!-- Questionnaire XML old format end --> 
+
+
+ 
