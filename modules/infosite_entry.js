@@ -1,20 +1,23 @@
 import $            from 'jquery';
-import utils		from 'utils/util';
+import Utils		from './utils/util';
 import infosite		from 'infosite-core/infosite-core';
 
 infosite.init();
 
 // CSS based on the config
-if(infositeConfig.responsive){
-	require('../infositeR/css/responsive.css');
-} else if(util.isMobile()){
-	require('../infositeR/css/mobile.css');
+
+let cssUrl;
+if(infositeConfig.style.responsive){
+	cssUrl = infositeConfig.style.cssUrl.responsive;
+} else if(Utils.isMobile()){
+	cssUrl = infositeConfig.style.cssUrl.mobile;
 } else {
-	require('../infositeR/css/desktop.css');
+	cssUrl = infositeConfig.style.cssUrl.desktop;
 }
+$('#infosite-main').attr('href', cssUrl);
 
 // Gift Manager script (gm_ba2.js);
-if(infositeConfig.giftmanager){
+if(infositeConfig.features.giftmanager){
 	require('../infositeR/js/gift-manager-v2.js');
 }
 
