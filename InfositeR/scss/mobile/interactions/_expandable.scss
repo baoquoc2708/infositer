@@ -1,0 +1,30 @@
+
+.js-expandable {
+
+	// Collapsed State
+		.js-expandable-content {
+			transition: all .5s;
+			max-height: 0;
+			overflow: hidden;
+		}
+		.js-expandable-button-collapsed {
+			display: block;
+		}
+		.js-expandable-button-expanded {
+			display: none;
+		}
+
+
+	// Expanded State
+	&.is-expanded {
+		.js-expandable-content {
+			max-height: 1000px;
+		}
+		.js-expandable-button-expanded {
+			display: block;
+		}
+		.js-expandable-button-collapsed {
+			display: none;
+		}
+	}
+}

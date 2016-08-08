@@ -1,0 +1,16 @@
+/*=== Scroll Indicator ===*/
+.scroll-indicator-1 {
+    position: fixed;
+    top: 30vh;
+    left: 5vw;
+    transition: visibility .5;
+    z-index: 8500;
+}
+
+.is-visible {
+    visibility: visible !important;
+}
+
+.is-invisible {
+    visibility: hidden;
+}

@@ -1,0 +1,21 @@
+.landscape-blocker,
+.portrait-blocker {
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: tomato;
+}
+
+
+@media all and (max-aspect-ratio: 13/9) {
+	.landscape-blocker {display: none;}
+	.portrait-blocker {display: block;}
+}
+
+@media all and (min-aspect-ratio: 13/9) {
+	.landscape-blocker {display: block;}
+	.portrait-blocker {display: none;}
+}

@@ -10,7 +10,7 @@ var shell = require('gulp-shell');
 
 // Infosite Sass Compiler
 gulp.task('infosite-sass', function (){
-	gulp.src(['./InfositeR/scss/*.scss'])
+	gulp.src(['./InfositeR/scss/responsive/*.scss'])
 		.pipe(sass({
 			includePaths: ['./InfositeR/scss/']
 		}))
@@ -18,10 +18,37 @@ gulp.task('infosite-sass', function (){
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(rename("style.css"))
+        .pipe(rename("responsive.css"))
 		.pipe(gulp.dest('./InfositeR/css/'));
 });
 
+// Infosite Sass Compiler
+gulp.task('infositeMobile-sass', function (){
+	gulp.src(['./InfositeR/scss/mobile/*.scss'])
+		.pipe(sass({
+			includePaths: ['./InfositeR/scss/']
+		}))
+		.pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(rename("mobile.css"))
+		.pipe(gulp.dest('./InfositeR/css/'));
+});
+
+// Infosite Sass Compiler
+gulp.task('infositeDesktop-sass', function (){
+	gulp.src(['./InfositeR/scss/desktop/*.scss'])
+		.pipe(sass({
+			includePaths: ['./InfositeR/scss/']
+		}))
+		.pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(rename("desktop.css"))
+		.pipe(gulp.dest('./InfositeR/css/'));
+});
 
 // Infosite HTML Compiler
 gulp.task('infosite-htmlIncluder', function() {
@@ -33,8 +60,16 @@ gulp.task('infosite-htmlIncluder', function() {
 
 // Infosite Watch //////////////////////////////////////////////////////////////////////////
 gulp.task('infosite-watch', function(){
-	gulp.watch("./InfositeR/scss/**/*.scss", function(event){
+	gulp.watch("./InfositeR/scss/responsive/**/*.scss", function(event){
 		gulp.run('infosite-sass');
+	});
+
+	gulp.watch("./InfositeR/scss/desktop/**/*.scss", function(event){
+		gulp.run('infositeDesktop-sass');
+	});
+
+	gulp.watch("./InfositeR/scss//mobile**/*.scss", function(event){
+		gulp.run('infositeMobile-sass');
 	});
 
 	gulp.watch(['./InfositeR/html/*.html'], function(event) {
@@ -47,5 +82,7 @@ gulp.task('infosite-watch', function(){
 // Infosite Build //////////////////////////////////////////////////////////////////////////
 gulp.task('infosite-build', function(){
 	gulp.run('infosite-sass');
+	gulp.run('infositeDesktop-sass');
+	gulp.run('infositeMobile-sass');
 	gulp.run('infosite-htmlIncluder');
 });

@@ -1,0 +1,392 @@
+$secondary-color: #9a9a9a !default;
+
+.video-scene {
+    @include aspect-ratio(16, 9, "video-container")
+}
+
+/* Hide Akamai logo */
+.akamai-branding, .akamai-controls, .akamai-replay {
+    display: none !important;
+}
+
+/* Overlay play button */
+.akamai-play {
+    background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/play-overlay.svg") center center no-repeat !important;
+    height: 30% !important;
+    margin-bottom: -10% !important;
+    background-size: 60% 60% !important;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Main video controls container which contains ".video-controls" */
+.control-container {
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+}
+
+/* Video controls container */
+.video-controls {
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.is-idle{
+    height: 10px !important;
+}
+
+.progress-drag, .volume-drag {
+    cursor: move;
+    cursor: grab;
+    cursor: -webkit-grab;
+    position: absolute;
+}
+
+/* Video progress div */
+.video-progress{
+    position: relative;
+    bottom: 14px;
+    cursor:pointer;
+    /* Firefox requires a different configuration */
+    @-moz-document url-prefix() {
+    	bottom: 16px;
+	}
+}
+
+/* The video progress bar height */
+.seekslider, .not-value {
+    height: 4px;
+    display: inline-block;
+}
+
+.seekslider {
+  width: 0;
+}
+
+.not-value {
+  width: 100%;
+}
+
+/* Video progress: Pending color bar */
+.not-value {
+  background-color: #595959;
+}
+
+/* Video progress: Watched color bar */
+.seekslider{
+  background-color: #44b2b5;
+}
+
+/* Video progress dragable circle */
+.progress-drag{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    bottom: 3px;
+    display: inline-block;
+    background-color: $secondary-color;
+    border: solid 1px $secondary-color;
+    float: left;
+}
+
+.on-progress-drag{
+    z-index: 1;
+}
+
+/* The video buttons bar which includes: play/pause, time/duration volume and fullscreen */
+.play-buttons-bar{
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    position: relative;
+    height: 30px;
+    width: 100%;
+    bottom: 12px;
+    left: 10px;
+    @-moz-document url-prefix() {
+    	bottom: 20px;
+	}
+}
+
+.playpause, .duration{
+    position: relative;
+    float: left;
+}
+
+/* Full screen div which includes the full screen icon */
+.fullscreen{
+    float: right;
+    position: relative;
+    left: 2%;
+}
+
+.playpause{
+    width: 24px;
+}
+
+.duration{
+    margin-left: 10px;
+    @-moz-document url-prefix() {
+	    position: relative;
+	    left: 2%;
+	    top: 5px;
+	}
+}
+
+/* The volume div that shows on hover over the volume button */
+.volume-wrap{
+    position: relative;
+    bottom: 170px;
+    height: 170px;
+    width: 5%;
+    float: right;
+    right: 60px;
+}
+
+.volume-bar-wrap{
+    height: 100%;
+    position: relative;
+}
+
+.volume-bar-background{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.volume-bar{
+    position: relative;
+    width: 4px;
+    height: 125px;
+    margin-left: 50%;
+    margin-top: 15px;
+}
+
+.volume-inner{
+    width: 4px;
+    height: 125px;
+    cursor: pointer;
+}
+
+.volume {
+    height: 100%;
+    width: 50%;    
+}
+
+.not-volume {
+    height: 0%;
+    width: 50%;
+}
+
+/* Volume progress bar circle */
+.volume-drag{
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    background-color: $secondary-color;
+    left: -5px;
+}
+
+/* The current volume color */
+.volume{
+  background-color: #c8c8c8;
+}
+
+/* The empty volume space color */
+.not-volume {
+  background-color: #595959;
+}
+
+.curtimetext, .separator, .durtimetext {
+    color: $secondary-color;
+    font-size: 12px;
+    display: inline-block;
+    padding: 2px;
+}
+
+.curtimetext {
+  text-align: right;
+}
+
+.separator {
+  margin: 0 3px;
+  text-align: center;
+}
+ .durtimetext {
+  text-align: left;
+}
+
+/* Buttons size */
+.play, .pause,  .volume-med, .volume-low, .volume-high, .unmute, .fs, .fs-exit {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border: 0;
+    background-size: 100% 100% !important;
+}
+
+.button-mute {
+    padding-left: 25%;
+    position: relative;
+    top: -15px;
+}
+
+/* Play icon and on hover effect */
+.play{
+  &:hover {
+    background: url('http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/play-active.svg') center center no-repeat;
+  }
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/play.svg") center center no-repeat;
+}
+
+/* Pause icon and on hover effect */
+.pause {
+    &:hover {
+    background: url('http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/pause-active.svg') center center no-repeat;
+  }
+  background: url("http://localhost:8080/products/brandadvance/assets/images/images_player/pause.svg") center center no-repeat;
+}
+
+/* Volume icon and on hover effect */
+.volume-high {
+    &:hover {
+    background: url('http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-high-hover.svg') center center no-repeat;
+  }
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-high.svg") center center no-repeat;
+}
+
+.volume-med {
+    &:hover {
+    background: url('http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-med-hover.svg') center center no-repeat;
+  }
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-med.svg") center center no-repeat;
+}
+
+.volume-low {
+  &:hover {
+    background: url('http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-low-hover.svg') center center no-repeat;
+  }  
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-low.svg") center center no-repeat;
+}
+
+.unmute {
+    &:hover {
+    background: url('http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-mute-hover.svg') center center no-repeat;
+  }
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/volume-mute.svg") center center no-repeat;
+}
+
+/* Fullscreen icon and on hover effect */
+.fs {
+    &:hover {
+    background: url('http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/enter-full-screen-active.svg') center center no-repeat;
+  } 
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/enter-full-screen.svg") center center no-repeat;
+}
+
+.fs-exit{
+    &:hover {
+    background: url('http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/exit-full-screen-active.svg') center center no-repeat;
+  } 
+  background: url("http://img.staging.medscapestatic.com/pi/sp/ipp/7/14480/images/images_player/exit-full-screen.svg") center center no-repeat;
+}
+
+/* Breakpoint for small devices: from 320px to 767px */
+@media screen and (min-width: 320px) {
+  .curtimetext, .durtimetext, .separator {
+    /*display: none;*/
+  }
+  .button-mute, .volume-bar, .fullscreen {
+    padding-right: 5%;
+  } 
+  .play-buttons-bar{
+    bottom: 5px;
+  }
+  .progress-drag {
+    width: 8px;
+    height: 8px;
+    bottom: 1px;
+  }
+  .fullscreen {
+    left: 5%;
+  }
+  @-moz-document url-prefix() {
+	  .video-progress {
+	    bottom: 12px;
+	  }
+	  .play-buttons-bar{
+	    bottom: 10px;
+	  }
+	  .fullscreen {
+	    left: 3%;
+	  }
+  }
+}
+
+/* Breakpoint for small devices: from 768px to 979px */
+@media screen and (min-width: 768px) {
+  .curtimetext, .durtimetext, .separator {
+    display: inline-block;
+  }
+  .button-mute, .volume-bar, .fullscreen {
+    padding-right: 5%;
+  } 
+  .play-buttons-bar{
+    bottom: 5px;
+  }
+  @-moz-document url-prefix() {
+	.play-buttons-bar{
+	  bottom: 9px;
+	}
+  }
+  .progress-drag {
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+  }
+  .fullscreen {
+    left: 6%;
+  }
+}
+
+/* Breakpoint for small devices: from 980px and higher */
+@media screen and (min-width: 980px) {
+  .curtimetext, .durtimetext, .separator {
+    display: inline-block; 
+  }
+  .button-mute, .volume-bar, .fullscreen {
+    padding-right: 5%; 
+  } 
+  .play-buttons-bar{
+    bottom: 13px; 
+  }
+  .progress-drag {
+    width: 10px;
+    height: 10px;
+    bottom: 3px;
+  }
+  .fullscreen {
+    left: 7%;
+  }
+  @-moz-document url-prefix() {
+    .video-progress {
+      bottom: 15px;
+    }
+    .play-buttons-bar {
+      bottom: 20px;
+    }
+  }
+}
