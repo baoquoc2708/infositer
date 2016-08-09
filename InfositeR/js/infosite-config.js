@@ -1,6 +1,6 @@
 window.infositeConfig = {
 	style: {
-		responsive: true,
+		responsive: false,
 		cssUrl: {
 			mobile: '../css/mobile.css',
 			desktop: '../css/desktop.css',
