@@ -179,15 +179,9 @@ ul li:before {
   content: "• ";
   color: #44b2b5; }
 
-.container {
-  max-width: 800px;
-  width: 92%;
-  margin: 0 auto; }
-
 body {
   margin: 0;
-  padding: 0;
-  padding-top: 132px; }
+  padding: 0; }
 
 html,
 * {
