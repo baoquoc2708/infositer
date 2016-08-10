@@ -27,7 +27,7 @@ if(infositeConfig.features.giftmanager){
 $('.infosite-footer').on('click', function(event) {
 	event.preventDefault();
 	/* Act on the event */
-	window.history.pushState(null, null, 'http://localhost:8080/InfositeR/dist-html/article-1');
+	window.history.pushState(null, null, 'http://localhost:8080/article-1');
 	console.log("here");
 	$('.article').load('/article/article-1.html',
 		function(){
@@ -39,7 +39,7 @@ $('.infosite-footer').on('click', function(event) {
 $('.medscape-link').on('click', function(event) {
 	event.preventDefault();
 	/* Act on the event */
-	window.history.pushState(null, null, 'http://localhost:8080/InfositeR/dist-html');
+	window.history.pushState(null, null, 'http://localhost:8080');
 	console.log("back");
 	$('.article').children().remove();
 });
