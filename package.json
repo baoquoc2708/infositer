@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "karma start",
-    "dev": "webpack-dev-server --content-base .",
+    "dev": "webpack-dev-server --content-base . --history-api-fallback",
     "dist": "NODE_ENV=production webpack --progress -p --optimize-minimize",
     "dist-infosite": "NODE_ENV=production webpack --progress -p --optimize-minimize --config webpack.infosite.deploy.js --display-error-details"
   },

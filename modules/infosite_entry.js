@@ -29,7 +29,7 @@ $('.infosite-footer').on('click', function(event) {
 	/* Act on the event */
 	window.history.pushState(null, null, 'http://localhost:8080/InfositeR/dist-html/article-1');
 	console.log("here");
-	$('.article').load('../dist-html/article/article-1.html',
+	$('.article').load('/article/article-1.html',
 		function(){
 		/* Stuff to do after the page is loaded */
 	});
@@ -44,3 +44,7 @@ $('.medscape-link').on('click', function(event) {
 	$('.article').children().remove();
 });
 console.log("infosite and gm");
+
+$(document).ready(function() {
+	console.log(window.location);
+});
