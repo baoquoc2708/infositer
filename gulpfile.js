@@ -54,7 +54,7 @@ gulp.task('infositeDesktop-sass', function (){
 gulp.task('infosite-htmlIncluder', function() {
     gulp.src('./InfositeR/html/*.html')
         .pipe(includer())
-        .pipe(gulp.dest('./InfositeR/dist-html/'));
+        .pipe(gulp.dest('.'));
 });
 
 
