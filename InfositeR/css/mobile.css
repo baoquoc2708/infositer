@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box; }
 
@@ -157,27 +156,10 @@ h3 {
   font-family: "proxima_nova_ltsemibold", sans-serif;
   margin-bottom: .6em; }
 
-.chart-title {
-  font-size: .8rem;
-  text-transform: uppercase;
-  margin-bottom: .5rem; }
-
-.footnote-ref {
-  vertical-align: super;
-  font-size: .6em; }
-
 ul {
   list-style: none;
   padding: 0;
   margin: 0; }
-
-ul li {
-  padding-left: .65rem;
-  text-indent: -.7rem; }
-
-ul li:before {
-  content: "• ";
-  color: #44b2b5; }
 
 body {
   margin: 0;
