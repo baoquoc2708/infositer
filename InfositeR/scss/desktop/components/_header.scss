@@ -1,131 +1,75 @@
-.header {
-    position: fixed;
-    top: 0;
-    z-index: 4000;
-    right: 0;
-    left: 0;
-    width: 100%;
-    background: #fff;
+.infosite-header {
+    line-height: 1;
+    border-bottom: 1px solid #666;
+    color: #000;
+    padding: 0 10px 5px;
+    margin: 10px 0;
 }
 
-.brand-header {
-    border-top: solid 1px #ddd;
-    @include max-brk(800px){
-        border-top: solid 1px #aaa;
-        border-bottom: solid 1px #aaa;
-    };
-    padding: 0;
-    height: 80px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0 1px 0 #ddd;
-}
-
-.brand-header-logo,
-.brand-header-links {
-    padding: 20px 0;
-    display: inline-block;
-}
-
-.brand-header-logo {
-    padding-right: 20px;
-    border-right: solid 1px #ddd;
-    img {
-        height: 40px;
-        vertical-align: bottom;
-    }
-}
-
-.brand-header-links {
-    text-align: right;
+.header-statement {
+    font-size: 10px;
+    font-weight: bold;
     float: right;
-    a {
-        display: block;
-        line-height: 1.8;
-        color: $brand-primary;
-        text-transform: uppercase;
-        font-size: 12px;
-        font-weight: 400;
-    }
+    margin-top: -20px;
+}
+
+.medscape-link {
+    height: 20px;
 }
 
 .chrome-header {
-    padding: 12px 0;
-    height: 54px;
-    position: relative;
+    height: 80px;
+    margin-top: 25px;
 }
 
-.chrome-header-links {
-    display: inline-block;
-    a {
-        display: block;
-        line-height: 2;
-        font-weight: 600;
-        font-size: 12px;
-        @include max-brk(800px){
-            font-size: .66rem;
-        }
-        line-height: 1.3;
-        color: $mscp_blue;
+.chrome-logo{
+    img {
+        width: 250px;
+        height: 100%;
     }
 }
+.chrome-social{
+    margin: -56px 10px 0 0;
+}
 
-.chrome-header-statement {
+.chrome-share, .chrome-email {
     float: right;
-    font-size: 12px;
-    @include max-brk(800px){
-        position: absolute;
-        right: 12px;
-        font-size: .66rem;
-        line-height: 1.3;
-        top: 12px;
-        width: 50%;
-        bottom: 10px;
-        overflow: hidden;
+    font-size: 9px;
+    line-height: 12px;
+    margin: 0 0 0 18px;
+    text-align: center;
+    width: 34px;
+    a {
+        vertical-align: baseline;
+        -webkit-tap-highlight-color: transparent;
+        text-decoration: none;
+        color: #1b88bf
     }
 }
 
-@include max-brk(800px){
-    .brand-header {
-        width: 100%;
-        padding: 0;
-        height: auto;
-        overflow: hidden;
-        background: #fff;
-        > .container {
-            width: 100%;
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            justify-content: flex-start;
-            align-items: stretch;
-         }
-        .brand-header-logo {
-            padding: 14px;
-            border-right: solid 1px #aaa;
-            overflow: hidden;
-            flex-grow: 2;
-            img {
-                width: 125px;
-            }
-
+.tooltip {
+    position: absolute;
+    right: 145px;
+    top: 100px;
+    opacity: 0;
+    display: none;
+    background: url(/assets/images/image_salutrib/tool-tip-bg.png);
+    height: 86px;
+    padding: 27px;
+    width: 250px;
+    ul {
+        display: flex;
+        li {
+            margin-left: 16px;
         }
-        .brand-header-links {
-            padding: 0;
-            text-align: left;
-            float: none;
-            flex-grow: 1;
-            a {
-                font-size: 12px;
-                padding: 10px;
-                width: 100%;
-                line-height: 1.1;
-                &:not(:last-of-type){
-                    border-bottom: solid 1px #aaa;
-                }
-            }
+        li:first-child {
+           margin-left: 10px; 
         }
     }
 }
+
+.tooltip-open {
+    opacity: 1 !important;
+    display: block !important;
+}
+

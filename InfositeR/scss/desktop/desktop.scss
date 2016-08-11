@@ -32,9 +32,18 @@ html,
 	text-size-adjust: none;
 }
 
+/*===  Page Layout width for Desktop ===*/
 
-.no-scroll {
-	overflow-y: hidden;
+.header, .main-wrapper, .footer {
+  width: 980px; /* can be set at instance level */
+  margin: auto;
 }
 
+@import 'components/header';
+
+@import 'components/navigation';
+
+@import 'components/footer';
+
+/*=== Onload import has to be last css on the file ===*/
 @import './onload';

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box; }
 
@@ -157,27 +156,10 @@ h3 {
   font-family: "proxima_nova_ltsemibold", sans-serif;
   margin-bottom: .6em; }
 
-.chart-title {
-  font-size: .8rem;
-  text-transform: uppercase;
-  margin-bottom: .5rem; }
-
-.footnote-ref {
-  vertical-align: super;
-  font-size: .6em; }
-
 ul {
   list-style: none;
   padding: 0;
   margin: 0; }
-
-ul li {
-  padding-left: .65rem;
-  text-indent: -.7rem; }
-
-ul li:before {
-  content: "• ";
-  color: #44b2b5; }
 
 body {
   margin: 0;
@@ -189,8 +171,83 @@ html,
   -ms-text-size-adjust: none;
   text-size-adjust: none; }
 
-.no-scroll {
-  overflow-y: hidden; }
+/*===  Page Layout width for Desktop ===*/
+.header, .main-wrapper, .footer {
+  width: 980px;
+  /* can be set at instance level */
+  margin: auto; }
 
+.infosite-header {
+  line-height: 1;
+  border-bottom: 1px solid #666;
+  color: #000;
+  padding: 0 10px 5px;
+  margin: 10px 0; }
+
+.header-statement {
+  font-size: 10px;
+  font-weight: bold;
+  float: right;
+  margin-top: -20px; }
+
+.medscape-link {
+  height: 20px; }
+
+.chrome-header {
+  height: 80px;
+  margin-top: 25px; }
+
+.chrome-logo img {
+  width: 250px;
+  height: 100%; }
+
+.chrome-social {
+  margin: -56px 10px 0 0; }
+
+.chrome-share, .chrome-email {
+  float: right;
+  font-size: 9px;
+  line-height: 12px;
+  margin: 0 0 0 18px;
+  text-align: center;
+  width: 34px; }
+  .chrome-share a, .chrome-email a {
+    vertical-align: baseline;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: #1b88bf; }
+
+.tooltip {
+  position: absolute;
+  right: 145px;
+  top: 100px;
+  opacity: 0;
+  display: none;
+  background: url(/assets/images/image_salutrib/tool-tip-bg.png);
+  height: 86px;
+  padding: 27px;
+  width: 250px; }
+  .tooltip ul {
+    display: -ms-flexbox;
+    display: flex; }
+    .tooltip ul li {
+      margin-left: 16px; }
+    .tooltip ul li:first-child {
+      margin-left: 10px; }
+
+.tooltip-open {
+  opacity: 1 !important;
+  display: block !important; }
+
+.infosite-footer {
+  border-top: 1px solid #B7B8B8;
+  font-size: 15px;
+  line-height: 1.1;
+  padding-left: 10px;
+  padding-top: 10px; }
+  .infosite-footer a {
+    color: #006699; }
+
+/*=== Onload import has to be last css on the file ===*/
 .onload {
   visibility: visible !important; }
