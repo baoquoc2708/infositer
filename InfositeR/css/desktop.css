@@ -201,6 +201,22 @@ html,
   width: 250px;
   height: 100%; }
 
+.chrome-social {
+  margin: -56px 10px 0 0; }
+
+.chrome-share, .chrome-email {
+  float: right;
+  font-size: 9px;
+  line-height: 12px;
+  margin: 0 0 0 18px;
+  text-align: center;
+  width: 34px; }
+  .chrome-share a, .chrome-email a {
+    vertical-align: baseline;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: #1b88bf; }
+
 .infosite-footer {
   border-top: 1px solid #B7B8B8;
   font-size: 15px;
