@@ -46,3 +46,30 @@
         color: #1b88bf
     }
 }
+
+.tooltip {
+    position: absolute;
+    right: 145px;
+    top: 100px;
+    opacity: 0;
+    display: none;
+    background: url(/assets/images/image_salutrib/tool-tip-bg.png);
+    height: 86px;
+    padding: 27px;
+    width: 250px;
+    ul {
+        display: flex;
+        li {
+            margin-left: 16px;
+        }
+        li:first-child {
+           margin-left: 10px; 
+        }
+    }
+}
+
+.tooltip-open {
+    opacity: 1 !important;
+    display: block !important;
+}
+

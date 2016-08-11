@@ -217,6 +217,28 @@ html,
     text-decoration: none;
     color: #1b88bf; }
 
+.tooltip {
+  position: absolute;
+  right: 145px;
+  top: 100px;
+  opacity: 0;
+  display: none;
+  background: url(/assets/images/image_salutrib/tool-tip-bg.png);
+  height: 86px;
+  padding: 27px;
+  width: 250px; }
+  .tooltip ul {
+    display: -ms-flexbox;
+    display: flex; }
+    .tooltip ul li {
+      margin-left: 16px; }
+    .tooltip ul li:first-child {
+      margin-left: 10px; }
+
+.tooltip-open {
+  opacity: 1 !important;
+  display: block !important; }
+
 .infosite-footer {
   border-top: 1px solid #B7B8B8;
   font-size: 15px;
