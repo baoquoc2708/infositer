@@ -8,8 +8,18 @@ window.infositeConfig = {
 		}
 	},
 	features: { // external features incusion flag
+		navigation: true,
 		giftmanager: true,
 		qna: false,
 		svplayer: false
-	}
+	},
+	navigation: [
+		{
+			menuItemTitle:'',
+			submenuTitle: ['','']
+		},
+		{
+
+		}
+	]
 };

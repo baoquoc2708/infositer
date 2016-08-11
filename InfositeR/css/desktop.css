@@ -193,6 +193,14 @@ html,
 .medscape-link {
   height: 20px; }
 
+.chrome-header {
+  height: 80px;
+  margin-top: 25px; }
+
+.chrome-logo img {
+  width: 250px;
+  height: 100%; }
+
 .infosite-footer {
   border-top: 1px solid #B7B8B8;
   font-size: 15px;

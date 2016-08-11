@@ -1,6 +1,7 @@
 import $            from 'jquery';
 import Utils		from './utils/util';
 import infosite		from 'infosite-core/infosite-core';
+import tracking		from 'infosite-core/infosite-tracking';
 
 infosite.init(); // code from infosite-core module 
 
