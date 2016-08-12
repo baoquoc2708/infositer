@@ -13,13 +13,39 @@ window.infositeConfig = {
 		qna: false,
 		svplayer: false
 	},
+	navigationDesktopStyle: "top", // manu options top, right, left 
+	navigationMobileStyle: 'top', //  humburger manu options top, right, left 
+	navigationTabletStyle: true,   // options for tab manu true, false
 	navigation: [
 		{
-			menuItemTitle:'',
-			submenuTitle: ['','']
+			title: "Infosite Home",
+			url: "/article-1",
+			submenu: [
+				{
+					title: "Salutrib (somaet iatrob) 50mg",
+					url: "/article-2"
+				},
+				{
+					title: "Salutrib (somaet iatrob) 50mg",
+					url: "/article-3"
+				},
+				{
+					title: "Salutrib (somaet iatrob) 50mg",
+					url: "/article-4"
+				},
+				{
+					title: "Salutrib (somaet iatrob) 50mg",
+					url: "/article-5"
+				}
+			]
 		},
 		{
-
+			title: "Important Safety Information",
+			url: "#isi"
+		},
+		{
+			title: "Prescribing Information",
+			url: "http://www.medscape.com"
 		}
 	]
 };
