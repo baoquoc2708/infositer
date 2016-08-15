@@ -1,7 +1,7 @@
-import $                      from 'jquery';
-import cx                     from 'classnames';
-import React , { PropTypes }				  from 'react';
-import Util 				  from 'utils/util';
+import $                                from 'jquery';
+import cx                               from 'classnames';
+import React , { PropTypes }		    from 'react';
+import Util 				            from 'utils/util';
 
 export default React.createClass({
     displayName: 'navigationMenu',
@@ -30,8 +30,8 @@ export default React.createClass({
         return linkItem;     
     },
     navMenuFn(){
-        let self = this;
-        let navMenu = this.props.items.navMenu.map(function(data,iterator){
+        let self = this,
+        navMenu = this.props.items.navMenu.map(function(data,iterator){
             if(data.submenu){
                 return ( <li key={iterator} className='menu-list'> 
                             <a href={data.url} id={`menu-${iterator}`}>{data.title}</a>

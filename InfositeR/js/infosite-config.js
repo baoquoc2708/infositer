@@ -52,7 +52,7 @@ window.infositeConfig = {
 			},
 			{
 				title: "Prescribing Information",
-				url: "http://www.medscape.com",
+				url: "http://www.medscape.com"
 			}
 		]
 
