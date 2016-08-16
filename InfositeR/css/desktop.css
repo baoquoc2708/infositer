@@ -251,7 +251,8 @@ html,
   font-size: 15px;
   line-height: 1.1;
   padding-left: 10px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  clear: both; }
   .infosite-footer a {
     color: #006699; }
 
