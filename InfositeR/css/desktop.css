@@ -246,6 +246,9 @@ html,
   width: 300px;
   float: left; }
 
+.menu-list ul {
+  padding-left: 20px; }
+
 .infosite-footer {
   border-top: 1px solid #B7B8B8;
   font-size: 15px;

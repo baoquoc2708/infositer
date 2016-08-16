@@ -20,23 +20,23 @@ window.infositeConfig = {
 		navMenu: [
 			{
 				title: "Infosite Home",
-				url: "/article-1",
+				url: "article-1",
 				submenu: [
 					{
 						title: "Salutrib (somaet iatrob) 50mg",
-						url: "/article-2"
+						url: "article-2"
 					},
 					{
 						title: "Treatment Guidelines",
-						url: "/article-3"
+						url: "article-3"
 					},
 					{
 						title: "Clinical Data",
-						url: "/article-4"
+						url: "article-4"
 					},
 					{
 						title: "Video: MOA",
-						url: "/article-5"
+						url: "article-5"
 					}
 				]
 			},
@@ -46,7 +46,7 @@ window.infositeConfig = {
 				submenu:[
 					{
 						title: "Efficacy and Safety Data",
-						url: "/article-6"
+						url: "article-6"
 					}
 				]
 			},
