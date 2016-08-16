@@ -12,22 +12,17 @@ export default {
 		feature2: false
 	},
 	infositeRouting(){
-		$(document).ready(function() {
-			let articleName = window.location.pathname.split("/").pop();
-			if(articleName == 'article-1'){
-				$('.article').load('/article/article-1.html');
-			}
-		});
+		
 
 		$('.infosite-footer').on('click', function(event) {
 			event.preventDefault();
 			/* Act on the event */
-			window.history.pushState(null, null, 'http://localhost:8080/article-1');
-			console.log("here");
-			$('.article').load('/article/article-1.html',
-				function(){
+			//window.history.pushState(null, null, 'http://localhost:8080/article-1');
+			//console.log("here");
+			//$('.article').load('/article/article-1.html',
+			//	function(){
 				/* Stuff to do after the page is loaded */
-			});
+			//});
 			
 		});
 

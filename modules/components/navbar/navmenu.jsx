@@ -30,7 +30,7 @@ export default React.createClass({
         let self = this;
         let linkItem = item.map(function(data,iterator){
             return ( <li key={iterator} className='sub-menu-list' onClick={(event) => self.listAction(event)}> 
-                        <a href={data.url} id={`sub-menu-${iterator}`} onClick={(event) => self.loadArticle(event)}>{data.title}</a>
+                        <a href={data.url} id={`sub-menu-${iterator}`} target="_blank" onClick={(event) => self.loadArticle(event)}>{data.title}</a>
                 </li>)  
         }); 
         return linkItem;     
@@ -40,23 +40,36 @@ export default React.createClass({
         navMenu = this.props.items.navMenu.map(function(data,iterator){
             if(data.submenu){
                 return ( <li key={iterator} className='menu-list' onClick={(event) => self.listAction(event)}> 
-                            <a href={data.url} id={`menu-${iterator}`} onClick={(event) => self.loadArticle(event)}>{data.title}</a>
+                            <a href={data.url} id={`menu-${iterator}`} target="_blank" onClick={(event) => self.loadArticle(event)}>{data.title}</a>
                             <ul>
                                 {self.linkItemFn(self.props.items.navMenu[iterator].submenu)}
                             </ul>
                         </li>)
             } else {
                 return ( <li key={iterator} className='menu-list' onClick={(event) => self.listAction(event)}> 
-                            <a href={data.url} id={`menu-${iterator}`} onClick={(event) => self.loadArticle(event)}>{data.title}</a>                        
+                            <a href={data.url} id={`menu-${iterator}`} target="_blank" onClick={(event) => self.loadArticle(event)}>{data.title}</a>                        
                         </li>)
             }     
         }); 
         return navMenu;     
     },
     loadArticle(event){
-        event.preventDefault();
+        const originUrl = window.location.origin;
         event.stopPropagation();
-        console.log(event.target.href);
+        if(event.target.href.indexOf(originUrl) == -1){
+            return;
+        }
+        let pageUrl = event.target.href;
+        const dirName = '/article/'
+        console.log(originUrl + dirName + $(event.target).attr('href'))
+        event.preventDefault();
+        if(event.target.href.indexOf('#') > -1){
+            let hashUrl = originUrl +'#'+ pageUrl.split('#')[1];
+            window.history.pushState(null, null, hashUrl);
+        } else {
+            window.history.pushState(null, null, pageUrl);
+            $('.article').load(originUrl + dirName + $(event.target).attr('href'));
+        }    
     },
     listAction(event){
         event.stopPropagation();
