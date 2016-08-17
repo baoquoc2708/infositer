@@ -29,7 +29,7 @@ export default {
 		$('.medscape-link').on('click', function(event) {
 			event.preventDefault();
 			/* Act on the event */
-			window.history.pushState(null, null, 'http://localhost:8080');
+			window.history.pushState(null, null, 'http://www.staging.medscape.com/infosite/infositeR_POC');
 			console.log("back");
 			$('.article').children().remove();
 		});
