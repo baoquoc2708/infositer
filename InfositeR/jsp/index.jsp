@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 	<html>
 		<head>
-			<meta charset="utf-8">
 			<meta name="robots" content="noindex, nofollow">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" >
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,9 +28,9 @@
         	<%-- USERS' INFO END --%>
 
         	<%-- Meta Data tags --%>
-	        <c:set var="activityId" value="xyz" />
+	        <c:set var="activityId" value="1234" />
 	        <c:set var="tacticId" value="00000" />
-	        <c:set var="sfNum" value="xyz_1" />
+	        <c:set var="sfNum" value="1234" />
 	        
 	        <meta data-cp='{"tacticId":"<c:out value="${tacticId}" />", "activityId": "<c:out value="${activityId}" />", "parId":"<ipp:sessionVar key='par_id' />"}' />
 
@@ -41,7 +40,7 @@
         	<%-- Main CSS--%>
         	<link id='infosite-main' rel="stylesheet" type="text/css">
         	<%-- Instance CSS--%>
-        	<link href="/InfositeR/css/instances/infosite-instance.css" rel="stylesheet" type="text/css">
+        	<link href='http://<medscape:domain type="imageServer"/>/pi/sites/infosite/infositeR_POC/css/instances/infosite-instance.css' rel="stylesheet" type="text/css">
         	<%-- CSS END--%>
 		</head>
 		<body>
