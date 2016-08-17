@@ -39,28 +39,27 @@
 
         	<%-- CSS START--%>
         	<%-- Main CSS--%>
+        	<link id='infosite-main' rel="stylesheet" type="text/css">
         	<%-- Instance CSS--%>
+        	<link href="/InfositeR/css/instances/infosite-instance.css" rel="stylesheet" type="text/css">
         	<%-- CSS END--%>
 		</head>
 		<body>
 			<div class='header'>
-				<%@ include file="/files/mscp_sites/www/infosite/infositeR/components/header.jsp" %>
+				<%@ include file="/files/mscp_sites/www/infosite/infositeR_POC/components/header.jsp" %>
+				<%@ include file="/files/mscp_sites/www/infosite/infositeR_POC/components/chrome-header.jsp" %>
 			</div>
 
 			<div class='main-wrapper'>
+				<%@ include file="/files/mscp_sites/www/infosite/infositeR_POC/components/navigation.jsp" %>
+				
 			</div>
 
 			<div class='footer'>
-				<%@ include file="/files/mscp_sites/www/infosite/infositeR/components/footer.jsp" %>
+				<%@ include file="/files/mscp_sites/www/infosite/infositeR_POC/components/footer.jsp" %>
 			</div>
 
 			<%-- Scripts --%>
-				<%@ include file="/files/mscp_sites/www/infosite/infositeR/components/scripts.jsp" %>
-			<%-- Configuration JS--%>
-			<%-- Main JS--%>
-			<%-- Instance JS--%>
-
-			<%-- Common Footer Include --%>
-			<%@ include file="/files/common/footer/footer-blank-promo.jsp" %>
+				<%@ include file="/files/mscp_sites/www/infosite/infositeR_POC/components/scripts.jsp" %>
 		</body>
 	</html>
