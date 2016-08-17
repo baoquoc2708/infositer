@@ -54,9 +54,9 @@ export default React.createClass({
         return navMenu;     
     },
     loadArticle(event){
-        const originUrl = 'http://www.staging.medscape.com/infosite/infositeR_POC';
+        const originUrl = window.location.origin + '/infosite/infositeR_POC';
         event.stopPropagation();
-        if(event.target.href.indexOf(originUrl) == -1){
+        if(event.target.href.indexOf(window.location.origin) == -1){
             return;
         }
         let pageUrl = event.target.href;
@@ -66,8 +66,8 @@ export default React.createClass({
             let hashUrl = originUrl +'#'+ pageUrl.split('#')[1];
             window.history.pushState(null, null, hashUrl);
         } else {
-            window.history.pushState(null, null, originUrl + dirName + $(event.target).attr('href').split('/')[2]);
-            $('.article').load(originUrl + dirName + $(event.target).attr('href').split('/')[2]);
+            window.history.pushState(null, null, originUrl + dirName + $(event.target).attr('href'));
+            $('.article').load(originUrl + dirName + $(event.target).attr('href'));
         }    
     },
     listAction(event){

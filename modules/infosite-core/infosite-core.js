@@ -25,11 +25,11 @@ export default {
 			//});
 			
 		});
-
+		const originUrl = window.location.origin + '/infosite/infositeR_POC';
 		$('.medscape-link').on('click', function(event) {
 			event.preventDefault();
 			/* Act on the event */
-			window.history.pushState(null, null, 'http://www.staging.medscape.com/infosite/infositeR_POC');
+			window.history.pushState(null, null, originUrl);
 			console.log("back");
 			$('.article').children().remove();
 		});
