@@ -67,8 +67,8 @@ amp-premier
 .DS_Store
 
 # build artefacts
-assets/js/*.bundle.js
-assets/js/*.bundle.js.map
+InfositeR/js/*.bundle.js
+InfositeR/js/*.bundle.js.map
 
 
 # OS generated files
