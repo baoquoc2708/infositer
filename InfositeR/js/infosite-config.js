@@ -2,9 +2,9 @@ window.infositeConfig = {
 	style: {
 		responsive: false, // flag to determine responsive style to add to program 
 		cssUrl: {
-			mobile: '/InfositeR/css/mobile.css', // url for mobile css (non responsive)
-			desktop: '/InfositeR/css/desktop.css', // url for desktop css (non responsive)
-			responsive: '/InfositeR/css/responsive.css' // url for responsive css 
+			mobile: 'http://img.staging.medscapestatic.com/medcss/infosite/infositeR_POC/css/mobile.css', // url for mobile css (non responsive)
+			desktop: 'http://img.staging.medscapestatic.com/medcss/infosite/infositeR_POC/css/desktop.css', // url for desktop css (non responsive)
+			responsive: 'http://img.staging.medscapestatic.com/medcss/infosite/infositeR_POC/css/responsive.css' // url for responsive css 
 		}
 	},
 	features: { // external features incusion flag
@@ -20,23 +20,23 @@ window.infositeConfig = {
 		navMenu: [
 			{
 				title: "Infosite Home",
-				url: "/article-1",
+				url: "article-1",
 				submenu: [
 					{
 						title: "Salutrib (somaet iatrob) 50mg",
-						url: "/article-2"
+						url: "article-2"
 					},
 					{
 						title: "Treatment Guidelines",
-						url: "/article-3"
+						url: "article-3"
 					},
 					{
 						title: "Clinical Data",
-						url: "/article-4"
+						url: "article-4"
 					},
 					{
 						title: "Video: MOA",
-						url: "/article-5"
+						url: "article-5"
 					}
 				]
 			},
@@ -46,7 +46,7 @@ window.infositeConfig = {
 				submenu:[
 					{
 						title: "Efficacy and Safety Data",
-						url: "/article-6"
+						url: "article-6"
 					}
 				]
 			},
