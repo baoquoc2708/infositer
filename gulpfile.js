@@ -73,7 +73,7 @@ gulp.task('infosite-watch', function(){
 	});
 
 	gulp.watch(['./InfositeR/html/*.html'], function(event) {
-      gulp.start('infosite-htmlIncluder');
+      gulp.run('infosite-htmlIncluder');
     });
 });
 

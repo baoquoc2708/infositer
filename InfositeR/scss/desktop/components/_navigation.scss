@@ -6,8 +6,26 @@
 	width: 300px;
     float: left;
 }
+
+.menu-list, .sub-menu-list {
+    background-color: #948db5 ;
+    border-top: 1px solid #fff;
+    a {
+    	color: #fff;
+    	padding: 20px;
+    	display: block;
+    	vertical-align: baseline;
+    	font-size: 15px;
+    }
+}
+
 .menu-list {
-	ul {
-		padding-left: 20px;
+	a {
+		padding-left: 40px;
+		background: url(/assets/images/image_salutrib/arrow.png) 15px 50% no-repeat;
+	}
+	ul li a {
+		padding-left: 60px;
+		background: url(/assets/images/image_salutrib/arrow.png) 35px 50% no-repeat;
 	}
 }
