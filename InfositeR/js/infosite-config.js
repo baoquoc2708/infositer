@@ -2,9 +2,9 @@ window.infositeConfig = {
 	style: {
 		responsive: false, // flag to determine responsive style to add to program 
 		cssUrl: {
-			mobile: 'http://img.staging.medscapestatic.com/medcss/infosite/infositeR_POC/css/mobile.css', // url for mobile css (non responsive)
-			desktop: 'http://img.staging.medscapestatic.com/medcss/infosite/infositeR_POC/css/desktop.css', // url for desktop css (non responsive)
-			responsive: 'http://img.staging.medscapestatic.com/medcss/infosite/infositeR_POC/css/responsive.css' // url for responsive css 
+			mobile: 'http://localhost:8080/infositeR/css/mobile.css', // url for mobile css (non responsive)
+			desktop: 'http://localhost:8080/infositeR/css/desktop.css', // url for desktop css (non responsive)
+			responsive: 'http://localhost:8080/infositeR/css/responsive.css' // url for responsive css 
 		}
 	},
 	features: { // external features incusion flag
