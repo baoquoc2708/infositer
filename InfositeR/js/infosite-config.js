@@ -1,4 +1,6 @@
 window.infositeConfig = {
+	infositeBasePath: '/infosite/infositeR_POC',
+	routing:true,
 	style: {
 		responsive: false, // flag to determine responsive style to add to program 
 		cssUrl: {
@@ -20,39 +22,47 @@ window.infositeConfig = {
 		navMenu: [
 			{
 				title: "Infosite Home",
-				url: "article-1",
+				url: "/article/article-1",
+				targetBlank: true,
 				submenu: [
 					{
 						title: "Salutrib (somaet iatrob) 50mg",
-						url: "article-2"
+						url: "/article/article-2",
+						targetBlank: true
 					},
 					{
 						title: "Treatment Guidelines",
-						url: "article-3"
+						url: "/article/article-3",
+						targetBlank: true
 					},
 					{
 						title: "Clinical Data",
-						url: "article-4"
+						url: "/article/article-4",
+						targetBlank: true
 					},
 					{
 						title: "Video: MOA",
-						url: "article-5"
+						url: "/article/article-5",
+						targetBlank: true
 					}
 				]
 			},
 			{
 				title: "Important Safety Information",
 				url: "#isi",
+				targetBlank: true,
 				submenu:[
 					{
 						title: "Efficacy and Safety Data",
-						url: "article-6"
+						url: "/article/article-6",
+						targetBlank: true
 					}
 				]
 			},
 			{
 				title: "Prescribing Information",
-				url: "http://www.medscape.com"
+				url: "http://www.medscape.com",
+				targetBlank: true
 			}
 		]
 
