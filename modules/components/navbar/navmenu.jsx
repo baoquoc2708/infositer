@@ -46,8 +46,8 @@ export default React.createClass({
     linkItemFn(item){
         let self = this;
         let linkItem = item.map(function(data,iterator){
-            return ( <li key={iterator} className='sub-menu-list'> 
-                        <a href={data.url} id={`sub-menu-${iterator}`}>{data.title}</a>
+            return ( <li key={iterator} className='sub-menu-list' onClick={(event) => self.listAction(event)}> 
+                        <a href={data.url} id={`sub-menu-${iterator}`} onClick={(event) => self.loadArticle(event)}>{data.title}</a>
                 </li>)  
         }); 
         return linkItem;     
@@ -56,50 +56,44 @@ export default React.createClass({
         let self = this,
         navMenu = this.props.items.navMenu.map(function(data,iterator){
             if(data.submenu){
-                return ( <li key={iterator} className='menu-list' > 
-                            <a href={data.url} id={`menu-${iterator}`}>{data.title}</a>
+                return ( <li key={iterator} className='menu-list' onClick={(event) => self.listAction(event)}> 
+                            <a href={data.url} id={`menu-${iterator}`} onClick={(event) => self.loadArticle(event)}>{data.title}</a>
                             <ul>
                                 {self.linkItemFn(self.props.items.navMenu[iterator].submenu)}
                             </ul>
                         </li>)
             } else {
-                return ( <li key={iterator} className='menu-list'> 
-                            <a href={data.url} id={`menu-${iterator}`} >{data.title}</a>                        
+                return ( <li key={iterator} className='menu-list' onClick={(event) => self.listAction(event)}> 
+                            <a href={data.url} id={`menu-${iterator}`} onClick={(event) => self.loadArticle(event)}>{data.title}</a>                        
                         </li>)
             }     
         }); 
         return navMenu;     
     },
     loadArticle(event){
-        const originUrl = window.location.origin + '/infosite/infositeR_POC';
+        const originUrl = window.location.origin ;
         event.stopPropagation();
         if(event.target.href.indexOf(window.location.origin) == -1){
             return;
         }
         let pageUrl = event.target.href;
-        const dirName = '/'
+        const dirName = '/article/'
         if(event.target.href.indexOf('#') > -1){
             let hashUrl = originUrl +'#'+ pageUrl.split('#')[1];
             window.history.pushState(null, null, hashUrl);
         } else {
             event.preventDefault();
             window.history.pushState(null, null, originUrl + dirName + $(event.target).attr('href'));
-            $('.article').load(originUrl + dirName + $(event.target).attr('href'),function(){
+            $('.article').load(originUrl + dirName + $(event.target).attr('href')+'.html',function(){
+
             });
         }    
     },
     listAction(event){
         event.stopPropagation();
-        console.log(event.target);
     },
     componentDidMount() {
-        let self = this;
-        $('.menu-list, .sub-menu-list').on('click', function(event) {
-           self.listAction(event);
-        });
-        $('.menu-list a, .sub-menu-list a').on('click', function(event) {
-           self.loadArticle(event);
-        });  
+
     },
     render() {
         return (
