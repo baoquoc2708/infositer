@@ -71,7 +71,7 @@ export default React.createClass({
         return navMenu;     
     },
     loadArticle(event){
-        const originUrl = window.location.origin ;
+        const originUrl = window.location.origin + '/infosite/infositeR_POC' ;
         event.stopPropagation();
         if(event.target.href.indexOf(window.location.origin) == -1){
             return;
@@ -83,8 +83,8 @@ export default React.createClass({
             window.history.pushState(null, null, hashUrl);
         } else {
             event.preventDefault();
-            window.history.pushState(null, null, originUrl + dirName + $(event.target).attr('href'));
-            $('.article').load(originUrl + dirName + $(event.target).attr('href')+'.html',function(){
+            window.history.pushState(null, null, originUrl + '/' + $(event.target).attr('href'));
+            $('.article').load(window.location.origin + dirName + $(event.target).attr('href')+'.html',function(){
 
             });
         }    
