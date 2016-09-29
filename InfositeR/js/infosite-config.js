@@ -1,4 +1,9 @@
 window.infositeConfig = {
+	projectName: 'infosite', // project name infoste or infositeR for routing 
+	programName: 'infositeR_POC', // program name 
+	articleDirectory: 'article', // content directory ariticles in case of routing
+	articleMain:'article-home', // main article whe program loads without specific article url
+	routing:true, // if its false page will redirect on navigation 
 	style: {
 		responsive: false, // flag to determine responsive style to add to program 
 		cssUrl: {
@@ -14,13 +19,13 @@ window.infositeConfig = {
 		svplayer: false
 	},
 	navigation: {
-		navDesktopStyle: "top", // manu options top, right, left 
+		navDesktopStyle: "top", // manu options top, right-static, left-static, right, left 
 		navMobileStyle: 'top', //  humburger manu options top, right, left 
 		navTabletStyle: true,   // options for tab manu true, false
 		navMenu: [
 			{
 				title: "Infosite Home",
-				url: "article-1",
+				url: "article-home",
 				submenu: [
 					{
 						title: "Salutrib (somaet iatrob) 50mg",
@@ -46,15 +51,16 @@ window.infositeConfig = {
 				submenu:[
 					{
 						title: "Efficacy and Safety Data",
-						url: "article-6"
+						url: "article-1"
 					}
 				]
 			},
 			{
 				title: "Prescribing Information",
-				url: "http://www.medscape.com"
+				url: "http://www.medscape.com",
+				target: '_blank',
+				submenu:[]
 			}
 		]
-
 	}
 };

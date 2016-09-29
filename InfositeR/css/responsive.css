@@ -135,7 +135,8 @@ a {
 h1,
 h2,
 h3 {
-  display: block; }
+  display: block;
+  margin: 0; }
 
 h2 {
   color: #4d4184;
