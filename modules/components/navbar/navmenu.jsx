@@ -46,9 +46,12 @@ export default React.createClass({
     linkItemFn(item){
         let self = this;
         let linkItem = item.map(function(data,iterator){
-            return ( <li key={iterator} className='sub-menu-list' onClick={(event) => self.listAction(event)}> 
-                        <a href={data.url} id={`sub-menu-${iterator}`} onClick={(event) => self.loadArticle(event)}>{data.title}</a>
-                </li>)  
+            return ( <li key={iterator} className='sub-menu-list' onClick={(event) => self.listAction(event)}>
+                        <span className='sub-menu-image'></span> 
+                        <a href={data.url} id={`sub-menu-${iterator}`} onClick={(event) => self.loadArticle(event)}> 
+                            {data.title}
+                        </a>
+                    </li>)  
         }); 
         return linkItem;     
     },
@@ -56,15 +59,23 @@ export default React.createClass({
         let self = this,
         navMenu = this.props.items.navMenu.map(function(data,iterator){
             if(data.submenu){
-                return ( <li key={iterator} className='menu-list' onClick={(event) => self.listAction(event)}> 
-                            <a href={data.url} id={`menu-${iterator}`} onClick={(event) => self.loadArticle(event)}>{data.title}</a>
+                return ( <li key={iterator} className='main-list' onClick={(event) => self.listAction(event)}>
+                            <li key={iterator} className='menu-list' onClick={(event) => self.listAction(event)}>
+                                <span className='menu-image'></span>
+                                <a href={data.url} id={`menu-${iterator}`} onClick={(event) => self.loadArticle(event)}> 
+                                    {data.title}
+                                </a>
+                            </li>
                             <ul>
                                 {self.linkItemFn(self.props.items.navMenu[iterator].submenu)}
                             </ul>
                         </li>)
             } else {
-                return ( <li key={iterator} className='menu-list' onClick={(event) => self.listAction(event)}> 
-                            <a href={data.url} id={`menu-${iterator}`} onClick={(event) => self.loadArticle(event)}>{data.title}</a>                        
+                return ( <li key={iterator} className='menu-list' onClick={(event) => self.listAction(event)}>
+                            <span className='menu-image'></span>
+                            <a href={data.url} id={`menu-${iterator}`} onClick={(event) => self.loadArticle(event)}> 
+                                {data.title}
+                            </a>                        
                         </li>)
             }     
         }); 

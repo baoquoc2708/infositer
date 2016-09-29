@@ -253,17 +253,21 @@ html,
   .menu-list a, .sub-menu-list a {
     color: #fff;
     padding: 20px;
-    display: block;
+    display: inline-block;
     vertical-align: baseline;
     font-size: 15px; }
 
-.menu-list a {
-  padding-left: 40px;
-  background: url(/assets/images/image_salutrib/arrow.png) 15px 50% no-repeat; }
+.menu-image, .sub-menu-image {
+  background: url(/assets/images/image_salutrib/arrow.png) 15px 50% no-repeat;
+  padding: 0 15px;
+  vertical-align: baseline;
+  cursor: pointer; }
 
-.menu-list ul li a {
-  padding-left: 60px;
-  background: url(/assets/images/image_salutrib/arrow.png) 35px 50% no-repeat; }
+.menu-image {
+  margin-left: 10px; }
+
+.sub-menu-image {
+  margin-left: 30px; }
 
 .infosite-footer {
   border-top: 1px solid #B7B8B8;
