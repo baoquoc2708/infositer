@@ -94,7 +94,7 @@ export default React.createClass({
             ext = '.html';
         }
         event.stopPropagation();
-        if(event.target.href.indexOf(window.location.origin) == -1){
+        if(event.target.href.indexOf(window.location.origin) == -1 || !infositeConfig.routing){
             return;
         } 
         if(event.target.href.indexOf('#') == -1){
