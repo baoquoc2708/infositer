@@ -58,7 +58,7 @@ window.infositeConfig = {
 			{
 				title: "Prescribing Information",
 				url: "http://www.medscape.com",
-				targetBlank: true,
+				target: '_blank',
 				submenu:[]
 			}
 		]

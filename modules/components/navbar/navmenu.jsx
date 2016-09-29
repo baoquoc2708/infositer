@@ -21,7 +21,11 @@ export default React.createClass({
     componentWillMount() {
         $(document).ready(function() {
             let articleName = window.location.pathname.split("/").pop(),
-                currentArticle = infositeConfig.articleMain;
+                currentArticle = infositeConfig.articleMain,
+                ext = '.jsp';
+            if(window.location.origin.indexOf('localhost') > -1){
+                ext = '.html';
+            };
             infositeConfig.navigation.navMenu.forEach(function(index){
                 if(articleName == index.url){
                     currentArticle = index.url;
@@ -35,7 +39,7 @@ export default React.createClass({
                     });
                 }
             });
-            let loadUrl = '/'+infositeConfig.articleDirectory+'/'+currentArticle+'.html';
+            let loadUrl = '/'+infositeConfig.articleDirectory+'/'+currentArticle + ext;
             $('.article').load(loadUrl,
                 function(){
                     console.log("home article loaded")
@@ -48,7 +52,7 @@ export default React.createClass({
         let linkItem = item.map(function(data,iterator){
             return ( <li key={iterator} className='sub-menu-list' onClick={(event) => self.listAction(event)}>
                         <span className='sub-menu-image'></span> 
-                        <a href={data.url} id={`sub-menu-${iterator}`} onClick={(event) => self.loadArticle(event)}> 
+                        <a href={data.url} id={`sub-menu-${iterator}`} target={data.target} onClick={(event) => self.loadArticle(event)}> 
                             {data.title}
                         </a>
                     </li>)  
@@ -59,21 +63,21 @@ export default React.createClass({
         let self = this,
         navMenu = this.props.items.navMenu.map(function(data,iterator){
             if(data.submenu){
-                return ( <li key={iterator} className='main-list' onClick={(event) => self.listAction(event)}>
+                return ( <ul key={iterator} className='main-list' onClick={(event) => self.listAction(event)}>
                             <li key={iterator} className='menu-list' onClick={(event) => self.listAction(event)}>
                                 <span className='menu-image'></span>
-                                <a href={data.url} id={`menu-${iterator}`} onClick={(event) => self.loadArticle(event)}> 
+                                <a href={data.url} id={`menu-${iterator}`} target={data.target} onClick={(event) => self.loadArticle(event)}> 
                                     {data.title}
                                 </a>
                             </li>
                             <ul>
                                 {self.linkItemFn(self.props.items.navMenu[iterator].submenu)}
                             </ul>
-                        </li>)
+                        </ul>)
             } else {
                 return ( <li key={iterator} className='menu-list' onClick={(event) => self.listAction(event)}>
                             <span className='menu-image'></span>
-                            <a href={data.url} id={`menu-${iterator}`} onClick={(event) => self.loadArticle(event)}> 
+                            <a href={data.url} id={`menu-${iterator}`} target={data.target} onClick={(event) => self.loadArticle(event)}> 
                                 {data.title}
                             </a>                        
                         </li>)
@@ -82,20 +86,25 @@ export default React.createClass({
         return navMenu;     
     },
     loadArticle(event){
-        const originUrl = window.location.origin + '/infosite/infositeR_POC' ;
+        const originUrl = window.location.origin + '/' + infositeConfig.projectName + '/' + infositeConfig.programName,
+                dirName = '/' + infositeConfig.articleDirectory + '/';
+        let pageUrl = event.target.href,
+            ext = '.jsp';
+        if(window.location.origin.indexOf('localhost') > -1){
+            ext = '.html';
+        }
         event.stopPropagation();
         if(event.target.href.indexOf(window.location.origin) == -1){
             return;
-        }
-        let pageUrl = event.target.href;
-        const dirName = '/article/'
-        if(event.target.href.indexOf('#') > -1){
-            let hashUrl = originUrl +'#'+ pageUrl.split('#')[1];
-            window.history.pushState(null, null, hashUrl);
-        } else {
+        } 
+        if(event.target.href.indexOf('#') == -1){
             event.preventDefault();
-            window.history.pushState(null, null, originUrl + '/' + $(event.target).attr('href'));
-            $('.article').load(window.location.origin + dirName + $(event.target).attr('href')+'.html',function(){
+            if($(event.target).attr('href') == infositeConfig.navigation.navMenu[0].url){
+                window.history.pushState(null, null, originUrl);
+            } else {
+                window.history.pushState(null, null, originUrl + '/' + $(event.target).attr('href'));
+            }
+            $('.article').load(window.location.origin + dirName + $(event.target).attr('href') + ext,function(){
 
             });
         }    
