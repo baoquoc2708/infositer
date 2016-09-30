@@ -41,10 +41,10 @@ export default React.createClass({
                 }
             });
             let loadUrl = '/'+infositeConfig.articleDirectory+'/'+currentArticle + self.fileType;
-            $('.article').load(loadUrl,
-                function(){
-                    console.log("home article loaded")
-                /* Stuff to do after the page is loaded */
+            $('.article').load(loadUrl, function(){
+                let articleOnLoad = new Event('articleOnLoad'); // broadcast event 
+                document.dispatchEvent(articleOnLoad);
+                console.log(currentArticle);
             });
         });   
     },
@@ -102,8 +102,11 @@ export default React.createClass({
             } else {
                 window.history.pushState(null, null, originUrl + '/' + $(event.target).attr('href'));
             }
+            let currentArticle = $(event.target).attr('href');
             $('.article').load(window.location.origin + dirName + $(event.target).attr('href') + self.fileType,function(){
-
+                let articleOnAction = new Event('articleOnAction'); // event broadcast
+                document.dispatchEvent(articleOnAction);
+                console.log(currentArticle);
             });
         }    
     },
