@@ -97,7 +97,7 @@ export default React.createClass({
         } 
         if(event.target.href.indexOf('#') == -1){
             event.preventDefault();
-            if($(event.target).attr('href') == infositeConfig.navigation.navMenu[0].url){
+            if($(event.target).attr('href') == infositeConfig.articleMain){
                 window.history.pushState(null, null, originUrl);
             } else {
                 window.history.pushState(null, null, originUrl + '/' + $(event.target).attr('href'));
