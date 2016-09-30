@@ -1,7 +1,7 @@
 import $                                from 'jquery';
 import cx                               from 'classnames';
 import React , { PropTypes }            from 'react';
-import Util                             from 'utils/util';
+import { isLocal }                      from 'utils/util';
 
 export default React.createClass({
     displayName: 'navigationMenu',
@@ -15,17 +15,18 @@ export default React.createClass({
     },
     getDefaultProps() {
         return {
-              
+           
         };
     },
+    fileType: '',
     componentWillMount() {
+        if(isLocal()){
+            this.fileType = '.html';
+        };
+        let self = this;
         $(document).ready(function() {
             let articleName = window.location.pathname.split("/").pop(),
-                currentArticle = infositeConfig.articleMain,
-                ext = '.jsp';
-            if(window.location.origin.indexOf('localhost') > -1){
-                ext = '.html';
-            };
+                currentArticle = infositeConfig.articleMain;
             infositeConfig.navigation.navMenu.forEach(function(index){
                 if(articleName == index.url){
                     currentArticle = index.url;
@@ -39,7 +40,7 @@ export default React.createClass({
                     });
                 }
             });
-            let loadUrl = '/'+infositeConfig.articleDirectory+'/'+currentArticle + ext;
+            let loadUrl = '/'+infositeConfig.articleDirectory+'/'+currentArticle + self.fileType;
             $('.article').load(loadUrl,
                 function(){
                     console.log("home article loaded")
@@ -89,10 +90,7 @@ export default React.createClass({
         const originUrl = window.location.origin + '/' + infositeConfig.projectName + '/' + infositeConfig.programName,
                 dirName = '/' + infositeConfig.articleDirectory + '/';
         let pageUrl = event.target.href,
-            ext = '.jsp';
-        if(window.location.origin.indexOf('localhost') > -1){
-            ext = '.html';
-        }
+            self = this;
         event.stopPropagation();
         if(event.target.href.indexOf(window.location.origin) == -1 || !infositeConfig.routing){
             return;
@@ -104,7 +102,7 @@ export default React.createClass({
             } else {
                 window.history.pushState(null, null, originUrl + '/' + $(event.target).attr('href'));
             }
-            $('.article').load(window.location.origin + dirName + $(event.target).attr('href') + ext,function(){
+            $('.article').load(window.location.origin + dirName + $(event.target).attr('href') + self.fileType,function(){
 
             });
         }    
