@@ -1,9 +1,10 @@
 import $            from 'jquery';
 import React, { PropTypes }		from 'react';
+import ReactDOM from 'react-dom';
 import Utils		from './utils/util';
 import infosite		from 'infosite-core/infosite-core';
 import tracking		from 'infosite-core/infosite-tracking';
-import NavigationMenu from 'components/navbar/navmenu.jsx';
+import NavigationMenu from './components/navbar/navmenu.jsx';
 
 
 $(document).ready(function() {
@@ -32,7 +33,7 @@ $(document).ready(function() {
 	console.log("infosite and gm");
 	let menuData = infositeConfig.navigation;
 	let menuElement = document.getElementById("menu-container");
-	React.render(<NavigationMenu items={menuData}/>, menuElement);
+	ReactDOM.render(<NavigationMenu items={menuData}/>, menuElement);
 
 	infosite.init(); // code from infosite-core module 
 		

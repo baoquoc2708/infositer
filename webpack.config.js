@@ -14,17 +14,18 @@ module.exports = {
   resolve: {
     root: __dirname + '/modules',
     extensions: [ '', '.js', '.jsx' ],
+      moduleDirectories:['node_modules'],
     alias: {
       amp:        __dirname + '/amp-premier/amp.premier.js',
-      react:      __dirname + '/ext_libraries/react',
-      reflux:     __dirname + '/ext_libraries/reflux/index.js',
-      _:          __dirname + '/ext_libraries/lodash/lodash.js',
-      event:      __dirname + '/ext_libraries/event-emitter/dist/EventEmitter.js',
-      jquery:     __dirname + '/ext_libraries/00-jquery1x/jquery-1.10.2.js',
-      jqmobile:   __dirname + '/ext_libraries/00-jquery1x/jqmobile-1.4.5',
-      md5:        __dirname + '/ext_libraries/MD5',
-      screenfull: __dirname + '/ext_libraries/screenfull/screenfull.js',
-      classnames: __dirname + '/ext_libraries/classnames/index.js',
+      //react:      __dirname + '/ext_libraries/react',
+      //reflux:     __dirname + '/ext_libraries/reflux/index.js',
+      _:          __dirname + '/node_modules/lodash/lodash.js',
+      event:      __dirname + '/node_modules/event-emitter/dist/EventEmitter.js',
+      //jquery:     __dirname + '/ext_libraries/00-jquery1x/jquery-1.10.2.js',
+      //jqmobile:   __dirname + '/ext_libraries/00-jquery1x/jqmobile-1.4.5',
+      //md5:        __dirname + '/ext_libraries/MD5',
+      //screenfull: __dirname + '/ext_libraries/screenfull/screenfull.js',
+      //classnames: __dirname + '/ext_libraries/classnames/index.js',
 
       // component styles
       baseStyle:  __dirname + '/InfositeR/css/video-player/main.scss',
